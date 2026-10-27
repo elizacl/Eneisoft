@@ -45,11 +45,14 @@ La solución integra tanto la difusión y bases de la competencia presencial com
 ### 3. Módulo de Eventos & Conferencias (`/eventos`)
 * **Navegación Scrollytelling (*Sticky Scroll*)**:
   * **Próximos Eventos (Noviembre 2026)**: Conferencias virtuales magistrales ordenadas cronológicamente, con enlace directo al perfil de LinkedIn de cada ponente:
-    * **Daniella Orozco** (03 de Noviembre): *"La parte del proyecto: De usar IA a pensar con IA"*.
-    * **Danilo Chavez** (04 de Noviembre): *"El rol del ingeniero de sistemas en la era de los datos y la IA"*.
-    * **Ernesto Cuadros** (05 de Noviembre): *"Computación en el Perú y el Mundo: Tendencias y Desafíos"*.
-    * **Doris Manrique** (07 de Noviembre): *"Innovación tecnológica y gestión de proyectos de software"*.
-    * **Raúl Mogollón** (07 de Noviembre): *"Empleabilidad más allá del aula: LinkedIn & CV"*.
+    * **Enrique Mesones** (03 de Noviembre, 14:30): *"¿Y si el problema no es el código? Cómo resolver conflictos, destacar bajo presión y transformar problemas en oportunidades de innovación"*.
+    * **Daniella Orozco** (03 de Noviembre, 17:30): *"La parte del proyecto: De usar IA a pensar con IA"*.
+    * **Miguel Solis** (03 de Noviembre, 19:00): *"Del git push a la nube: construye tu primer pipeline automatizado"*.
+    * **Danilo Chavez** (04 de Noviembre, 19:00): *"Lo que me hubiera gustado saber en primer ciclo sobre datos"*.
+    * **Ernesto Cuadros** (05 de Noviembre, 16:00): Ponencia magistral en computación e investigación.
+    * **Doris Manrique** (05 de Noviembre, 17:30): Arquitectura cloud y liderazgo tecnológico.
+    * **Raúl Mogollón** (05 de Noviembre, 19:00): *"Empleabilidad más allá del aula: LinkedIn & CV"*.
+    * **Hackathon Presencial** (07 de Noviembre, 08:00 - 20:45): Jornada técnica en la FISI - UNMSM.
   * **Eventos Anteriores**: Ponencias magistrales internacionales (Bastián Landskron y Heileen Goodson) con enlaces a publicaciones oficiales de LinkedIn.
 
 ---

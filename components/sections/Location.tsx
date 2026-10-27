@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import { MapPin, Navigation, ArrowUpRight, Compass, Building, Calendar } from "lucide-react";
+import { MagneticButton } from "@/components/ui/MagneticButton";
 
 export function Location() {
     const mapsUrl = "https://maps.app.goo.gl/km1Gfoo3B5tPDwUY7";
@@ -46,11 +47,13 @@ export function Location() {
                             href={mapsUrl}
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="inline-flex items-center gap-2 px-6 py-3.5 rounded-full bg-emerald-600 text-white text-xs md:text-sm font-bold uppercase tracking-wider hover:bg-emerald-500 transition-all shadow-md hover:shadow-lg w-fit shrink-0 group cursor-pointer"
+                            className="inline-block"
                         >
-                            <Navigation className="w-4 h-4 text-white" />
-                            <span>Cómo Llegar en Google Maps</span>
-                            <ArrowUpRight className="w-4 h-4 text-white transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
+                            <MagneticButton className="inline-flex items-center gap-2 px-6 py-3.5 rounded-full bg-[#00668e] text-white hover:bg-[#00c8df] hover:text-[#0a2138] text-xs md:text-sm font-bold uppercase tracking-wider transition-all duration-300 shadow-[0_4px_14px_rgba(0,102,142,0.35)] hover:shadow-[0_4px_20px_rgba(0,200,223,0.5)] w-fit shrink-0 group cursor-pointer">
+                                <Navigation className="w-4 h-4 transition-transform group-hover:scale-110" />
+                                <span>Cómo Llegar en Google Maps</span>
+                                <ArrowUpRight className="w-4 h-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
+                            </MagneticButton>
                         </a>
                     </div>
                 </div>

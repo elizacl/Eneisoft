@@ -8,6 +8,7 @@ import { cn } from "@/lib/utils";
 import { Menu, X, Sparkles } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger, SheetTitle, SheetClose } from "@/components/ui/sheet";
+import { MagneticButton } from "@/components/ui/MagneticButton";
 
 const navLinks = [
     { name: "Inicio", href: "/" },
@@ -98,7 +99,7 @@ export function Navbar() {
                         <Link
                             key={link.name}
                             href={link.href}
-                            className="relative px-4 py-2 text-sm font-medium text-neutral-400 hover:text-[#00ff87] transition-colors"
+                            className="relative px-4 py-2 text-sm font-medium text-neutral-400 hover:text-[#24ed7a] transition-colors"
                         >
                             {link.name}
                         </Link>
@@ -111,13 +112,11 @@ export function Navbar() {
                         href="https://forms.gle/kEkG3JYVXWN5t7hX9"
                         target="_blank"
                         rel="noopener noreferrer"
+                        className="inline-block"
                     >
-                        <Button
-                            size="sm"
-                            className="rounded-full px-5 py-2 bg-[#00ff87] text-[#030806] hover:bg-[#22e565] font-semibold transition-all shadow-[0_0_20px_rgba(0,255,135,0.3)] hover:shadow-[0_0_30px_rgba(0,255,135,0.5)] border border-[#00ff87] cursor-pointer"
-                        >
+                        <MagneticButton className="rounded-full px-5 py-2.5 bg-[#24ed7a] text-[#0a2138] hover:bg-[#00c8df] hover:text-[#0a2138] text-xs font-bold uppercase tracking-wider transition-all duration-300 shadow-[0_0_20px_rgba(36,237,122,0.35)] hover:shadow-[0_0_30px_rgba(0,200,223,0.5)] border border-[#24ed7a] cursor-pointer">
                             Inscribir Equipo
-                        </Button>
+                        </MagneticButton>
                     </a>
                 </div>
 
@@ -130,7 +129,7 @@ export function Navbar() {
                     >
                         <Button
                             size="sm"
-                            className="rounded-full px-4 bg-[#00ff87] text-[#030806] hover:bg-[#22e565] font-semibold transition-all mr-2 text-xs cursor-pointer"
+                            className="rounded-full px-4 bg-[#24ed7a] text-[#0a2138] hover:bg-[#00c8df] font-semibold transition-all mr-2 text-xs cursor-pointer"
                         >
                             Inscribir
                         </Button>

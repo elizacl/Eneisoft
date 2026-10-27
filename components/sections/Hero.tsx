@@ -110,16 +110,16 @@ export function Hero() {
                     className="flex flex-col sm:flex-row items-center gap-5 mb-4"
                 >
                     <a href="/hackathon" className="inline-block">
-                        <MagneticButton className="rounded-full px-9 h-14 text-sm font-bold uppercase tracking-wider bg-[#00ff87] text-[#020705] hover:bg-[#22e565] transition-all shadow-[0_0_35px_rgba(0,255,135,0.4)] hover:shadow-[0_0_50px_rgba(0,255,135,0.7)] flex items-center gap-2 cursor-pointer">
+                        <MagneticButton className="rounded-full px-9 h-14 text-sm font-bold uppercase tracking-wider bg-[#24ed7a] text-[#0a2138] hover:bg-[#00c8df] hover:text-[#0a2138] transition-all duration-300 shadow-[0_0_35px_rgba(36,237,122,0.4)] hover:shadow-[0_0_50px_rgba(0,200,223,0.7)] flex items-center gap-2 cursor-pointer">
                             <span>Conoce la Hackathon</span>
-                            <ArrowRight className="w-4 h-4 text-[#020705]" />
+                            <ArrowRight className="w-4 h-4 text-[#0a2138]" />
                         </MagneticButton>
                     </a>
 
                     <a href="/eventos" className="inline-block">
-                        <MagneticButton className="flex items-center text-sm uppercase tracking-widest text-neutral-300 hover:text-[#00ff87] transition-colors group px-6 py-4 rounded-full border border-white/15 hover:border-[#00ff87]/50 bg-white/5 cursor-pointer">
+                        <MagneticButton className="flex items-center text-sm uppercase tracking-widest text-neutral-300 hover:text-[#24ed7a] transition-colors group px-6 py-4 rounded-full border border-white/15 hover:border-[#24ed7a]/50 bg-white/5 cursor-pointer">
                             Ver Eventos
-                            <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform text-[#00ff87]" />
+                            <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform text-[#24ed7a]" />
                         </MagneticButton>
                     </a>
                 </motion.div>

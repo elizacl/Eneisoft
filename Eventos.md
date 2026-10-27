@@ -2,6 +2,18 @@
 ## Próximos eventos
 
 > 📅 **NOV | 03** `Ponencia` `Virtual`
+> ### **¿Y si el problema no es el código? Cómo resolver conflictos, destacar bajo presión y transformar problemas en oportunidades de innovación**
+> Martes 03 de noviembre de 2026
+>
+> **Temática:** Importancia de las habilidades blandas, liderazgo y resolución de problemas bajo presión para generar, capturar y compartir valor en el desarrollo de software.
+> **Hora:** 2:30 PM - 3:30 PM (14:30 - 15:30)
+> **Speaker:** Enrique Mesones (Líder empresarial, presidente de APESOFT, especializado en impulsar ecosistemas tecnológicos, Web 3.0 e IA).
+>
+> 🔗 [Inscribirse al evento en Luma](https://luma.com/user/eneisoft) 🔗 [Ver perfil de Linkedin](https://www.linkedin.com/in/enriquemesones)
+
+***
+
+> 📅 **NOV | 03** `Ponencia` `Virtual`
 > ### **La parte del proyecto: De usar IA a pensar con IA**
 > Martes 03 de noviembre de 2026
 >
@@ -13,11 +25,23 @@
 
 ***
 
+> 📅 **NOV | 03** `Ponencia` `Virtual`
+> ### **Del git push a la nube: construye tu primer pipeline automatizado**
+> Martes 03 de noviembre de 2026
+>
+> **Temática:** Fundamentos y arquitectura de pipelines CI/CD, automatización de builds y despliegues en la nube con GitHub Actions y Docker, gestión de secretos y detección temprana de errores.
+> **Hora:** 7:00 PM - 8:00 PM (19:00 - 20:00)
+> **Speaker:** Miguel Solis (Desarrollador full-stack, especialista en backend, arquitectura cloud y DevSecOps en Mibanco y UNMSM).
+>
+> 🔗 [Inscribirse al evento en Luma](https://luma.com/user/eneisoft) 🔗 [Ver perfil de Linkedin](https://www.linkedin.com/in/miguel-solis-cunza)
+
+***
+
 > 📅 **NOV | 04** `Ponencia` `Virtual`
-> ### **[Título por actualizar]**
+> ### **Lo que me hubiera gustado saber en primer ciclo sobre datos**
 > Miércoles 04 de noviembre de 2026
 >
-> **Temática:** [Por actualizar]
+> **Temática:** Descubrimiento del mundo de los datos mediante casos prácticos empresariales, toma de decisiones y consejos clave para que los estudiantes comiencen a explorar esta área desde primeros ciclos.
 > **Hora:** 7:00 PM - 8:00 PM (19:00 - 20:00)
 > **Speaker:** Danilo Chavez (Analista de datos corporativos y fundador de DATANILO, enfocado en transformación digital).
 >

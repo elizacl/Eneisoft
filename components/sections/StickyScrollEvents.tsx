@@ -15,6 +15,7 @@ import {
     Linkedin,
 } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
+import { MagneticButton } from "@/components/ui/MagneticButton";
 
 export interface ScrollEventItem {
     id: string;
@@ -201,17 +202,21 @@ function EventTextItem({
                             href={link.href}
                             target={link.href.startsWith("http") ? "_blank" : undefined}
                             rel={link.href.startsWith("http") ? "noopener noreferrer" : undefined}
-                            className={`inline-flex items-center gap-2 px-5 py-2.5 rounded-full text-xs font-semibold transition-all duration-300 ${
-                                isLinkedIn
-                                    ? "bg-[#0a66c2] text-white hover:bg-[#004182] border border-[#0a66c2] shadow-[0_0_20px_rgba(10,102,194,0.4)]"
-                                    : link.primary
-                                    ? "bg-[#00ff87] text-[#020705] hover:bg-[#22e565] shadow-[0_0_20px_rgba(0,255,135,0.35)]"
-                                    : "bg-white/5 hover:bg-white/10 text-neutral-300 hover:text-white border border-white/10 hover:border-white/25"
-                            }`}
+                            className="inline-block"
                         >
-                            {isLinkedIn && <Linkedin className="w-3.5 h-3.5 fill-current" />}
-                            <span>{link.label}</span>
-                            <ArrowUpRight className="w-3.5 h-3.5" />
+                            <MagneticButton
+                                className={`inline-flex items-center gap-2 px-5 py-2.5 rounded-full text-xs font-semibold transition-all duration-300 cursor-pointer ${
+                                    isLinkedIn
+                                        ? "bg-[#0a66c2] text-white hover:bg-[#004182] border border-[#0a66c2] shadow-[0_0_20px_rgba(10,102,194,0.4)]"
+                                        : link.primary
+                                        ? "bg-[#24ed7a] text-[#0a2138] hover:bg-[#00c8df] hover:text-[#0a2138] shadow-[0_0_20px_rgba(36,237,122,0.35)] hover:shadow-[0_0_25px_rgba(0,200,223,0.5)] font-bold"
+                                        : "bg-white/5 hover:bg-white/10 text-neutral-300 hover:text-white border border-white/10 hover:border-white/25"
+                                }`}
+                            >
+                                {isLinkedIn && <Linkedin className="w-3.5 h-3.5 fill-current" />}
+                                <span>{link.label}</span>
+                                <ArrowUpRight className="w-3.5 h-3.5" />
+                            </MagneticButton>
                         </Link>
                     );
                 })}
