@@ -26,7 +26,7 @@ export default function HackathonPage() {
             <Features />
             {/* 4. Esquema de Evaluación (Oscuro) */}
             <Testimonials />
-            {/* 5. Espacios e Instalaciones Físicas de la Hackathon (Oscuro) */}
+            {/* 5. Espacios e Instalaciones Físicas de la Hackathon (Claro) */}
             <HackathonSpaces />
         </div>
     );

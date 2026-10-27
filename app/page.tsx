@@ -10,16 +10,16 @@ export default function Home() {
       {/* 1. Portada ENEISOFT (Oscuro) */}
       <Hero />
 
-      {/* 2. Misión y Visión Institucional (Oscuro) */}
+      {/* 2. Misión y Visión Institucional (Claro) */}
       <MissionVision />
 
-      {/* 3. Nuestros Aliados & Patrocinadores (Claro) */}
+      {/* 3. Nuestros Aliados & Patrocinadores (Oscuro) */}
       <Partners />
 
-      {/* 4. Ubicaciones del Evento con Google Maps (Oscuro) */}
+      {/* 4. Ubicaciones del Evento con Google Maps (Claro) */}
       <Location />
 
-      {/* 5. Preguntas Frecuentes (Claro, debajo de Ubicación) */}
+      {/* 5. Preguntas Frecuentes (Oscuro) */}
       <FAQ />
     </div>
   );

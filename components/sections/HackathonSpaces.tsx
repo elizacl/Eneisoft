@@ -58,9 +58,9 @@ const spaces: SpaceItem[] = [
 
 export function HackathonSpaces() {
     return (
-        <section id="espacios" className="py-24 px-6 bg-[#030806] text-white relative overflow-hidden border-t border-white/5">
-            {/* Ambient background glow */}
-            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[350px] bg-[#00ff87]/[0.03] rounded-full blur-[160px] pointer-events-none" />
+        <section id="espacios" className="py-24 px-6 bg-[#f8fafc] text-neutral-900 relative overflow-hidden border-t border-b border-neutral-200/80">
+            {/* Ambient background subtle glow */}
+            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[350px] bg-emerald-500/[0.04] rounded-full blur-[150px] pointer-events-none" />
 
             <div className="max-w-7xl mx-auto relative z-10">
                 {/* Header */}
@@ -70,9 +70,9 @@ export function HackathonSpaces() {
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
                         transition={{ duration: 0.6 }}
-                        className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full border border-[#00ff87]/30 text-xs uppercase tracking-widest text-[#00ff87] mb-4 bg-[#07150e]/80 backdrop-blur-sm shadow-[0_0_15px_rgba(0,255,135,0.15)] font-mono"
+                        className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full border border-emerald-200 text-xs uppercase tracking-widest text-emerald-800 mb-4 bg-emerald-50 shadow-sm font-mono"
                     >
-                        <MapPin className="w-3.5 h-3.5 text-[#00ff87]" />
+                        <MapPin className="w-3.5 h-3.5 text-emerald-600" />
                         Instalaciones Oficiales · FISI UNMSM
                     </motion.div>
 
@@ -81,9 +81,9 @@ export function HackathonSpaces() {
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
                         transition={{ duration: 0.7 }}
-                        className="text-3xl md:text-5xl font-bold tracking-tight text-white mb-4"
+                        className="text-3xl md:text-5xl font-bold tracking-tight text-neutral-900 mb-4"
                     >
-                        Espacios de la <span className="text-gradient-eneisoft">Hackathon.</span>
+                        Espacios de la <span className="text-emerald-600 font-bold">Hackathon.</span>
                     </motion.h2>
 
                     <motion.p
@@ -91,7 +91,7 @@ export function HackathonSpaces() {
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
                         transition={{ duration: 0.7, delay: 0.15 }}
-                        className="text-neutral-400 max-w-2xl mx-auto text-sm md:text-base font-light leading-relaxed"
+                        className="text-neutral-600 max-w-2xl mx-auto text-sm md:text-base font-light leading-relaxed"
                     >
                         Tres estaciones físicas acondicionadas en la Facultad de Ingeniería de Sistemas e Informática para garantizar la máxima productividad, confort y nivel técnico de la competencia.
                     </motion.p>
@@ -108,27 +108,27 @@ export function HackathonSpaces() {
                                 whileInView={{ opacity: 1, y: 0 }}
                                 viewport={{ once: true }}
                                 transition={{ duration: 0.5, delay: index * 0.12 }}
-                                className="group rounded-[2rem] bg-[#07120c] border border-white/10 hover:border-[#00ff87]/40 transition-all duration-500 overflow-hidden flex flex-col shadow-xl hover:shadow-[0_0_30px_rgba(0,255,135,0.12)]"
+                                className="group rounded-[2rem] bg-white border border-neutral-200/90 hover:border-emerald-500/50 transition-all duration-500 overflow-hidden flex flex-col shadow-lg hover:shadow-2xl"
                             >
                                 {/* Image Container */}
-                                <div className="relative w-full aspect-[16/10] overflow-hidden bg-black/40">
+                                <div className="relative w-full aspect-[16/10] overflow-hidden bg-neutral-100">
                                     <Image
                                         src={space.image}
                                         alt={space.title}
                                         fill
-                                        className="object-cover object-center filter brightness-90 contrast-110 group-hover:scale-105 group-hover:brightness-100 transition-all duration-700"
+                                        className="object-cover object-center filter brightness-95 contrast-105 group-hover:scale-105 transition-all duration-700"
                                     />
                                     {/* Gradient Overlay */}
-                                    <div className="absolute inset-0 bg-gradient-to-t from-[#07120c] via-transparent to-black/30 opacity-90" />
+                                    <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-black/20" />
 
                                     {/* Station Badge overlay */}
-                                    <div className="absolute top-4 left-4 z-10 flex items-center gap-2 px-3 py-1 rounded-full bg-black/75 backdrop-blur-md border border-white/15 text-xs font-mono text-white">
+                                    <div className="absolute top-4 left-4 z-10 flex items-center gap-2 px-3 py-1 rounded-full bg-black/75 backdrop-blur-md border border-white/20 text-xs font-mono text-white">
                                         <span className="w-2 h-2 rounded-full bg-[#00ff87] animate-pulse" />
                                         <span>Estación {space.number}</span>
                                     </div>
 
                                     {/* Step Number Watermark */}
-                                    <span className="absolute bottom-3 right-4 z-10 text-3xl font-mono font-bold text-white/20 select-none">
+                                    <span className="absolute bottom-3 right-4 z-10 text-3xl font-mono font-bold text-white/40 select-none">
                                         {space.number}
                                     </span>
                                 </div>
@@ -138,21 +138,21 @@ export function HackathonSpaces() {
                                     <div>
                                         {/* Subtitle / Location */}
                                         <div className="flex items-center gap-2 mb-2">
-                                            <div className="p-1.5 rounded-lg bg-[#00ff87]/10 text-[#00ff87] border border-[#00ff87]/20">
+                                            <div className="p-1.5 rounded-lg bg-emerald-50 text-emerald-700 border border-emerald-200">
                                                 <IconComponent className="w-3.5 h-3.5" />
                                             </div>
-                                            <span className="text-xs font-mono text-[#00ff87] font-semibold uppercase tracking-wider">
+                                            <span className="text-xs font-mono text-emerald-700 font-semibold uppercase tracking-wider">
                                                 {space.subtitle}
                                             </span>
                                         </div>
 
                                         {/* Main Title */}
-                                        <h3 className="text-xl font-bold text-white mb-3 tracking-tight group-hover:text-[#00ff87] transition-colors duration-300">
+                                        <h3 className="text-xl font-bold text-neutral-900 mb-3 tracking-tight group-hover:text-emerald-600 transition-colors duration-300">
                                             {space.title}
                                         </h3>
 
                                         {/* Description */}
-                                        <p className="text-xs sm:text-sm text-neutral-400 font-light leading-relaxed">
+                                        <p className="text-xs sm:text-sm text-neutral-600 font-light leading-relaxed">
                                             {space.description}
                                         </p>
                                     </div>
