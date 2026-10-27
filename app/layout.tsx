@@ -22,6 +22,11 @@ export const metadata: Metadata = {
   title: "ENEISOFT XVI 2026 | FISI UNMSM",
   description:
     "Encuentro Nacional de Estudiantes de Ingeniería de Sistemas y Computación - Facultad de Ingeniería de Sistemas e Informática, Universidad Nacional Mayor de San Marcos.",
+  icons: {
+    icon: "/logoEneisoft.png",
+    shortcut: "/logoEneisoft.png",
+    apple: "/logoEneisoft.png",
+  },
 };
 
 export default function RootLayout({
