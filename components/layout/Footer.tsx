@@ -126,11 +126,11 @@ export function Footer() {
                         <Link href="/" className="inline-flex items-center gap-3 group">
                             <div className="relative w-14 h-14 rounded-2xl bg-white border border-neutral-200/80 p-2 shadow-sm flex items-center justify-center">
                                 <Image
-                                    src="/logoEneisoft.png"
+                                    src="/logoEneisoft.jpg"
                                     alt="Logo ENEISOFT"
                                     width={48}
                                     height={48}
-                                    className="object-contain"
+                                    className="object-contain rounded-lg"
                                 />
                             </div>
                             <div className="flex flex-col text-left md:text-right">

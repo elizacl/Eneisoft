@@ -23,9 +23,9 @@ export const metadata: Metadata = {
   description:
     "Encuentro Nacional de Estudiantes de Ingeniería de Sistemas y Computación - Facultad de Ingeniería de Sistemas e Informática, Universidad Nacional Mayor de San Marcos.",
   icons: {
-    icon: "/logoEneisoft.png",
-    shortcut: "/logoEneisoft.png",
-    apple: "/logoEneisoft.png",
+    icon: "/logoEneisoft.jpg",
+    shortcut: "/logoEneisoft.jpg",
+    apple: "/logoEneisoft.jpg",
   },
 };
 

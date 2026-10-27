@@ -70,11 +70,11 @@ export function Navbar() {
                 <Link href="/" className="flex items-center gap-3 group mr-8">
                     <div className="relative w-8 h-8 rounded-lg overflow-hidden border border-[#00ff87]/30 bg-black/60 p-1 flex items-center justify-center group-hover:border-[#00ff87] transition-colors shadow-[0_0_12px_rgba(0,255,135,0.2)]">
                         <Image
-                            src="/logoEneisoft.png"
+                            src="/logoEneisoft.jpg"
                             alt="ENEISOFT XVI"
                             width={28}
                             height={28}
-                            className="object-contain"
+                            className="object-contain rounded"
                         />
                     </div>
                     <div className="flex flex-col">
