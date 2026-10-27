@@ -74,22 +74,16 @@ function EventTextItem({
         >
             {/* Meta Header */}
             <div className="flex flex-wrap items-center gap-3 mb-6">
-                <span className="text-3xl font-mono font-bold text-[#00ff87]">
+                <span className="text-3xl font-mono font-bold text-[#24ed7a]">
                     {event.stepNumber}
                 </span>
                 <div className="h-4 w-[1px] bg-white/20" />
                 <Badge
                     variant="outline"
-                    className="border-[#00ff87]/40 bg-[#00ff87]/10 text-[#00ff87] font-mono text-xs uppercase tracking-wider"
+                    className="border-[#24ed7a]/40 bg-[#24ed7a]/10 text-[#24ed7a] font-mono text-xs uppercase tracking-wider"
                 >
                     📅 {event.dateBadge}
                 </Badge>
-                {/* Solo se muestra modalidad aquí si el evento no tiene foto (ej. Hackathon) */}
-                {!event.image && (
-                    <span className="text-xs font-mono text-neutral-400">
-                        {event.modalidad}
-                    </span>
-                )}
             </div>
 
             {/* Title */}
@@ -97,20 +91,13 @@ function EventTextItem({
                 {event.title}
             </h3>
 
-            {/* Speaker block (if present) */}
-            {event.speaker && (
-                <div className="mb-6 p-4 rounded-xl bg-white/[0.03] border border-white/10 flex items-center gap-4">
-                    <div className="w-2.5 h-2.5 rounded-full bg-[#60efff] shadow-[0_0_8px_#60efff]" />
-                    <div>
-                        <p className="text-base font-semibold text-white">
-                            {event.speaker}
-                        </p>
-                        <p className="text-xs text-[#00ff87] font-mono">
-                            {event.role}
-                        </p>
-                    </div>
-                </div>
-            )}
+            {/* Modalidad - Entre el título y la fecha */}
+            <div className="mb-6 flex items-center gap-2">
+                <span className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#071320] border border-[#24ed7a]/30 text-xs font-mono uppercase tracking-wider text-[#24ed7a] shadow-[0_0_12px_rgba(36,237,122,0.15)] font-semibold">
+                    <span className="w-2 h-2 rounded-full bg-[#24ed7a] shadow-[0_0_8px_#24ed7a] animate-pulse" />
+                    <span>{event.modalidad}</span>
+                </span>
+            </div>
 
             {/* Mobile Image preview (only on mobile screens) */}
             <div className="block lg:hidden my-6">
@@ -124,13 +111,17 @@ function EventTextItem({
                                 className="object-cover object-top"
                             />
                         </div>
-                        {/* Debajo de la foto en móvil */}
-                        <div className="pt-3 flex items-center gap-2">
-                            <span className="w-2 h-2 rounded-full bg-[#00ff87]" />
-                            <span className="text-xs text-[#00ff87] font-mono uppercase tracking-wider">
-                                {event.modalidad}
-                            </span>
-                        </div>
+                        {/* Debajo de la foto en móvil: Nombre y Perfil */}
+                        {event.speaker && (
+                            <div className="pt-3">
+                                <h4 className="text-base font-bold text-white tracking-tight">
+                                    {event.speaker}
+                                </h4>
+                                <p className="text-xs text-[#24ed7a] font-mono mt-0.5 leading-relaxed">
+                                    {event.role}
+                                </p>
+                            </div>
+                        )}
                     </div>
                 ) : (
                     <div className="relative w-full aspect-[4/3] rounded-2xl overflow-hidden border border-white/15 bg-[#0a1510]">
@@ -240,8 +231,8 @@ export function StickyScrollEvents({
         <section id={sectionId} className="py-20 px-4 sm:px-6 max-w-7xl mx-auto w-full">
             {/* Section Header */}
             <div className="pb-8 mb-4 border-b border-white/10">
-                <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full border border-[#00ff87]/30 text-xs uppercase tracking-widest text-[#00ff87] mb-3 bg-[#07150e]/80 backdrop-blur-sm font-mono">
-                    <Sparkles className="w-3.5 h-3.5 text-[#00ff87]" />
+                <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full border border-[#24ed7a]/30 text-xs uppercase tracking-widest text-[#24ed7a] mb-3 bg-[#071320]/80 backdrop-blur-sm font-mono">
+                    <Sparkles className="w-3.5 h-3.5 text-[#24ed7a]" />
                     {badgeText}
                 </div>
                 <h2 className="text-3xl md:text-5xl font-bold tracking-tight text-white mb-2">
@@ -269,7 +260,7 @@ export function StickyScrollEvents({
                 {/* Right Side: Sticky Visual Container that updates on scroll */}
                 <div className="hidden lg:flex w-1/2 h-[calc(100vh-7rem)] sticky top-24 items-center justify-center p-6 lg:p-10">
                     {/* Ambient Glow */}
-                    <div className="absolute w-[450px] h-[450px] bg-[#00ff87]/[0.08] rounded-full blur-[140px] pointer-events-none" />
+                    <div className="absolute w-[450px] h-[450px] bg-[#24ed7a]/[0.08] rounded-full blur-[140px] pointer-events-none" />
 
                     <div className="relative w-full max-w-lg aspect-square rounded-[2.5rem] overflow-hidden border border-white/15 bg-[#0a1510] shadow-[0_0_50px_rgba(0,0,0,0.8)]">
                         <AnimatePresence mode="wait">
@@ -302,28 +293,30 @@ export function StickyScrollEvents({
                                             </div>
                                         </div>
 
-                                        {/* Bottom info below photo - no duplica nombre ni rol */}
-                                        <div className="pt-4 flex items-center justify-between">
-                                            <div className="flex items-center gap-2">
-                                                <span className="w-2 h-2 rounded-full bg-[#00ff87]" />
-                                                <span className="text-xs text-[#00ff87] font-mono uppercase tracking-wider">
-                                                    {activeEvent.modalidad}
-                                                </span>
+                                        {/* Bottom info below photo: Nombre y Perfil */}
+                                        <div className="pt-4 flex items-start justify-between gap-4">
+                                            <div className="flex-1 min-w-0">
+                                                <h4 className="text-base md:text-lg font-bold text-white tracking-tight leading-snug">
+                                                    {activeEvent.speaker}
+                                                </h4>
+                                                <p className="text-xs text-[#24ed7a] font-mono mt-1 leading-relaxed">
+                                                    {activeEvent.role}
+                                                </p>
                                             </div>
-                                            <span className="text-2xl font-mono font-bold text-white/20">
+                                            <span className="text-2xl font-mono font-bold text-white/20 shrink-0">
                                                 {activeEvent.stepNumber}
                                             </span>
                                         </div>
                                     </div>
                                 ) : (
                                     /* Hackathon High-Tech Card (No person photo as requested) */
-                                    <div className="relative w-full h-full rounded-2xl border border-[#00ff87]/30 bg-gradient-to-b from-[#0c2016] to-[#040c07] p-8 flex flex-col justify-between overflow-hidden shadow-[inset_0_0_40px_rgba(0,255,135,0.1)]">
+                                    <div className="relative w-full h-full rounded-2xl border border-[#24ed7a]/30 bg-gradient-to-b from-[#071320] to-[#040d17] p-8 flex flex-col justify-between overflow-hidden shadow-[inset_0_0_40px_rgba(36,237,122,0.1)]">
                                         {/* Cyber matrix background decor */}
-                                        <div className="absolute -top-10 -right-10 w-44 h-44 bg-[#00ff87]/15 rounded-full blur-3xl pointer-events-none" />
+                                        <div className="absolute -top-10 -right-10 w-44 h-44 bg-[#24ed7a]/15 rounded-full blur-3xl pointer-events-none" />
 
                                         {/* Top Card Bar */}
                                         <div className="flex items-center justify-between z-10">
-                                            <div className="flex items-center gap-2 px-3 py-1 rounded-full bg-[#00ff87]/10 border border-[#00ff87]/30 text-xs font-mono text-[#00ff87]">
+                                            <div className="flex items-center gap-2 px-3 py-1 rounded-full bg-[#24ed7a]/10 border border-[#24ed7a]/30 text-xs font-mono text-[#24ed7a]">
                                                 <Terminal className="w-3.5 h-3.5" />
                                                 <span>RETO OFICIAL 2026</span>
                                             </div>
@@ -334,7 +327,7 @@ export function StickyScrollEvents({
 
                                         {/* Center Graphic */}
                                         <div className="flex flex-col items-center justify-center my-auto text-center z-10">
-                                            <div className="relative w-20 h-20 rounded-2xl bg-black/60 border border-[#00ff87]/40 flex items-center justify-center mb-5 shadow-[0_0_30px_rgba(0,255,135,0.3)]">
+                                            <div className="relative w-20 h-20 rounded-2xl bg-black/60 border border-[#24ed7a]/40 flex items-center justify-center mb-5 shadow-[0_0_30px_rgba(36,237,122,0.3)]">
                                                 <Image
                                                     src="/logoEneisoft.png"
                                                     alt="ENEISOFT XVI"
@@ -343,7 +336,7 @@ export function StickyScrollEvents({
                                                     className="object-contain"
                                                 />
                                             </div>
-                                            <span className="text-xs uppercase font-mono tracking-[0.3em] text-[#00ff87] mb-1 font-semibold">
+                                            <span className="text-xs uppercase font-mono tracking-[0.3em] text-[#24ed7a] mb-1 font-semibold">
                                                 FISI · UNMSM
                                             </span>
                                             <h4 className="text-2xl md:text-3xl font-black tracking-tight text-white uppercase text-gradient-eneisoft">
@@ -357,7 +350,7 @@ export function StickyScrollEvents({
                                         {/* Bottom Details Footer */}
                                         <div className="pt-4 border-t border-white/10 flex items-center justify-between text-xs font-mono text-neutral-400 z-10">
                                             <span>Pozo: S/ 450.00 + Premios</span>
-                                            <span className="text-[#00ff87]">36 Hackers</span>
+                                            <span className="text-[#24ed7a]">36 Hackers</span>
                                         </div>
                                     </div>
                                 )}

@@ -5,12 +5,13 @@ import { Target, Telescope, Sparkles } from "lucide-react";
 
 export function MissionVision() {
     return (
-        <section id="mision-vision" className="relative py-24 md:py-32 px-6 bg-[#f8fafc] text-neutral-900 overflow-hidden border-t border-b border-neutral-200/80">
+        <section id="mision-vision" className="relative py-24 md:py-32 w-full bg-[#f8fafc] text-neutral-900 overflow-hidden border-t border-b border-neutral-200/80">
             {/* Ambient Background Glows */}
             <div className="absolute top-1/2 left-1/4 -translate-y-1/2 w-[550px] h-[350px] bg-emerald-500/[0.04] rounded-full blur-[150px] pointer-events-none" />
             <div className="absolute top-1/2 right-1/4 -translate-y-1/2 w-[550px] h-[350px] bg-cyan-500/[0.04] rounded-full blur-[150px] pointer-events-none" />
 
-            <div className="max-w-6xl mx-auto relative z-10">
+            <div className="boxed-frame boxed-border-light px-6 md:px-12 relative z-10">
+                <div className="max-w-6xl mx-auto">
                 {/* Header */}
                 <div className="text-center max-w-3xl mx-auto mb-16 md:mb-20">
                     <motion.div
@@ -113,6 +114,7 @@ export function MissionVision() {
                         </div>
                     </motion.div>
                 </div>
+            </div>
             </div>
         </section>
     );

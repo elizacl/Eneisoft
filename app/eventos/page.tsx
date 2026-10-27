@@ -272,29 +272,31 @@ const eventosPasados: ScrollEventItem[] = [
 
 export default function EventosPage() {
     return (
-        <div className="flex flex-col w-full bg-[#030806] text-white min-h-screen pt-24 pb-28">
-            {/* 1. LO QUE SE VIENE — Próximos eventos (Efecto scroll fijado dinámico) */}
-            <StickyScrollEvents
-                sectionId="proximos"
-                badgeText="Próximos eventos"
-                title="LO QUE SE VIENE"
-                subtitle="Conferencias magistrales virtuales y el evento central de innovación tecnológica."
-                events={proximosEventos}
-            />
+        <div className="flex flex-col w-full bg-[#0a2138] text-white min-h-screen pt-24 pb-28">
+            <div className="boxed-frame boxed-border-dark flex flex-col w-full">
+                {/* 1. LO QUE SE VIENE — Próximos eventos (Efecto scroll fijado dinámico) */}
+                <StickyScrollEvents
+                    sectionId="proximos"
+                    badgeText="Próximos eventos"
+                    title="LO QUE SE VIENE"
+                    subtitle="Conferencias magistrales virtuales y el evento central de innovación tecnológica."
+                    events={proximosEventos}
+                />
 
-            {/* Separador de línea con brillo neón */}
-            <div className="max-w-7xl mx-auto w-full px-6 my-10">
-                <div className="h-[1px] w-full bg-gradient-to-r from-transparent via-[#00ff87]/30 to-transparent" />
+                {/* Separador de línea con brillo neón */}
+                <div className="max-w-7xl mx-auto w-full px-6 my-10">
+                    <div className="h-[1px] w-full bg-gradient-to-r from-transparent via-[#24ed7a]/30 to-transparent" />
+                </div>
+
+                {/* 2. LO QUE YA VIVIMOS — Eventos anteriores (Efecto scroll fijado dinámico) */}
+                <StickyScrollEvents
+                    sectionId="anteriores"
+                    badgeText="Eventos anteriores"
+                    title="LO QUE YA VIVIMOS"
+                    subtitle="Desliza hacia abajo para recorrer las ponencias y revivir las conferencias magistrales que ya se llevaron a cabo."
+                    events={eventosPasados}
+                />
             </div>
-
-            {/* 2. LO QUE YA VIVIMOS — Eventos anteriores (Efecto scroll fijado dinámico) */}
-            <StickyScrollEvents
-                sectionId="anteriores"
-                badgeText="Eventos anteriores"
-                title="LO QUE YA VIVIMOS"
-                subtitle="Desliza hacia abajo para recorrer las ponencias y revivir las conferencias magistrales que ya se llevaron a cabo."
-                events={eventosPasados}
-            />
         </div>
     );
 }

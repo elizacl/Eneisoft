@@ -16,11 +16,12 @@ import {
 
 export function ProductDemo() {
     return (
-        <section id="premiacion" className="py-32 px-6 bg-[#030806] text-white relative overflow-hidden border-t border-white/5">
+        <section id="premiacion" className="py-32 w-full bg-[#0a2138] text-white relative overflow-hidden border-t border-white/5">
             {/* Ambient Background Glow */}
-            <div className="absolute top-1/3 left-1/2 -translate-x-1/2 w-[800px] h-[380px] bg-[#00ff87]/[0.035] rounded-full blur-[160px] pointer-events-none" />
+            <div className="absolute top-1/3 left-1/2 -translate-x-1/2 w-[800px] h-[380px] bg-[#24ed7a]/[0.035] rounded-full blur-[160px] pointer-events-none" />
 
-            <div className="max-w-7xl mx-auto relative z-10">
+            <div className="boxed-frame boxed-border-dark px-6 md:px-12 relative z-10">
+                <div className="max-w-7xl mx-auto">
                 {/* Section Header */}
                 <div className="text-center mb-14">
                     <motion.div
@@ -378,6 +379,7 @@ export function ProductDemo() {
                         </div>
                     </div>
                 </Tabs>
+            </div>
             </div>
         </section>
     );

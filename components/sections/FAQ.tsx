@@ -34,11 +34,12 @@ const faqs = [
 
 export function FAQ() {
     return (
-        <section id="faq" className="py-28 px-6 bg-[#030806] text-white border-t border-white/5 relative overflow-hidden">
+        <section id="faq" className="py-28 w-full bg-[#0a2138] text-white border-t border-white/5 relative overflow-hidden">
             {/* Ambient subtle glow */}
-            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[350px] bg-[#00ff87]/[0.035] rounded-full blur-[150px] pointer-events-none" />
+            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[350px] bg-[#24ed7a]/[0.035] rounded-full blur-[150px] pointer-events-none" />
 
-            <div className="max-w-4xl mx-auto relative z-10">
+            <div className="boxed-frame boxed-border-dark px-6 md:px-12 relative z-10">
+                <div className="max-w-4xl mx-auto">
                 <motion.div
                     initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}
@@ -46,8 +47,8 @@ export function FAQ() {
                     transition={{ duration: 0.6 }}
                     className="text-center mb-12"
                 >
-                    <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full border border-[#00ff87]/30 text-xs uppercase tracking-widest text-[#00ff87] mb-4 bg-[#07150e]/80 backdrop-blur-sm shadow-[0_0_15px_rgba(0,255,135,0.15)] font-mono">
-                        <HelpCircle className="w-3.5 h-3.5 text-[#00ff87]" />
+                    <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full border border-[#24ed7a]/30 text-xs uppercase tracking-widest text-[#24ed7a] mb-4 bg-[#071320]/80 backdrop-blur-sm shadow-[0_0_15px_rgba(36,237,122,0.15)] font-mono">
+                        <HelpCircle className="w-3.5 h-3.5 text-[#24ed7a]" />
                         PREGUNTAS FRECUENTES
                     </div>
                     <h2 className="text-3xl md:text-5xl font-bold tracking-tight text-white mb-4">
@@ -58,11 +59,11 @@ export function FAQ() {
                     </p>
                 </motion.div>
 
-                <div className="bg-[#07120c]/80 backdrop-blur-xl p-6 md:p-10 rounded-3xl border border-white/10 shadow-2xl">
+                <div className="bg-[#071320]/80 backdrop-blur-xl p-6 md:p-10 rounded-3xl border border-white/10 shadow-2xl">
                     <Accordion type="single" collapsible className="w-full">
                         {faqs.map((faq, index) => (
                             <AccordionItem key={index} value={`item-${index}`} className="border-white/10 py-1">
-                                <AccordionTrigger className="text-base md:text-lg text-left text-white hover:text-[#00ff87] font-semibold py-4 transition-colors">
+                                <AccordionTrigger className="text-base md:text-lg text-left text-white hover:text-[#24ed7a] font-semibold py-4 transition-colors">
                                     {faq.question}
                                 </AccordionTrigger>
                                 <AccordionContent className="text-neutral-300 text-sm md:text-base leading-relaxed pt-1 pb-4 font-light">
@@ -72,6 +73,7 @@ export function FAQ() {
                         ))}
                     </Accordion>
                 </div>
+            </div>
             </div>
         </section>
     );

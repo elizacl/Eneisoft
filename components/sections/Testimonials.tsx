@@ -67,11 +67,12 @@ const criteria = [
 
 export function Testimonials() {
     return (
-        <section id="evaluacion" className="py-32 px-6 bg-[#030806] text-white relative overflow-hidden border-t border-white/5">
+        <section id="evaluacion" className="py-32 w-full bg-[#0a2138] text-white relative overflow-hidden border-t border-white/5">
             {/* Ambient Background Glow */}
-            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[750px] h-[350px] bg-[#00ff87]/[0.03] rounded-full blur-[150px] pointer-events-none" />
+            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[750px] h-[350px] bg-[#24ed7a]/[0.03] rounded-full blur-[150px] pointer-events-none" />
 
-            <div className="max-w-7xl mx-auto relative z-10">
+            <div className="boxed-frame boxed-border-dark px-6 md:px-12 relative z-10">
+                <div className="max-w-7xl mx-auto">
                 {/* Header */}
                 <div className="text-center mb-16">
                     <motion.div
@@ -221,6 +222,7 @@ export function Testimonials() {
                         Penalización: -15 pts
                     </span>
                 </div>
+            </div>
             </div>
         </section>
     );

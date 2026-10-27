@@ -58,11 +58,12 @@ const spaces: SpaceItem[] = [
 
 export function HackathonSpaces() {
     return (
-        <section id="espacios" className="py-24 px-6 bg-[#f8fafc] text-neutral-900 relative overflow-hidden border-t border-b border-neutral-200/80">
+        <section id="espacios" className="py-24 w-full bg-[#f8fafc] text-neutral-900 relative overflow-hidden border-t border-b border-neutral-200/80">
             {/* Ambient background subtle glow */}
             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[350px] bg-emerald-500/[0.04] rounded-full blur-[150px] pointer-events-none" />
 
-            <div className="max-w-7xl mx-auto relative z-10">
+            <div className="boxed-frame boxed-border-light px-6 md:px-12 relative z-10">
+                <div className="max-w-7xl mx-auto">
                 {/* Header */}
                 <div className="text-center mb-16">
                     <motion.div
@@ -161,6 +162,7 @@ export function HackathonSpaces() {
                         );
                     })}
                 </div>
+            </div>
             </div>
         </section>
     );

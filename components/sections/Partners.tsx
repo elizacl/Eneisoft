@@ -74,12 +74,13 @@ function InfiniteAlliancesMarquee({
 
 export function Partners() {
     return (
-        <section id="partners" className="py-28 px-6 bg-[#0a2138] text-white relative overflow-hidden border-t border-white/5">
+        <section id="partners" className="py-28 w-full bg-[#0a2138] text-white relative overflow-hidden border-t border-white/5">
             {/* Resplandor ambiental de fondo con paleta oficial */}
             <div className="absolute top-1/2 left-1/4 -translate-y-1/2 w-[600px] h-[350px] bg-[#00c8df]/[0.05] rounded-full blur-[160px] pointer-events-none" />
             <div className="absolute top-1/2 right-1/4 -translate-y-1/2 w-[600px] h-[350px] bg-[#24ed7a]/[0.05] rounded-full blur-[160px] pointer-events-none" />
 
-            <div className="max-w-7xl mx-auto relative z-10">
+            <div className="boxed-frame boxed-border-dark px-6 md:px-12 relative z-10">
+                <div className="max-w-7xl mx-auto">
                 {/* Encabezado limpio */}
                 <div className="flex flex-col md:flex-row md:items-end justify-between gap-8 mb-14">
                     <div>
@@ -172,6 +173,7 @@ export function Partners() {
                         </div>
                     </motion.div>
                 </div>
+            </div>
             </div>
         </section>
     );
