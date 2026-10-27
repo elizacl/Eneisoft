@@ -9,11 +9,12 @@ export function Location() {
     const embedUrl = "https://maps.google.com/maps?q=-12.0533774,-77.085542&t=&z=17&ie=UTF8&iwloc=&output=embed";
 
     return (
-        <section id="ubicacion" className="py-28 px-6 bg-[#f8fafc] text-neutral-900 relative overflow-hidden border-t border-b border-neutral-200/80">
+        <section id="ubicacion" className="py-28 w-full bg-[#f8fafc] text-neutral-900 relative overflow-hidden border-t border-b border-neutral-200/80">
             {/* Ambient Background Glow */}
             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[750px] h-[400px] bg-emerald-500/[0.04] rounded-full blur-[150px] pointer-events-none" />
 
-            <div className="max-w-7xl mx-auto relative z-10">
+            <div className="boxed-frame boxed-border-light px-6 md:px-12 relative z-10">
+                <div className="max-w-7xl mx-auto">
                 {/* Section Header */}
                 <div className="mb-10">
                     <motion.div
@@ -162,6 +163,7 @@ export function Location() {
                         </div>
                     </div>
                 </motion.div>
+                </div>
             </div>
         </section>
     );

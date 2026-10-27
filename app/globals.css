@@ -169,3 +169,28 @@
 .animate-marquee-continuous:hover {
   animation-play-state: paused;
 }
+
+/* Boxed Layout & Framed Canvas Utilities */
+.boxed-frame {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
+
+@media (min-width: 640px) {
+  .boxed-frame {
+    width: 92vw;
+    max-width: 1536px;
+  }
+}
+
+.boxed-border-dark {
+  border-left: 1px solid rgba(255, 255, 255, 0.08);
+  border-right: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.boxed-border-light {
+  border-left: 1px solid rgba(0, 0, 0, 0.08);
+  border-right: 1px solid rgba(0, 0, 0, 0.08);
+}

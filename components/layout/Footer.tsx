@@ -10,8 +10,9 @@ import {
 
 export function Footer() {
     return (
-        <footer className="w-full bg-[#f8fafc] text-neutral-800 border-t border-neutral-200/80 py-16 px-6 md:px-12 lg:px-24">
-            <div className="max-w-7xl mx-auto">
+        <footer className="w-full bg-[#f8fafc] text-neutral-800 border-t border-neutral-200/80 py-16">
+            <div className="boxed-frame boxed-border-light px-6 md:px-12 lg:px-16">
+                <div className="max-w-7xl mx-auto">
                 <div className="grid grid-cols-1 md:grid-cols-12 gap-10 lg:gap-16 items-start">
                     {/* 1. Explora */}
                     <div className="md:col-span-3 flex flex-col gap-4">
@@ -164,6 +165,7 @@ export function Footer() {
                         Edición XVI · 2026
                     </p>
                 </div>
+            </div>
             </div>
         </footer>
     );

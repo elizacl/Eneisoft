@@ -137,11 +137,12 @@ const tableSchedule: AgendaRow[] = [
 
 export function Features() {
     return (
-        <section id="cronograma" className="py-32 px-6 bg-[#f8fafc] text-neutral-900 relative overflow-hidden border-t border-b border-neutral-200/80">
+        <section id="cronograma" className="py-32 w-full bg-[#f8fafc] text-neutral-900 relative overflow-hidden border-t border-b border-neutral-200/80">
             {/* Ambient Background Gradient Accent */}
             <div className="absolute top-1/4 left-1/2 -translate-x-1/2 w-[750px] h-[350px] bg-emerald-500/[0.05] rounded-full blur-[150px] pointer-events-none" />
 
-            <div className="max-w-7xl mx-auto relative z-10">
+            <div className="boxed-frame boxed-border-light px-6 md:px-12 relative z-10">
+                <div className="max-w-7xl mx-auto">
                 {/* Header */}
                 <div className="mb-14 md:flex justify-between items-end gap-8">
                     <div>
@@ -309,6 +310,7 @@ export function Features() {
                         <span className="text-emerald-700 font-bold">9 Hitos Operativos</span>
                     </div>
                 </div>
+            </div>
             </div>
         </section>
     );

@@ -11,21 +11,21 @@ export function HackathonHero() {
     const opacity = useTransform(scrollY, [0, 300], [1, 0]);
 
     return (
-        <section id="hackathon-hero" className="relative min-h-[110vh] w-full flex items-center justify-center overflow-hidden bg-[#020705] text-white">
+        <section id="hackathon-hero" className="relative min-h-[110vh] w-full flex items-center justify-center overflow-hidden bg-[#0a2138] text-white">
             {/* Ambient Cyber Flares & Neon Glows */}
-            <div className="absolute top-[-15%] left-[-15%] w-[65vw] h-[65vw] bg-[#00ff87]/10 rounded-full blur-[180px] pointer-events-none" />
-            <div className="absolute top-[20%] right-[-15%] w-[60vw] h-[60vw] bg-[#00e5ff]/10 rounded-full blur-[180px] pointer-events-none" />
+            <div className="absolute top-[-15%] left-[-15%] w-[65vw] h-[65vw] bg-[#24ed7a]/10 rounded-full blur-[180px] pointer-events-none" />
+            <div className="absolute top-[20%] right-[-15%] w-[60vw] h-[60vw] bg-[#00c8df]/10 rounded-full blur-[180px] pointer-events-none" />
             
             {/* Subtle Circuit / Tech Grid Overlay */}
             <div 
                 className="absolute inset-0 opacity-[0.03] pointer-events-none" 
                 style={{
-                    backgroundImage: `linear-gradient(#00ff87 1px, transparent 1px), linear-gradient(90deg, #00ff87 1px, transparent 1px)`,
+                    backgroundImage: `linear-gradient(#24ed7a 1px, transparent 1px), linear-gradient(90deg, #24ed7a 1px, transparent 1px)`,
                     backgroundSize: '48px 48px'
                 }}
             />
 
-            <div className="container relative z-10 flex flex-col items-center text-center px-4 pt-32 pb-20">
+            <div className="boxed-frame boxed-border-dark relative z-10 flex flex-col items-center text-center px-4 pt-32 pb-20 min-h-[110vh] justify-center">
                 {/* Animated Tagline Badge */}
                 <motion.div
                     initial={{ opacity: 0, y: 25 }}
@@ -138,7 +138,7 @@ export function HackathonHero() {
             {/* Bottom Fade */}
             <motion.div
                 style={{ y, opacity }}
-                className="absolute bottom-0 w-full h-[25vh] bg-gradient-to-t from-[#030806] via-[#030806]/80 to-transparent z-20 pointer-events-none"
+                className="absolute bottom-0 w-full h-[25vh] bg-gradient-to-t from-[#0a2138] via-[#0a2138]/80 to-transparent z-20 pointer-events-none"
             />
         </section>
     );
