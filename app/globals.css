@@ -80,39 +80,39 @@
 }
 
 .dark {
-  --background: #030806;
-  /* Deep Cyber Matrix Black */
+  --background: #0a2138;
+  /* Official Deep Cyber Navy */
   --foreground: oklch(0.98 0 0);
   /* Off-white */
-  --card: #07100b;
+  --card: #071526;
   --card-foreground: oklch(0.98 0 0);
-  --popover: #07100b;
+  --popover: #071526;
   --popover-foreground: oklch(0.98 0 0);
-  --primary: #00ff87;
-  --primary-foreground: #030806;
-  --secondary: #0c1a13;
-  --secondary-foreground: #00ff87;
-  --muted: #0d1e16;
-  --muted-foreground: #7aa38f;
-  --accent: #11281d;
-  --accent-foreground: #00ff87;
+  --primary: #24ed7a;
+  --primary-foreground: #0a2138;
+  --secondary: #00668e;
+  --secondary-foreground: #24ed7a;
+  --muted: #0c2033;
+  --muted-foreground: #7aa5c2;
+  --accent: #00c8df;
+  --accent-foreground: #0a2138;
   --destructive: oklch(0.704 0.191 22.216);
-  --border: rgba(0, 255, 135, 0.12);
-  --input: rgba(0, 255, 135, 0.15);
-  --ring: #00ff87;
-  --chart-1: #00ff87;
-  --chart-2: #00e5ff;
-  --chart-3: #d4ff55;
-  --chart-4: #05df72;
+  --border: rgba(36, 237, 122, 0.15);
+  --input: rgba(0, 200, 223, 0.15);
+  --ring: #24ed7a;
+  --chart-1: #24ed7a;
+  --chart-2: #00c8df;
+  --chart-3: #00668e;
+  --chart-4: #0c5d2f;
   --chart-5: #10b981;
-  --sidebar: #07100b;
+  --sidebar: #071526;
   --sidebar-foreground: oklch(0.98 0 0);
-  --sidebar-primary: #00ff87;
-  --sidebar-primary-foreground: #030806;
-  --sidebar-accent: #0c1a13;
-  --sidebar-accent-foreground: #00ff87;
-  --sidebar-border: rgba(0, 255, 135, 0.12);
-  --sidebar-ring: #00ff87;
+  --sidebar-primary: #24ed7a;
+  --sidebar-primary-foreground: #0a2138;
+  --sidebar-accent: #00668e;
+  --sidebar-accent-foreground: #24ed7a;
+  --sidebar-border: rgba(0, 200, 223, 0.15);
+  --sidebar-ring: #24ed7a;
 }
 
 @layer base {
@@ -127,23 +127,45 @@
 
 /* Eneisoft Brand Utilities */
 .text-gradient-eneisoft {
-  background: linear-gradient(135deg, #00ff87 0%, #60efff 100%);
+  background: linear-gradient(135deg, #24ed7a 0%, #00c8df 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .bg-gradient-eneisoft {
-  background: linear-gradient(135deg, #00ff87 0%, #00e5ff 100%);
+  background: linear-gradient(135deg, #24ed7a 0%, #00c8df 100%);
 }
 
 .glow-eneisoft {
-  box-shadow: 0 0 30px -5px rgba(0, 255, 135, 0.35);
+  box-shadow: 0 0 30px -5px rgba(36, 237, 122, 0.4);
 }
 
 .glow-eneisoft-cyan {
-  box-shadow: 0 0 30px -5px rgba(0, 229, 255, 0.35);
+  box-shadow: 0 0 30px -5px rgba(0, 200, 223, 0.4);
 }
 
 .flare-line {
-  background: linear-gradient(90deg, transparent 0%, #00ff87 35%, #00e5ff 65%, transparent 100%);
+  background: linear-gradient(90deg, transparent 0%, #24ed7a 35%, #00c8df 65%, transparent 100%);
+}
+
+/* Continuous Marquee Utilities with Pause on Hover */
+@keyframes marquee-scroll {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-marquee-continuous {
+  display: flex;
+  width: max-content;
+  animation: marquee-scroll 24s linear infinite;
+  will-change: transform;
+}
+
+.group-marquee:hover .animate-marquee-continuous,
+.animate-marquee-continuous:hover {
+  animation-play-state: paused;
 }

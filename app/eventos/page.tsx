@@ -8,8 +8,33 @@ export const metadata = {
 // 1. LO QUE SE VIENE - Próximos eventos
 const proximosEventos: ScrollEventItem[] = [
     {
-        id: "ponencia-daniela",
+        id: "ponencia-enrique",
         stepNumber: "01",
+        dateBadge: "NOV | 03",
+        modalidad: "Ponencia Virtual",
+        title: "¿Y si el problema no es el código? Cómo resolver conflictos, destacar bajo presión y transformar problemas en oportunidades de innovación",
+        fechaDetalle: "Martes 03 de noviembre de 2026",
+        hora: "2:30 PM - 3:30 PM (14:30 - 15:30)",
+        speaker: "Enrique Mesones",
+        role: "Líder empresarial, presidente de APESOFT, especializado en impulsar ecosistemas tecnológicos, Web 3.0 e IA",
+        tematica: "Importancia de las habilidades blandas, liderazgo y resolución de problemas bajo presión para generar, capturar y compartir valor en el desarrollo de software.",
+        image: "/speakers/EnriqueMesones.png",
+        links: [
+            {
+                label: "Inscribirse al evento en Luma",
+                href: "https://luma.com/user/eneisoft",
+                primary: true,
+            },
+            {
+                label: "Ver perfil de Linkedin",
+                href: "https://www.linkedin.com/in/enriquemesones",
+                variant: "linkedin",
+            },
+        ],
+    },
+    {
+        id: "ponencia-daniela",
+        stepNumber: "02",
         dateBadge: "NOV | 03",
         modalidad: "Ponencia Virtual",
         title: "La parte del proyecto: De usar IA a pensar con IA",
@@ -33,16 +58,41 @@ const proximosEventos: ScrollEventItem[] = [
         ],
     },
     {
+        id: "ponencia-miguel",
+        stepNumber: "03",
+        dateBadge: "NOV | 03",
+        modalidad: "Ponencia Virtual",
+        title: "Del git push a la nube: construye tu primer pipeline automatizado",
+        fechaDetalle: "Martes 03 de noviembre de 2026",
+        hora: "7:00 PM - 8:00 PM (19:00 - 20:00)",
+        speaker: "Miguel Solis",
+        role: "Desarrollador full-stack, especialista en backend, arquitectura cloud y DevSecOps en Mibanco y UNMSM",
+        tematica: "Fundamentos y arquitectura de pipelines CI/CD, automatización de builds y despliegues en la nube con GitHub Actions y Docker, gestión de secretos y detección temprana de errores.",
+        image: "/speakers/MiguelSolis.png",
+        links: [
+            {
+                label: "Inscribirse al evento en Luma",
+                href: "https://luma.com/user/eneisoft",
+                primary: true,
+            },
+            {
+                label: "Ver perfil de Linkedin",
+                href: "https://www.linkedin.com/in/miguel-solis-cunza",
+                variant: "linkedin",
+            },
+        ],
+    },
+    {
         id: "ponencia-danilo",
-        stepNumber: "02",
+        stepNumber: "04",
         dateBadge: "NOV | 04",
         modalidad: "Ponencia Virtual",
-        title: "[Título por actualizar]",
+        title: "Lo que me hubiera gustado saber en primer ciclo sobre datos",
         fechaDetalle: "Miércoles 04 de noviembre de 2026",
         hora: "7:00 PM - 8:00 PM (19:00 - 20:00)",
         speaker: "Danilo Chavez",
         role: "Analista de datos corporativos y fundador de DATANILO, enfocado en transformación digital",
-        tematica: "[Por actualizar] — Próximamente se revelará el temario detallado de la ponencia.",
+        tematica: "Descubrimiento del mundo de los datos mediante casos prácticos empresariales, toma de decisiones y consejos clave para que los estudiantes comiencen a explorar esta área desde primeros ciclos.",
         image: "/speakers/DaniloChavez.jpg",
         links: [
             {
@@ -59,7 +109,7 @@ const proximosEventos: ScrollEventItem[] = [
     },
     {
         id: "ponencia-ernesto",
-        stepNumber: "03",
+        stepNumber: "05",
         dateBadge: "NOV | 05",
         modalidad: "Ponencia Virtual",
         title: "[Título por actualizar]",
@@ -84,7 +134,7 @@ const proximosEventos: ScrollEventItem[] = [
     },
     {
         id: "ponencia-doris",
-        stepNumber: "04",
+        stepNumber: "06",
         dateBadge: "NOV | 05",
         modalidad: "Ponencia Virtual",
         title: "[Título por actualizar]",
@@ -109,7 +159,7 @@ const proximosEventos: ScrollEventItem[] = [
     },
     {
         id: "ponencia-raul",
-        stepNumber: "05",
+        stepNumber: "07",
         dateBadge: "NOV | 05",
         modalidad: "Ponencia Virtual",
         title: "Empleabilidad más allá del aula: LinkedIn & CV",
@@ -134,7 +184,7 @@ const proximosEventos: ScrollEventItem[] = [
     },
     {
         id: "hackathon-2026",
-        stepNumber: "06",
+        stepNumber: "08",
         dateBadge: "NOV | 07",
         modalidad: "Hackathon Presencial",
         title: "Hackathon ENEISOFT XVI 2026",
