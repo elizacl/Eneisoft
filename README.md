@@ -25,23 +25,32 @@ La solución integra tanto la difusión y bases de la competencia presencial com
 ## ✦ Arquitectura de la Plataforma
 
 ### 1. Portal Principal ENEISOFT (`/`)
+*Secuencia de fondos estrictamente alternada (Oscuro $\to$ Claro $\to$ Oscuro $\to$ Claro $\to$ Oscuro $\to$ Claro):*
 * **Hero ENEISOFT** *(Fondo Oscuro)*: Portada monumental de identidad visual del congreso, lema *«CONECTA / CREA / CONSTRUYE»* y llamados de acción directa a la Hackathon y Eventos.
-* **Misión & Visión Institucional** *(Fondo Oscuro)*: Sección dedicada con tarjetas de alta estética glassmorphism para el propósito y la visión a futuro del congreso.
-* **Nuestros Aliados & Patrocinadores** *(Fondo Claro)*: Marquesina continua fluida (*Framer Motion*) con logos a gran escala de aliados (IEEE Computer Society PUCP, Developer Student Club PUCP, Club Blockchain PUCP).
-* **Ubicaciones del Evento (Sede Oficial)** *(Fondo Oscuro)*: Mapa interactivo estilizado en modo oscuro con las coordenadas exactas de la FISI - UNMSM, radar de localización, botón de acceso directo a Google Maps (`https://maps.app.goo.gl/km1Gfoo3B5tPDwUY7`) e información de ingresos y estaciones.
-* **Preguntas Frecuentes (FAQ)** *(Fondo Claro)*: Acordeón interactivo situado debajo de la ubicación con respuestas a dudas sobre inscripciones, sedes, hackathon y certificaciones.
+* **Misión & Visión Institucional** *(Fondo Claro)*: Sección dedicada con tarjetas interactivas de alta estética para el propósito y la visión a futuro del congreso.
+* **Nuestros Aliados & Patrocinadores** *(Fondo Oscuro)*: Marquesina continua fluida (*Framer Motion*) con logos a gran escala de aliados (IEEE Computer Society PUCP, Developer Student Club PUCP, Club Blockchain PUCP) y botón de contacto directo a WhatsApp (`https://wa.link/k11jrd`) para sponsors.
+* **Ubicaciones del Evento (Sede Oficial)** *(Fondo Claro)*: Mapa interactivo con las coordenadas exactas de la FISI - UNMSM, radar de localización, botón directo a Google Maps e información de ingresos y estaciones.
+* **Preguntas Frecuentes (FAQ)** *(Fondo Oscuro)*: Acordeón interactivo con respuestas a dudas sobre inscripciones, dinámicas, sedes y certificaciones oficiales.
+* **Footer Institucional** *(Fondo Claro)*: Navegación (*Explora*), redes oficiales (*Conecta*: Luma, LinkedIn, Facebook, Instagram y WhatsApp) y bloque de marca ENEISOFT.
 
 ### 2. Pestaña Oficial Hackathon 2026 (`/hackathon`)
-* **Portada Hackathon con Inscripción** *(Fondo Oscuro)*: Portada monumental dedicada a la competencia, fecha oficial (Sábado 07 de Noviembre), sede FISI - UNMSM y botón directo para inscripción de equipos al formulario.
+*Secuencia de fondos estrictamente alternada (Oscuro $\to$ Claro $\to$ Oscuro $\to$ Claro $\to$ Oscuro $\to$ Claro):*
+* **Portada Hackathon con Inscripción** *(Fondo Oscuro)*: Portada monumental dedicada a la competencia, fecha oficial (Sábado 07 de Noviembre), marquesina interactiva y botón directo al formulario oficial de inscripción.
 * **1. Ejes Temáticos** *(Fondo Claro)*: Desglose de los 3 sub-ejes (Académico, Bienestar Universitario y Gestión Universitaria).
 * **2. Estructura de Premiación** *(Fondo Oscuro)*: Pestañas interactivas para 1.er puesto (S/ 200.00), 2.º puesto (S/ 150.00) y 3.er puesto (S/ 100.00), becas integrales/parciales y certificados oficiales.
 * **3. Cronograma Operativo** *(Fondo Claro)*: Tabla secuencial con los 9 hitos presenciales en las 3 estaciones físicas del campus.
 * **4. Esquema de Evaluación** *(Fondo Oscuro)*: Ponderación oficial (85% Jurados + 15% Voto de Pares), rúbrica unificada de 5 criterios y penalización anti-código preexistente (-15 pts).
+* **5. Espacios e Instalaciones Físicas** *(Fondo Claro)*: Disposición visual en una sola fila de las 3 áreas acondicionadas: Sala de Estudios & Cubículos (Estación 1: Sprints y Mentoría), Comedor FISI (Estación 2: Receso e Hidratación) y Auditorio Alfredo Alva Bravo (Estación 3: Pitches y Premiación).
 
 ### 3. Módulo de Eventos & Conferencias (`/eventos`)
 * **Navegación Scrollytelling (*Sticky Scroll*)**:
-  * **Próximos Eventos**: Convocatoria de la Hackathon 2026 con bases oficiales, enlace de registro y geolocalización.
-  * **Eventos Anteriores**: Ponencias magistrales con ponentes internacionales (Bastián Landskron y Heileen Goodson), enlaces a publicaciones oficiales y ubicación en Google Maps.
+  * **Próximos Eventos (Noviembre 2026)**: Conferencias virtuales magistrales ordenadas cronológicamente, con enlace directo al perfil de LinkedIn de cada ponente:
+    * **Daniella Orozco** (03 de Noviembre): *"La parte del proyecto: De usar IA a pensar con IA"*.
+    * **Danilo Chavez** (04 de Noviembre): *"El rol del ingeniero de sistemas en la era de los datos y la IA"*.
+    * **Ernesto Cuadros** (05 de Noviembre): *"Computación en el Perú y el Mundo: Tendencias y Desafíos"*.
+    * **Doris Manrique** (07 de Noviembre): *"Innovación tecnológica y gestión de proyectos de software"*.
+    * **Raúl Mogollón** (07 de Noviembre): *"Empleabilidad más allá del aula: LinkedIn & CV"*.
+  * **Eventos Anteriores**: Ponencias magistrales internacionales (Bastián Landskron y Heileen Goodson) con enlaces a publicaciones oficiales de LinkedIn.
 
 ---
 

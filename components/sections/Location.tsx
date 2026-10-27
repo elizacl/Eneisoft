@@ -8,9 +8,9 @@ export function Location() {
     const embedUrl = "https://maps.google.com/maps?q=-12.0533774,-77.085542&t=&z=17&ie=UTF8&iwloc=&output=embed";
 
     return (
-        <section id="ubicacion" className="py-28 px-6 bg-[#030806] text-white relative overflow-hidden border-t border-white/5">
+        <section id="ubicacion" className="py-28 px-6 bg-[#f8fafc] text-neutral-900 relative overflow-hidden border-t border-b border-neutral-200/80">
             {/* Ambient Background Glow */}
-            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[750px] h-[400px] bg-[#00ff87]/[0.035] rounded-full blur-[160px] pointer-events-none" />
+            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[750px] h-[400px] bg-emerald-500/[0.04] rounded-full blur-[150px] pointer-events-none" />
 
             <div className="max-w-7xl mx-auto relative z-10">
                 {/* Section Header */}
@@ -20,9 +20,9 @@ export function Location() {
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
                         transition={{ duration: 0.6 }}
-                        className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full border border-[#00ff87]/30 text-xs uppercase tracking-[0.25em] text-[#00ff87] mb-3 bg-[#07150e]/80 backdrop-blur-sm shadow-[0_0_15px_rgba(0,255,135,0.15)] font-mono"
+                        className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full border border-emerald-200 text-xs uppercase tracking-widest text-emerald-800 mb-3 bg-emerald-50 shadow-sm font-mono"
                     >
-                        <Compass className="w-3.5 h-3.5 text-[#00ff87]" />
+                        <Compass className="w-3.5 h-3.5 text-emerald-600" />
                         UBICACIONES DEL EVENTO
                     </motion.div>
 
@@ -33,11 +33,11 @@ export function Location() {
                                 whileInView={{ opacity: 1, y: 0 }}
                                 viewport={{ once: true }}
                                 transition={{ duration: 0.7 }}
-                                className="text-4xl md:text-6xl font-medium tracking-tight text-white"
+                                className="text-4xl md:text-6xl font-medium tracking-tight text-neutral-900"
                             >
-                                Sede <span className="text-gradient-eneisoft font-bold">Oficial.</span>
+                                Sede <span className="text-emerald-600 font-bold">Oficial.</span>
                             </motion.h2>
-                            <p className="text-neutral-400 text-sm md:text-base font-light mt-2 max-w-xl">
+                            <p className="text-neutral-600 text-sm md:text-base font-light mt-2 max-w-xl">
                                 Facultad de Ingeniería de Sistemas e Informática (FISI) — Universidad Nacional Mayor de San Marcos.
                             </p>
                         </div>
@@ -46,40 +46,40 @@ export function Location() {
                             href={mapsUrl}
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="inline-flex items-center gap-2 px-6 py-3.5 rounded-full bg-[#00ff87] text-[#020705] text-xs md:text-sm font-bold uppercase tracking-wider hover:bg-[#22e565] transition-all shadow-[0_0_25px_rgba(0,255,135,0.3)] hover:shadow-[0_0_35px_rgba(0,255,135,0.6)] w-fit shrink-0 group cursor-pointer"
+                            className="inline-flex items-center gap-2 px-6 py-3.5 rounded-full bg-emerald-600 text-white text-xs md:text-sm font-bold uppercase tracking-wider hover:bg-emerald-500 transition-all shadow-md hover:shadow-lg w-fit shrink-0 group cursor-pointer"
                         >
-                            <Navigation className="w-4 h-4 text-[#020705]" />
+                            <Navigation className="w-4 h-4 text-white" />
                             <span>Cómo Llegar en Google Maps</span>
-                            <ArrowUpRight className="w-4 h-4 text-[#020705] transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
+                            <ArrowUpRight className="w-4 h-4 text-white transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
                         </a>
                     </div>
                 </div>
 
-                {/* Google Maps Container styled like the user mockup */}
+                {/* Google Maps Container styled cleanly */}
                 <motion.div
                     initial={{ opacity: 0, y: 25 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
                     transition={{ duration: 0.8 }}
-                    className="relative w-full rounded-2xl md:rounded-3xl border border-white/10 bg-[#07100b] shadow-2xl overflow-hidden backdrop-blur-xl group"
+                    className="relative w-full rounded-2xl md:rounded-3xl border border-neutral-200/90 bg-white shadow-2xl overflow-hidden group"
                 >
                     {/* Top Terminal Bar */}
-                    <div className="flex items-center justify-between px-4 py-3 bg-[#030806]/90 border-b border-white/5 text-[11px] font-mono text-neutral-400">
+                    <div className="flex items-center justify-between px-4 py-3 bg-neutral-100 border-b border-neutral-200 text-[11px] font-mono text-neutral-600">
                         <div className="flex items-center gap-2">
-                            <div className="w-2.5 h-2.5 rounded-full bg-red-500/70" />
-                            <div className="w-2.5 h-2.5 rounded-full bg-amber-500/70" />
-                            <div className="w-2.5 h-2.5 rounded-full bg-[#00ff87]/70" />
+                            <div className="w-2.5 h-2.5 rounded-full bg-red-400" />
+                            <div className="w-2.5 h-2.5 rounded-full bg-amber-400" />
+                            <div className="w-2.5 h-2.5 rounded-full bg-emerald-500" />
                             <span className="ml-2 text-neutral-500">FISI - UNMSM // COORD: -12.0533774, -77.085542</span>
                         </div>
-                        <span className="text-[#00ff87] flex items-center gap-1.5">
-                            <span className="w-2 h-2 rounded-full bg-[#00ff87] animate-pulse" />
+                        <span className="text-emerald-700 font-semibold flex items-center gap-1.5">
+                            <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse" />
                             SEDE PRESENCIAL ACTIVA
                         </span>
                     </div>
 
                     {/* Map Frame Area */}
-                    <div className="relative w-full h-[400px] sm:h-[460px] md:h-[540px] bg-[#020705] overflow-hidden">
-                        {/* Dark Styled Google Maps Iframe */}
+                    <div className="relative w-full h-[400px] sm:h-[460px] md:h-[540px] bg-neutral-100 overflow-hidden">
+                        {/* Styled Google Maps Iframe */}
                         <iframe
                             title="Ubicación de FISI - UNMSM en Google Maps"
                             src={embedUrl}
@@ -87,74 +87,74 @@ export function Location() {
                             height="100%"
                             style={{
                                 border: 0,
-                                filter: "invert(92%) hue-rotate(180deg) contrast(1.2) brightness(0.92)",
+                                filter: "contrast(1.03) saturate(1.05)",
                             }}
                             loading="lazy"
                             referrerPolicy="no-referrer-when-downgrade"
                             className="w-full h-full"
                         />
 
-                        {/* Glowing Radar Beacon in the Center (like the user mockup) */}
+                        {/* Radar Beacon in the Center */}
                         <div className="pointer-events-none absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 flex items-center justify-center">
                             {/* Outer Ping */}
-                            <div className="absolute w-24 h-24 rounded-full bg-[#00ff87]/20 animate-ping opacity-75" />
+                            <div className="absolute w-24 h-24 rounded-full bg-emerald-500/25 animate-ping opacity-75" />
                             {/* Mid Halo */}
-                            <div className="w-16 h-16 rounded-full bg-[#00ff87]/15 border border-[#00ff87]/40 flex items-center justify-center shadow-[0_0_30px_rgba(0,255,135,0.5)]">
+                            <div className="w-16 h-16 rounded-full bg-emerald-500/15 border border-emerald-500/40 flex items-center justify-center shadow-md">
                                 {/* Inner Pin Dot */}
-                                <div className="w-6 h-6 rounded-full bg-[#00ff87] border-2 border-white shadow-[0_0_15px_#00ff87] flex items-center justify-center">
+                                <div className="w-6 h-6 rounded-full bg-emerald-600 border-2 border-white shadow-md flex items-center justify-center">
                                     <div className="w-2 h-2 rounded-full bg-white" />
                                 </div>
                             </div>
                         </div>
 
-                        {/* Floating Pill Overlay Badge (like in the user screenshot) */}
+                        {/* Floating Pill Overlay Badge */}
                         <div className="absolute bottom-5 left-5 z-20">
                             <a
                                 href={mapsUrl}
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="flex items-center gap-2.5 px-4 py-2.5 rounded-xl bg-[#030806]/90 backdrop-blur-md border border-white/15 text-xs text-neutral-200 hover:text-white hover:border-[#00ff87] transition-all shadow-2xl group/pill cursor-pointer"
+                                className="flex items-center gap-2.5 px-4 py-2.5 rounded-xl bg-white/95 backdrop-blur-md border border-neutral-200 text-xs text-neutral-800 hover:text-emerald-700 hover:border-emerald-500 transition-all shadow-xl group/pill cursor-pointer"
                             >
-                                <div className="w-2 h-2 rounded-full bg-[#00ff87] shadow-[0_0_8px_#00ff87]" />
-                                <span className="font-semibold text-white">FISI - UNMSM</span>
-                                <span className="text-neutral-400">· Abrir en Maps</span>
-                                <ArrowUpRight className="w-3.5 h-3.5 text-[#00ff87] transition-transform group-hover/pill:translate-x-0.5 group-hover/pill:-translate-y-0.5" />
+                                <div className="w-2 h-2 rounded-full bg-emerald-500 shadow-sm" />
+                                <span className="font-semibold text-neutral-900">FISI - UNMSM</span>
+                                <span className="text-neutral-500">· Abrir en Maps</span>
+                                <ArrowUpRight className="w-3.5 h-3.5 text-emerald-600 transition-transform group-hover/pill:translate-x-0.5 group-hover/pill:-translate-y-0.5" />
                             </a>
                         </div>
                     </div>
 
                     {/* Venue Metadata Footer Bar */}
-                    <div className="p-6 md:p-8 bg-[#040906] border-t border-white/5 grid grid-cols-1 md:grid-cols-3 gap-6 text-left">
+                    <div className="p-6 md:p-8 bg-neutral-50 border-t border-neutral-200/80 grid grid-cols-1 md:grid-cols-3 gap-6 text-left">
                         <div className="flex items-start gap-3.5">
-                            <div className="p-2.5 rounded-xl bg-[#00ff87]/10 text-[#00ff87] border border-[#00ff87]/20 shrink-0">
+                            <div className="p-2.5 rounded-xl bg-emerald-100 text-emerald-800 border border-emerald-200 shrink-0">
                                 <Building className="w-5 h-5" />
                             </div>
                             <div>
-                                <div className="text-xs font-mono uppercase tracking-wider text-neutral-400">Facultad & Sede</div>
-                                <div className="text-sm font-semibold text-white mt-0.5">Facultad de Ingeniería de Sistemas e Informática</div>
-                                <div className="text-xs text-neutral-400 font-light mt-0.5">UNMSM · Ciudad Universitaria</div>
+                                <div className="text-xs font-mono uppercase tracking-wider text-neutral-500">Facultad & Sede</div>
+                                <div className="text-sm font-semibold text-neutral-900 mt-0.5">Facultad de Ingeniería de Sistemas e Informática</div>
+                                <div className="text-xs text-neutral-600 font-light mt-0.5">UNMSM · Ciudad Universitaria</div>
                             </div>
                         </div>
 
                         <div className="flex items-start gap-3.5">
-                            <div className="p-2.5 rounded-xl bg-[#60efff]/10 text-[#60efff] border border-[#60efff]/20 shrink-0">
+                            <div className="p-2.5 rounded-xl bg-cyan-100 text-cyan-800 border border-cyan-200 shrink-0">
                                 <MapPin className="w-5 h-5" />
                             </div>
                             <div>
-                                <div className="text-xs font-mono uppercase tracking-wider text-neutral-400">Dirección de Ingreso</div>
-                                <div className="text-sm font-semibold text-white mt-0.5">Av. Carlos Germán Amezaga #375</div>
-                                <div className="text-xs text-neutral-400 font-light mt-0.5">Puerta N.° 2 o Puerta N.° 7 (Av. Venezuela / Túpac Amaru)</div>
+                                <div className="text-xs font-mono uppercase tracking-wider text-neutral-500">Dirección de Ingreso</div>
+                                <div className="text-sm font-semibold text-neutral-900 mt-0.5">Av. Carlos Germán Amezaga #375</div>
+                                <div className="text-xs text-neutral-600 font-light mt-0.5">Puerta N.° 2 o Puerta N.° 7 (Av. Venezuela / Túpac Amaru)</div>
                             </div>
                         </div>
 
                         <div className="flex items-start gap-3.5">
-                            <div className="p-2.5 rounded-xl bg-amber-400/10 text-amber-300 border border-amber-400/20 shrink-0">
+                            <div className="p-2.5 rounded-xl bg-amber-100 text-amber-800 border border-amber-200 shrink-0">
                                 <Calendar className="w-5 h-5" />
                             </div>
                             <div>
-                                <div className="text-xs font-mono uppercase tracking-wider text-neutral-400">Estaciones del Evento</div>
-                                <div className="text-sm font-semibold text-white mt-0.5">Cubículos FISI · Comedor · Auditorio</div>
-                                <div className="text-xs text-neutral-400 font-light mt-0.5">Auditorio Alfredo Alva Bravo (Pitches y Premiación)</div>
+                                <div className="text-xs font-mono uppercase tracking-wider text-neutral-500">Estaciones del Evento</div>
+                                <div className="text-sm font-semibold text-neutral-900 mt-0.5">Cubículos FISI · Comedor · Auditorio</div>
+                                <div className="text-xs text-neutral-600 font-light mt-0.5">Auditorio Alfredo Alva Bravo (Pitches y Premiación)</div>
                             </div>
                         </div>
                     </div>

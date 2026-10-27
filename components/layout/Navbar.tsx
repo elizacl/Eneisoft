@@ -107,15 +107,6 @@ export function Navbar() {
 
                 {/* Actions */}
                 <div className="hidden md:flex items-center gap-4 ml-8">
-                    <Link
-                        href="/hackathon"
-                        className={cn(
-                            "text-sm font-medium text-neutral-300 hover:text-white transition-colors",
-                            isScrolled ? "hidden lg:block" : ""
-                        )}
-                    >
-                        Hackathon 2026
-                    </Link>
                     <a
                         href="https://forms.gle/kEkG3JYVXWN5t7hX9"
                         target="_blank"
