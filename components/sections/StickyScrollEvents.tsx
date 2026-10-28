@@ -122,24 +122,81 @@ function EventTextItem({
                                 </p>
                             </div>
                         )}
+                        {/* Botones de acción debajo de los datos del ponente en móvil */}
+                        {event.links && event.links.length > 0 && (
+                            <div className="flex flex-wrap items-center gap-2.5 pt-4">
+                                {event.links.map((link) => {
+                                    const isLinkedIn =
+                                        link.variant === "linkedin" ||
+                                        link.href.includes("linkedin.com") ||
+                                        link.label.toLowerCase().includes("linkedin");
+
+                                    return (
+                                        <Link
+                                            key={link.label}
+                                            href={link.href}
+                                            target={link.href.startsWith("http") ? "_blank" : undefined}
+                                            rel={link.href.startsWith("http") ? "noopener noreferrer" : undefined}
+                                            className="inline-block"
+                                        >
+                                            <MagneticButton
+                                                className={`inline-flex items-center gap-2 px-4 py-2.5 rounded-full text-xs font-semibold transition-all duration-300 cursor-pointer ${
+                                                    isLinkedIn
+                                                        ? "bg-[#0a66c2] text-white hover:bg-[#004182] border border-[#0a66c2]"
+                                                        : link.primary
+                                                        ? "bg-[#24ed7a] text-[#0a2138] hover:bg-[#00c8df] hover:text-[#0a2138] font-bold"
+                                                        : "bg-white/5 hover:bg-white/10 text-neutral-300 hover:text-white border border-white/10"
+                                                }`}
+                                            >
+                                                {isLinkedIn && <Linkedin className="w-3.5 h-3.5 fill-current" />}
+                                                <span>{link.label}</span>
+                                                <ArrowUpRight className="w-3.5 h-3.5" />
+                                            </MagneticButton>
+                                        </Link>
+                                    );
+                                })}
+                            </div>
+                        )}
                     </div>
                 ) : (
-                    <div className="relative w-full aspect-[4/3] rounded-2xl overflow-hidden border border-white/15 bg-[#0a1510]">
-                        <div className="w-full h-full flex flex-col items-center justify-center p-6 text-center bg-gradient-to-b from-[#0c2016] to-[#040c07]">
-                            <Image
-                                src="/logoEneisoft.png"
-                                alt="ENEISOFT XVI"
-                                width={48}
-                                height={48}
-                                className="object-contain mb-3"
-                            />
-                            <h4 className="text-xl font-bold text-white uppercase text-gradient-eneisoft">
-                                HACKATHON XVI
-                            </h4>
-                            <p className="text-xs text-neutral-400 font-mono mt-1">
-                                {event.fechaDetalle}
-                            </p>
+                    <div>
+                        <div className="relative w-full aspect-[4/3] rounded-2xl overflow-hidden border border-white/15 bg-[#0a1510]">
+                            <div className="w-full h-full flex flex-col items-center justify-center p-6 text-center bg-gradient-to-b from-[#0c2016] to-[#040c07]">
+                                <Image
+                                    src="/logoEneisoft.png"
+                                    alt="ENEISOFT XVI"
+                                    width={48}
+                                    height={48}
+                                    className="object-contain mb-3"
+                                />
+                                <h4 className="text-xl font-bold text-white uppercase text-gradient-eneisoft">
+                                    HACKATHON XVI
+                                </h4>
+                                <p className="text-xs text-neutral-400 font-mono mt-1">
+                                    {event.fechaDetalle}
+                                </p>
+                            </div>
                         </div>
+                        {event.links && event.links.length > 0 && (
+                            <div className="flex flex-wrap items-center gap-2.5 pt-4">
+                                {event.links.map((link) => (
+                                    <Link
+                                        key={link.label}
+                                        href={link.href}
+                                        target={link.href.startsWith("http") ? "_blank" : undefined}
+                                        rel={link.href.startsWith("http") ? "noopener noreferrer" : undefined}
+                                        className="inline-block"
+                                    >
+                                        <MagneticButton
+                                            className="inline-flex items-center gap-2 px-4 py-2.5 rounded-full text-xs font-semibold bg-[#24ed7a] text-[#0a2138] hover:bg-[#00c8df] font-bold"
+                                        >
+                                            <span>{link.label}</span>
+                                            <ArrowUpRight className="w-3.5 h-3.5" />
+                                        </MagneticButton>
+                                    </Link>
+                                ))}
+                            </div>
+                        )}
                     </div>
                 )}
             </div>
@@ -177,40 +234,6 @@ function EventTextItem({
                         ⚡ <strong>Regla del reto:</strong> {event.regla}
                     </div>
                 )}
-            </div>
-
-            {/* Links / Action Buttons */}
-            <div className="flex flex-wrap items-center gap-3 pt-2">
-                {event.links.map((link) => {
-                    const isLinkedIn =
-                        link.variant === "linkedin" ||
-                        link.href.includes("linkedin.com") ||
-                        link.label.toLowerCase().includes("linkedin");
-
-                    return (
-                        <Link
-                            key={link.label}
-                            href={link.href}
-                            target={link.href.startsWith("http") ? "_blank" : undefined}
-                            rel={link.href.startsWith("http") ? "noopener noreferrer" : undefined}
-                            className="inline-block"
-                        >
-                            <MagneticButton
-                                className={`inline-flex items-center gap-2 px-5 py-2.5 rounded-full text-xs font-semibold transition-all duration-300 cursor-pointer ${
-                                    isLinkedIn
-                                        ? "bg-[#0a66c2] text-white hover:bg-[#004182] border border-[#0a66c2] shadow-[0_0_20px_rgba(10,102,194,0.4)]"
-                                        : link.primary
-                                        ? "bg-[#24ed7a] text-[#0a2138] hover:bg-[#00c8df] hover:text-[#0a2138] shadow-[0_0_20px_rgba(36,237,122,0.35)] hover:shadow-[0_0_25px_rgba(0,200,223,0.5)] font-bold"
-                                        : "bg-white/5 hover:bg-white/10 text-neutral-300 hover:text-white border border-white/10 hover:border-white/25"
-                                }`}
-                            >
-                                {isLinkedIn && <Linkedin className="w-3.5 h-3.5 fill-current" />}
-                                <span>{link.label}</span>
-                                <ArrowUpRight className="w-3.5 h-3.5" />
-                            </MagneticButton>
-                        </Link>
-                    );
-                })}
             </div>
         </div>
     );
@@ -258,100 +281,139 @@ export function StickyScrollEvents({
                 </div>
 
                 {/* Right Side: Sticky Visual Container that updates on scroll */}
-                <div className="hidden lg:flex w-1/2 h-[calc(100vh-7rem)] sticky top-24 items-center justify-center p-6 lg:p-10">
+                <div className="hidden lg:flex w-1/2 h-[calc(100vh-7rem)] sticky top-24 items-center justify-center p-6 lg:p-8">
                     {/* Ambient Glow */}
-                    <div className="absolute w-[450px] h-[450px] bg-[#24ed7a]/[0.08] rounded-full blur-[140px] pointer-events-none" />
+                    <div className="absolute w-[450px] h-[450px] bg-[#24ed7a]/[0.08] rounded-full blur-[140px] pointer-events-none -z-10" />
 
-                    <div className="relative w-full max-w-lg aspect-square rounded-[2.5rem] overflow-hidden border border-white/15 bg-[#0a1510] shadow-[0_0_50px_rgba(0,0,0,0.8)]">
+                    <div className="w-full max-w-[460px] xl:max-w-lg flex flex-col items-center">
                         <AnimatePresence mode="wait">
                             <motion.div
                                 key={activeEvent.id}
-                                initial={{ opacity: 0, scale: 0.93, y: 15 }}
+                                initial={{ opacity: 0, scale: 0.95, y: 12 }}
                                 animate={{ opacity: 1, scale: 1, y: 0 }}
-                                exit={{ opacity: 0, scale: 1.05, y: -15 }}
-                                transition={{ duration: 0.5, ease: [0.16, 1, 0.3, 1] }}
-                                className="absolute inset-0 flex flex-col items-center justify-center p-6"
+                                exit={{ opacity: 0, scale: 1.04, y: -12 }}
+                                transition={{ duration: 0.45, ease: [0.16, 1, 0.3, 1] }}
+                                className="w-full flex flex-col items-center"
                             >
-                                {activeEvent.image ? (
-                                    /* Speaker Presentation Card with Image */
-                                    <div className="relative w-full h-full flex flex-col justify-between rounded-2xl overflow-hidden">
-                                        <div className="relative flex-1 w-full rounded-2xl overflow-hidden border border-white/10 group">
-                                            <Image
-                                                src={activeEvent.image}
-                                                alt={activeEvent.speaker || "Ponente ENEISOFT"}
-                                                fill
-                                                className="object-cover object-top filter grayscale contrast-125 group-hover:grayscale-0 transition-all duration-700"
-                                                priority
-                                            />
-                                            {/* Gradient Overlay */}
-                                            <div className="absolute inset-0 bg-gradient-to-t from-[#0a1510] via-transparent to-transparent opacity-85" />
+                                {/* Rectángulo que contiene la foto y datos del ponente */}
+                                <div className="relative w-full aspect-square rounded-[2.5rem] overflow-hidden border border-white/15 bg-[#0a1510] shadow-[0_0_50px_rgba(0,0,0,0.8)] p-6">
+                                    {activeEvent.image ? (
+                                        /* Speaker Presentation Card with Image */
+                                        <div className="relative w-full h-full flex flex-col justify-between rounded-2xl overflow-hidden">
+                                            <div className="relative flex-1 w-full rounded-2xl overflow-hidden border border-white/10 group">
+                                                <Image
+                                                    src={activeEvent.image}
+                                                    alt={activeEvent.speaker || "Ponente ENEISOFT"}
+                                                    fill
+                                                    className="object-cover object-top filter grayscale contrast-125 group-hover:grayscale-0 transition-all duration-700"
+                                                    priority
+                                                />
+                                                {/* Gradient Overlay */}
+                                                <div className="absolute inset-0 bg-gradient-to-t from-[#0a1510] via-transparent to-transparent opacity-85" />
 
-                                            {/* Live/Status Badge */}
-                                            <div className="absolute top-4 left-4 z-10 flex items-center gap-2 px-3 py-1 rounded-full bg-black/70 backdrop-blur-md border border-white/10 text-xs font-mono text-white">
-                                                <span className="w-2 h-2 rounded-full bg-[#00ff87] animate-ping" />
-                                                <span>Ponencia Especializada</span>
+                                                {/* Live/Status Badge */}
+                                                <div className="absolute top-4 left-4 z-10 flex items-center gap-2 px-3 py-1 rounded-full bg-black/70 backdrop-blur-md border border-white/10 text-xs font-mono text-white">
+                                                    <span className="w-2 h-2 rounded-full bg-[#00ff87] animate-ping" />
+                                                    <span>Ponencia Especializada</span>
+                                                </div>
+                                            </div>
+
+                                            {/* Bottom info below photo: Nombre y Perfil */}
+                                            <div className="pt-4 flex items-start justify-between gap-4">
+                                                <div className="flex-1 min-w-0">
+                                                    <h4 className="text-base md:text-lg font-bold text-white tracking-tight leading-snug">
+                                                        {activeEvent.speaker}
+                                                    </h4>
+                                                    <p className="text-xs text-[#24ed7a] font-mono mt-1 leading-relaxed">
+                                                        {activeEvent.role}
+                                                    </p>
+                                                </div>
+                                                <span className="text-2xl font-mono font-bold text-white/20 shrink-0">
+                                                    {activeEvent.stepNumber}
+                                                </span>
                                             </div>
                                         </div>
+                                    ) : (
+                                        /* Hackathon High-Tech Card (No person photo as requested) */
+                                        <div className="relative w-full h-full rounded-2xl border border-[#24ed7a]/30 bg-gradient-to-b from-[#071320] to-[#040d17] p-8 flex flex-col justify-between overflow-hidden shadow-[inset_0_0_40px_rgba(36,237,122,0.1)]">
+                                            {/* Cyber matrix background decor */}
+                                            <div className="absolute -top-10 -right-10 w-44 h-44 bg-[#24ed7a]/15 rounded-full blur-3xl pointer-events-none" />
 
-                                        {/* Bottom info below photo: Nombre y Perfil */}
-                                        <div className="pt-4 flex items-start justify-between gap-4">
-                                            <div className="flex-1 min-w-0">
-                                                <h4 className="text-base md:text-lg font-bold text-white tracking-tight leading-snug">
-                                                    {activeEvent.speaker}
+                                            {/* Top Card Bar */}
+                                            <div className="flex items-center justify-between z-10">
+                                                <div className="flex items-center gap-2 px-3 py-1 rounded-full bg-[#24ed7a]/10 border border-[#24ed7a]/30 text-xs font-mono text-[#24ed7a]">
+                                                    <Terminal className="w-3.5 h-3.5" />
+                                                    <span>RETO OFICIAL 2026</span>
+                                                </div>
+                                                <span className="text-xs font-mono text-neutral-400">
+                                                    12 EQUIPOS
+                                                </span>
+                                            </div>
+
+                                            {/* Center Graphic */}
+                                            <div className="flex flex-col items-center justify-center my-auto text-center z-10">
+                                                <div className="relative w-20 h-20 rounded-2xl bg-black/60 border border-[#24ed7a]/40 flex items-center justify-center mb-5 shadow-[0_0_30px_rgba(36,237,122,0.3)]">
+                                                    <Image
+                                                        src="/logoEneisoft.png"
+                                                        alt="ENEISOFT XVI"
+                                                        width={56}
+                                                        height={56}
+                                                        className="object-contain"
+                                                    />
+                                                </div>
+                                                <span className="text-xs uppercase font-mono tracking-[0.3em] text-[#24ed7a] mb-1 font-semibold">
+                                                    FISI · UNMSM
+                                                </span>
+                                                <h4 className="text-2xl md:text-3xl font-black tracking-tight text-white uppercase text-gradient-eneisoft">
+                                                    HACKATHON XVI
                                                 </h4>
-                                                <p className="text-xs text-[#24ed7a] font-mono mt-1 leading-relaxed">
-                                                    {activeEvent.role}
+                                                <p className="text-xs font-mono text-neutral-400 mt-2 max-w-xs">
+                                                    Sábado 07 de Noviembre · 08:00 AM - 08:45 PM
                                                 </p>
                                             </div>
-                                            <span className="text-2xl font-mono font-bold text-white/20 shrink-0">
-                                                {activeEvent.stepNumber}
-                                            </span>
-                                        </div>
-                                    </div>
-                                ) : (
-                                    /* Hackathon High-Tech Card (No person photo as requested) */
-                                    <div className="relative w-full h-full rounded-2xl border border-[#24ed7a]/30 bg-gradient-to-b from-[#071320] to-[#040d17] p-8 flex flex-col justify-between overflow-hidden shadow-[inset_0_0_40px_rgba(36,237,122,0.1)]">
-                                        {/* Cyber matrix background decor */}
-                                        <div className="absolute -top-10 -right-10 w-44 h-44 bg-[#24ed7a]/15 rounded-full blur-3xl pointer-events-none" />
 
-                                        {/* Top Card Bar */}
-                                        <div className="flex items-center justify-between z-10">
-                                            <div className="flex items-center gap-2 px-3 py-1 rounded-full bg-[#24ed7a]/10 border border-[#24ed7a]/30 text-xs font-mono text-[#24ed7a]">
-                                                <Terminal className="w-3.5 h-3.5" />
-                                                <span>RETO OFICIAL 2026</span>
+                                            {/* Bottom Details Footer */}
+                                            <div className="pt-4 border-t border-white/10 flex items-center justify-between text-xs font-mono text-neutral-400 z-10">
+                                                <span>Pozo: S/ 450.00 + Premios</span>
+                                                <span className="text-[#24ed7a]">36 Hackers</span>
                                             </div>
-                                            <span className="text-xs font-mono text-neutral-400">
-                                                12 EQUIPOS
-                                            </span>
                                         </div>
+                                    )}
+                                </div>
 
-                                        {/* Center Graphic */}
-                                        <div className="flex flex-col items-center justify-center my-auto text-center z-10">
-                                            <div className="relative w-20 h-20 rounded-2xl bg-black/60 border border-[#24ed7a]/40 flex items-center justify-center mb-5 shadow-[0_0_30px_rgba(36,237,122,0.3)]">
-                                                <Image
-                                                    src="/logoEneisoft.png"
-                                                    alt="ENEISOFT XVI"
-                                                    width={56}
-                                                    height={56}
-                                                    className="object-contain"
-                                                />
-                                            </div>
-                                            <span className="text-xs uppercase font-mono tracking-[0.3em] text-[#24ed7a] mb-1 font-semibold">
-                                                FISI · UNMSM
-                                            </span>
-                                            <h4 className="text-2xl md:text-3xl font-black tracking-tight text-white uppercase text-gradient-eneisoft">
-                                                HACKATHON XVI
-                                            </h4>
-                                            <p className="text-xs font-mono text-neutral-400 mt-2 max-w-xs">
-                                                Sábado 07 de Noviembre · 08:00 AM - 08:45 PM
-                                            </p>
-                                        </div>
+                                {/* Debajo del rectángulo: Inscribirse al evento en Luma y Ver perfil de Linkedin */}
+                                {activeEvent.links && activeEvent.links.length > 0 && (
+                                    <div className="flex flex-wrap items-center justify-center gap-3 pt-5 w-full">
+                                        {activeEvent.links.map((link) => {
+                                            const isLinkedIn =
+                                                link.variant === "linkedin" ||
+                                                link.href.includes("linkedin.com") ||
+                                                link.label.toLowerCase().includes("linkedin");
 
-                                        {/* Bottom Details Footer */}
-                                        <div className="pt-4 border-t border-white/10 flex items-center justify-between text-xs font-mono text-neutral-400 z-10">
-                                            <span>Pozo: S/ 450.00 + Premios</span>
-                                            <span className="text-[#24ed7a]">36 Hackers</span>
-                                        </div>
+                                            return (
+                                                <Link
+                                                    key={link.label}
+                                                    href={link.href}
+                                                    target={link.href.startsWith("http") ? "_blank" : undefined}
+                                                    rel={link.href.startsWith("http") ? "noopener noreferrer" : undefined}
+                                                    className="inline-block"
+                                                >
+                                                    <MagneticButton
+                                                        className={`inline-flex items-center gap-2 px-5 py-2.5 rounded-full text-xs font-semibold transition-all duration-300 cursor-pointer ${
+                                                            isLinkedIn
+                                                                ? "bg-[#0a66c2] text-white hover:bg-[#004182] border border-[#0a66c2] shadow-[0_0_20px_rgba(10,102,194,0.4)]"
+                                                                : link.primary
+                                                                ? "bg-[#24ed7a] text-[#0a2138] hover:bg-[#00c8df] hover:text-[#0a2138] shadow-[0_0_20px_rgba(36,237,122,0.35)] hover:shadow-[0_0_25px_rgba(0,200,223,0.5)] font-bold"
+                                                                : "bg-white/5 hover:bg-white/10 text-neutral-300 hover:text-white border border-white/10 hover:border-white/25"
+                                                        }`}
+                                                    >
+                                                        {isLinkedIn && <Linkedin className="w-3.5 h-3.5 fill-current" />}
+                                                        <span>{link.label}</span>
+                                                        <ArrowUpRight className="w-3.5 h-3.5" />
+                                                    </MagneticButton>
+                                                </Link>
+                                            );
+                                        })}
                                     </div>
                                 )}
                             </motion.div>
