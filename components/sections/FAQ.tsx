@@ -16,7 +16,7 @@ const faqs = [
     },
     {
         question: "¿Dónde y cuándo se desarrollará el evento?",
-        answer: "El evento se realizará de manera presencial en las instalaciones de la Facultad de Ingeniería de Sistemas e Informática (FISI) de la Universidad Nacional Mayor de San Marcos (Ciudad Universitaria, Lima, Perú). Las fechas y el cronograma detallado están disponibles en las secciones de Hackathon y Eventos.",
+        answer: "ENEISOFT XVI dura 6 días continuos: del lunes 02 al viernes 06 de noviembre se desarrollará el ciclo de ponencias magistrales y becas de especialización (en modalidades presencial en la FISI y virtual). Como cierre estelar, el sábado 07 de noviembre se llevará a cabo la gran Hackathon presencial en las instalaciones de la Facultad de Ingeniería de Sistemas e Informática (FISI) de la Universidad Nacional Mayor de San Marcos (Lima, Perú).",
     },
     {
         question: "¿Cómo puedo participar en la Hackathon de Inteligencia Artificial?",

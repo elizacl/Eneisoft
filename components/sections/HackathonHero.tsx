@@ -11,7 +11,7 @@ export function HackathonHero() {
     const opacity = useTransform(scrollY, [0, 300], [1, 0]);
 
     return (
-        <section id="hackathon-hero" className="relative min-h-[110vh] w-full flex items-center justify-center overflow-hidden bg-[#0a2138] text-white">
+        <section id="hackathon-hero" className="relative min-h-screen w-full flex items-center justify-center overflow-hidden bg-[#0a2138] text-white">
             {/* Ambient Cyber Flares & Neon Glows */}
             <div className="absolute top-[-15%] left-[-15%] w-[65vw] h-[65vw] bg-[#24ed7a]/10 rounded-full blur-[180px] pointer-events-none" />
             <div className="absolute top-[20%] right-[-15%] w-[60vw] h-[60vw] bg-[#00c8df]/10 rounded-full blur-[180px] pointer-events-none" />
@@ -25,7 +25,7 @@ export function HackathonHero() {
                 }}
             />
 
-            <div className="boxed-frame boxed-border-dark relative z-10 flex flex-col items-center text-center px-4 pt-32 pb-20 min-h-[110vh] justify-center">
+            <div className="boxed-frame boxed-border-dark relative z-10 flex flex-col items-center text-center px-4 pt-36 pb-24 min-h-screen justify-center">
                 {/* Animated Tagline Badge */}
                 <motion.div
                     initial={{ opacity: 0, y: 25 }}
@@ -52,7 +52,7 @@ export function HackathonHero() {
                     transition={{ duration: 1, delay: 0.1, ease: [0.16, 1, 0.3, 1] }}
                     className="flex items-center gap-3 mb-2"
                 >
-                    <span className="text-sm md:text-base font-mono uppercase tracking-[0.35em] text-neutral-400">
+                    <span className="text-xs md:text-sm font-mono uppercase tracking-[0.3em] text-neutral-400">
                         ENEISOFT · <span className="text-[#00ff87]">EDICIÓN XVI</span>
                     </span>
                 </motion.div>
@@ -62,7 +62,7 @@ export function HackathonHero() {
                     initial={{ opacity: 0, scale: 0.95, y: 30 }}
                     animate={{ opacity: 1, scale: 1, y: 0 }}
                     transition={{ duration: 1.2, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
-                    className="text-6xl sm:text-8xl md:text-9xl lg:text-[11rem] font-black tracking-tight leading-[0.88] mb-6 uppercase"
+                    className="text-5xl sm:text-7xl md:text-8xl lg:text-[8.5rem] font-black tracking-tight leading-[0.88] mb-6 uppercase"
                 >
                     <span className="text-gradient-eneisoft drop-shadow-[0_0_50px_rgba(0,255,135,0.4)]">
                         HACKATHON
@@ -138,7 +138,7 @@ export function HackathonHero() {
             {/* Bottom Fade */}
             <motion.div
                 style={{ y, opacity }}
-                className="absolute bottom-0 w-full h-[25vh] bg-gradient-to-t from-[#0a2138] via-[#0a2138]/80 to-transparent z-20 pointer-events-none"
+                className="absolute bottom-0 w-full h-[20vh] bg-gradient-to-t from-[#0a2138] via-[#0a2138]/60 to-transparent z-20 pointer-events-none"
             />
         </section>
     );

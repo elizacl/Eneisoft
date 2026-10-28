@@ -8,8 +8,50 @@ export const metadata = {
 // 1. LO QUE SE VIENE - Próximos eventos
 const proximosEventos: ScrollEventItem[] = [
     {
-        id: "ponencia-enrique",
+        id: "inauguracion-hackathon",
         stepNumber: "01",
+        dateBadge: "NOV | 02",
+        modalidad: "Presencial · Día 1 Hackathon",
+        title: "Inauguración y Jornada de Ponencias",
+        fechaDetalle: "Lunes 02 de noviembre de 2026",
+        hora: "2:30 PM - 7:00 PM (14:30 - 19:00)",
+        lugar: "Auditorio - FISI UNMSM",
+        cardTitle: "DÍA 1",
+        cardFooterLeft: "Auditorio - FISI UNMSM",
+        cardFooterRight: "2 Ponencias Magistrales",
+        programa: [
+            {
+                time: "14:30 – 16:00",
+                activity: "Inauguración Oficial",
+                description: "Apertura oficial del evento y bienvenida a todos los participantes.",
+            },
+            {
+                time: "16:00 – 17:30",
+                activity: 'Ponencia 1: "De resolver un problema a construir un producto: la historia detrás de Latinfo"',
+                speaker: "Kevin Navarro y Lourdes Iturria (DSC PUCP)",
+            },
+            {
+                time: "17:30 – 19:00",
+                activity: 'Ponencia 2: "El arquitecto híbrido: El encuentro de dos mundos"',
+                speaker: "Guillermo Gamboa (QuantumHub)",
+            },
+        ],
+        links: [
+            {
+                label: "Inscribirse al evento en Luma",
+                href: "https://luma.com/bpl4gqid?lm_source=embed",
+                primary: true,
+            },
+            {
+                label: "Abrir en Google Maps",
+                href: "https://maps.app.goo.gl/tMyPpnmLZ6ZryRej7",
+                primary: false,
+            },
+        ],
+    },
+    {
+        id: "ponencia-enrique",
+        stepNumber: "02",
         dateBadge: "NOV | 03",
         modalidad: "Ponencia Virtual",
         title: "¿Y si el problema no es el código? Cómo resolver conflictos, destacar bajo presión y transformar problemas en oportunidades de innovación",
@@ -22,7 +64,7 @@ const proximosEventos: ScrollEventItem[] = [
         links: [
             {
                 label: "Inscribirse al evento en Luma",
-                href: "https://luma.com/user/eneisoft",
+                href: "https://luma.com/14y6sxn7",
                 primary: true,
             },
             {
@@ -34,7 +76,7 @@ const proximosEventos: ScrollEventItem[] = [
     },
     {
         id: "ponencia-daniela",
-        stepNumber: "02",
+        stepNumber: "03",
         dateBadge: "NOV | 03",
         modalidad: "Ponencia Virtual",
         title: "La parte del proyecto: De usar IA a pensar con IA",
@@ -59,7 +101,7 @@ const proximosEventos: ScrollEventItem[] = [
     },
     {
         id: "ponencia-miguel",
-        stepNumber: "03",
+        stepNumber: "04",
         dateBadge: "NOV | 03",
         modalidad: "Ponencia Virtual",
         title: "Del git push a la nube: construye tu primer pipeline automatizado",
@@ -72,7 +114,7 @@ const proximosEventos: ScrollEventItem[] = [
         links: [
             {
                 label: "Inscribirse al evento en Luma",
-                href: "https://luma.com/user/eneisoft",
+                href: "https://luma.com/jk1y1vnv",
                 primary: true,
             },
             {
@@ -84,7 +126,7 @@ const proximosEventos: ScrollEventItem[] = [
     },
     {
         id: "ponencia-danilo",
-        stepNumber: "04",
+        stepNumber: "05",
         dateBadge: "NOV | 04",
         modalidad: "Ponencia Virtual",
         title: "Lo que me hubiera gustado saber en primer ciclo sobre datos",
@@ -97,7 +139,7 @@ const proximosEventos: ScrollEventItem[] = [
         links: [
             {
                 label: "Inscribirse al evento en Luma",
-                href: "https://luma.com/user/eneisoft",
+                href: "https://luma.com/ipzz5u2c",
                 primary: true,
             },
             {
@@ -109,7 +151,7 @@ const proximosEventos: ScrollEventItem[] = [
     },
     {
         id: "ponencia-ernesto",
-        stepNumber: "05",
+        stepNumber: "06",
         dateBadge: "NOV | 05",
         modalidad: "Ponencia Virtual",
         title: "[Título por actualizar]",
@@ -134,7 +176,7 @@ const proximosEventos: ScrollEventItem[] = [
     },
     {
         id: "ponencia-doris",
-        stepNumber: "06",
+        stepNumber: "07",
         dateBadge: "NOV | 05",
         modalidad: "Ponencia Virtual",
         title: "[Título por actualizar]",
@@ -159,7 +201,7 @@ const proximosEventos: ScrollEventItem[] = [
     },
     {
         id: "ponencia-raul",
-        stepNumber: "07",
+        stepNumber: "08",
         dateBadge: "NOV | 05",
         modalidad: "Ponencia Virtual",
         title: "Empleabilidad más allá del aula: LinkedIn & CV",
@@ -184,7 +226,7 @@ const proximosEventos: ScrollEventItem[] = [
     },
     {
         id: "hackathon-2026",
-        stepNumber: "08",
+        stepNumber: "09",
         dateBadge: "NOV | 07",
         modalidad: "Hackathon Presencial",
         title: "Hackathon ENEISOFT XVI 2026",
@@ -193,6 +235,9 @@ const proximosEventos: ScrollEventItem[] = [
         lugar: "Facultad de Ingeniería de Sistemas e Informática (FISI - UNMSM)",
         tematica: "IA aplicada a problemas reales de la comunidad universitaria. (Sub-ejes: Académico, Bienestar y Gestión Universitaria).",
         regla: "La solución debe ir más allá de un chatbot o dashboard convencional y mostrarse en ejecución durante el pitch final.",
+        cardTitle: "HACKATHON XVI",
+        cardFooterLeft: "Sede FISI - UNMSM",
+        cardFooterRight: "12 Equipos · Pitches & Premiación",
         // Sin foto de persona (tarjeta técnica central)
         image: undefined,
         links: [

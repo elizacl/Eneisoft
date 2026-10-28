@@ -156,9 +156,9 @@ export function Location() {
                                 <Calendar className="w-5 h-5" />
                             </div>
                             <div>
-                                <div className="text-xs font-mono uppercase tracking-wider text-neutral-500">Estaciones del Evento</div>
-                                <div className="text-sm font-semibold text-neutral-900 mt-0.5">Cubículos FISI · Comedor · Auditorio</div>
-                                <div className="text-xs text-neutral-600 font-light mt-0.5">Auditorio Alfredo Alva Bravo (Pitches y Premiación)</div>
+                                <div className="text-xs font-mono uppercase tracking-wider text-neutral-500">Duración: 6 Días</div>
+                                <div className="text-sm font-semibold text-neutral-900 mt-0.5">02 al 07 de Noviembre 2026</div>
+                                <div className="text-xs text-neutral-600 font-light mt-0.5">Lun–Vie: Ponencias + Becas (Presencial & Virtual) · Sáb: Hackathon FISI</div>
                             </div>
                         </div>
                     </div>

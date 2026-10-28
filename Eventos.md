@@ -1,6 +1,24 @@
 # LO QUE SE VIENE
 ## Próximos eventos
 
+> 📅 **NOV | 02** `Presencial` `Día 1 Hackathon`
+> ### **Inauguración y Jornada de Ponencias**
+> Lunes 02 de noviembre de 2026
+>
+> **Programa del evento:**
+> *   **14:30 – 16:00 | Inauguración:** Apertura oficial del evento y bienvenida a los participantes.
+> *   **16:00 – 17:30 | Ponencia 1:** "De resolver un problema a construir un producto: la historia detrás de Latinfo".
+>     **Speakers Invitados:** Kevin Navarro y Lourdes Iturria (DSC PUCP)
+> *   **17:30 – 19:00 | Ponencia 2:** "El arquitecto híbrido: El encuentro de dos mundos".
+>     **Speakers Invitados:** Guillermo Gamboa (QuantumHub).
+>
+> **Hora:** 2:30 PM - 7:00 PM (14:30 - 19:00)
+> **Lugar:** Auditorio - FISI UNMSM
+>
+> 🔗 [Inscribirse al evento en Luma](https://luma.com/bpl4gqid?lm_source=embed) 📍 [Abrir en Google Maps](https://maps.app.goo.gl/tMyPpnmLZ6ZryRej7)
+
+***
+
 > 📅 **NOV | 03** `Ponencia` `Virtual`
 > ### **¿Y si el problema no es el código? Cómo resolver conflictos, destacar bajo presión y transformar problemas en oportunidades de innovación**
 > Martes 03 de noviembre de 2026
@@ -9,7 +27,7 @@
 > **Hora:** 2:30 PM - 3:30 PM (14:30 - 15:30)
 > **Speaker:** Enrique Mesones (Líder empresarial, presidente de APESOFT, especializado en impulsar ecosistemas tecnológicos, Web 3.0 e IA).
 >
-> 🔗 [Inscribirse al evento en Luma](https://luma.com/user/eneisoft) 🔗 [Ver perfil de Linkedin](https://www.linkedin.com/in/enriquemesones)
+> 🔗 [Inscribirse al evento en Luma](https://luma.com/14y6sxn7) 🔗 [Ver perfil de Linkedin](https://www.linkedin.com/in/enriquemesones)
 
 ***
 
@@ -33,7 +51,7 @@
 > **Hora:** 7:00 PM - 8:00 PM (19:00 - 20:00)
 > **Speaker:** Miguel Solis (Desarrollador full-stack, especialista en backend, arquitectura cloud y DevSecOps en Mibanco y UNMSM).
 >
-> 🔗 [Inscribirse al evento en Luma](https://luma.com/user/eneisoft) 🔗 [Ver perfil de Linkedin](https://www.linkedin.com/in/miguel-solis-cunza)
+> 🔗 [Inscribirse al evento en Luma](https://luma.com/jk1y1vnv) 🔗 [Ver perfil de Linkedin](https://www.linkedin.com/in/miguel-solis-cunza)
 
 ***
 
@@ -45,7 +63,7 @@
 > **Hora:** 7:00 PM - 8:00 PM (19:00 - 20:00)
 > **Speaker:** Danilo Chavez (Analista de datos corporativos y fundador de DATANILO, enfocado en transformación digital).
 >
-> 🔗 [Inscribirse al evento en Luma](https://luma.com/user/eneisoft) 🔗 [Ver perfil de Linkedin](https://www.linkedin.com/in/daniloyamir)
+> 🔗 [Inscribirse al evento en Luma](https://luma.com/ipzz5u2c) 🔗 [Ver perfil de Linkedin](https://www.linkedin.com/in/daniloyamir)
 
 ***
 
