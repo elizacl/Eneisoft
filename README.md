@@ -1,5 +1,5 @@
 # ENEISOFT XVI 2026 — Plataforma Web Oficial
-> **Encuentro Nacional de Estudiantes de Ingeniería de Sistemas e Informática**  
+> **Encuentro Nacional de Estudiantes de Ingeniería de Software**  
 > *Facultad de Ingeniería de Sistemas e Informática (FISI) — Universidad Nacional Mayor de San Marcos (UNMSM)*
 
 ---

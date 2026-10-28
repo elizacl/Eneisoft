@@ -145,7 +145,7 @@ export function Footer() {
                         </Link>
 
                         <p className="text-sm text-neutral-600 font-light leading-relaxed max-w-md">
-                            Encuentro Nacional de Estudiantes de Ingeniería de Sistemas y Computación.
+                            Encuentro Nacional de Estudiantes de Ingeniería de Software.
                             Impulsando el desarrollo tecnológico, la innovación aplicada y la comunidad estudiantil desde la Facultad de Ingeniería de Sistemas e Informática de la Universidad Nacional Mayor de San Marcos.
                         </p>
 

@@ -6,13 +6,13 @@
 > Lunes 02 de noviembre de 2026
 >
 > **Programa del evento:**
-> *   **14:30 – 16:00 | Inauguración:** Apertura oficial del evento y bienvenida a los participantes.
-> *   **16:00 – 17:30 | Ponencia 1:** "De resolver un problema a construir un producto: la historia detrás de Latinfo".
+> *   **2:30 PM – 4:00 PM | Inauguración:** Apertura oficial del evento y bienvenida a los participantes.
+> *   **4:00 PM – 5:30 PM | Ponencia 1:** "De resolver un problema a construir un producto: la historia detrás de Latinfo".
 >     **Speakers Invitados:** Kevin Navarro y Lourdes Iturria (DSC PUCP)
-> *   **17:30 – 19:00 | Ponencia 2:** "El arquitecto híbrido: El encuentro de dos mundos".
+> *   **5:30 PM – 7:00 PM | Ponencia 2:** "El arquitecto híbrido: El encuentro de dos mundos".
 >     **Speakers Invitados:** Guillermo Gamboa (QuantumHub).
 >
-> **Hora:** 2:30 PM - 7:00 PM (14:30 - 19:00)
+> **Hora:** 2:30 PM - 7:00 PM
 > **Lugar:** Auditorio - FISI UNMSM
 >
 > 🔗 [Inscribirse al evento en Luma](https://luma.com/bpl4gqid?lm_source=embed) 📍 [Abrir en Google Maps](https://maps.app.goo.gl/tMyPpnmLZ6ZryRej7)
@@ -24,7 +24,7 @@
 > Martes 03 de noviembre de 2026
 >
 > **Temática:** Importancia de las habilidades blandas, liderazgo y resolución de problemas bajo presión para generar, capturar y compartir valor en el desarrollo de software.
-> **Hora:** 2:30 PM - 3:30 PM (14:30 - 15:30)
+> **Hora:** 2:30 PM - 3:30 PM
 > **Speaker:** Enrique Mesones (Líder empresarial, presidente de APESOFT, especializado en impulsar ecosistemas tecnológicos, Web 3.0 e IA).
 >
 > 🔗 [Inscribirse al evento en Luma](https://luma.com/14y6sxn7) 🔗 [Ver perfil de Linkedin](https://www.linkedin.com/in/enriquemesones)
@@ -36,7 +36,7 @@
 > Martes 03 de noviembre de 2026
 >
 > **Temática:** Evolución estratégica desde el uso instrumental de herramientas de IA hacia una mentalidad de pensamiento aumentado aplicada al diseño de productos y la experiencia de usuario.
-> **Hora:** 5:30 PM - 6:30 PM (17:30 - 18:30)
+> **Hora:** 5:30 PM - 6:30 PM
 > **Speaker:** Daniella Orozco (Especialista en transformación organizacional, innovación tecnológica y UX).
 >
 > 🔗 [Inscribirse al evento en Luma](https://luma.com/user/eneisoft) 🔗 [Ver perfil de Linkedin](https://www.linkedin.com/in/daniella-orozco-bedregal)
@@ -48,7 +48,7 @@
 > Martes 03 de noviembre de 2026
 >
 > **Temática:** Fundamentos y arquitectura de pipelines CI/CD, automatización de builds y despliegues en la nube con GitHub Actions y Docker, gestión de secretos y detección temprana de errores.
-> **Hora:** 7:00 PM - 8:00 PM (19:00 - 20:00)
+> **Hora:** 7:00 PM - 8:00 PM
 > **Speaker:** Miguel Solis (Desarrollador full-stack, especialista en backend, arquitectura cloud y DevSecOps en Mibanco y UNMSM).
 >
 > 🔗 [Inscribirse al evento en Luma](https://luma.com/jk1y1vnv) 🔗 [Ver perfil de Linkedin](https://www.linkedin.com/in/miguel-solis-cunza)
@@ -60,7 +60,7 @@
 > Miércoles 04 de noviembre de 2026
 >
 > **Temática:** Descubrimiento del mundo de los datos mediante casos prácticos empresariales, toma de decisiones y consejos clave para que los estudiantes comiencen a explorar esta área desde primeros ciclos.
-> **Hora:** 7:00 PM - 8:00 PM (19:00 - 20:00)
+> **Hora:** 7:00 PM - 8:00 PM
 > **Speaker:** Danilo Chavez (Analista de datos corporativos y fundador de DATANILO, enfocado en transformación digital).
 >
 > 🔗 [Inscribirse al evento en Luma](https://luma.com/ipzz5u2c) 🔗 [Ver perfil de Linkedin](https://www.linkedin.com/in/daniloyamir)
@@ -72,7 +72,7 @@
 > Jueves 05 de noviembre de 2026
 >
 > **Temática:** [Por actualizar]
-> **Hora:** 4:00 PM - 5:00 PM (16:00 - 17:00)
+> **Hora:** 4:00 PM - 5:00 PM
 > **Speaker:** Ernesto Cuadros (Científico de la computación, investigador y asesor tecnológico peruano con reconocimiento internacional).
 >
 > 🔗 [Inscribirse al evento en Luma](https://luma.com/user/eneisoft) 🔗 [Ver perfil de Linkedin](https://www.linkedin.com/in/ecuadrosv)
@@ -84,7 +84,7 @@
 > Jueves 05 de noviembre de 2026
 >
 > **Temática:** [Por actualizar]
-> **Hora:** 5:30 PM - 6:30 PM (17:30 - 18:30)
+> **Hora:** 5:30 PM - 6:30 PM
 > **Speaker:** Doris Manrique (Arquitecta de soluciones cloud, líder tecnológica y fundadora de la comunidad AWS Girls Peru).
 >
 > 🔗 [Inscribirse al evento en Luma](https://luma.com/user/eneisoft) 🔗 [Ver perfil de Linkedin](https://www.linkedin.com/in/dorismanrique)
@@ -96,7 +96,7 @@
 > Jueves 05 de noviembre de 2026
 >
 > **Temática:** Estrategias prácticas de inserción laboral en tecnología mediante la optimización de perfiles en LinkedIn, diseño de CV adaptado a filtros ATS y desarrollo de networking profesional.
-> **Hora:** 7:00 PM - 8:00 PM (19:00 - 20:00)
+> **Hora:** 7:00 PM - 8:00 PM
 > **Speaker:** Raúl Mogollón (Especialista en ciberseguridad, gestión de riesgos TI y tecnologías emergentes en BCP y ASBANC).
 >
 > 🔗 [Inscribirse al evento en Luma](https://luma.com/user/eneisoft) 🔗 [Ver perfil de Linkedin](https://www.linkedin.com/in/raul-mogollon)
@@ -108,7 +108,7 @@
 > Sábado 07 de noviembre de 2026
 >
 > **Temática:** IA aplicada a problemas reales de la comunidad universitaria. (Sub-ejes: Académico, Bienestar y Gestión Universitaria).
-> **Hora:** 08:00 AM - 08:45 PM
+> **Hora:** 8:00 AM - 8:45 PM
 > **Lugar:** Facultad de Ingeniería de Sistemas e Informática (FISI - UNMSM)
 > 
 > *La solución debe ir más allá de un chatbot o dashboard convencional y mostrarse en ejecución durante el pitch final.*
@@ -125,7 +125,7 @@
 > Sábado 03 de octubre de 2026
 >
 > **Temática:** Revolución de la IA en el desarrollo seguro, análisis de vulnerabilidades, impacto de Codex, OWASP Top 10 y riesgos en la era de los LLM.
-> **Hora:** 2:00 PM - 4:00 PM (14:00 - 16:00)
+> **Hora:** 2:00 PM - 4:00 PM
 > **Speaker:** Bastián Landskron (Arquitecto de software, ingeniero IA y CEO en Blandskron SpA, especializado en sistemas inteligentes).
 > 
 > 🔗 [Ver publicación] 🔗 [Ver perfil de Linkedin](https://www.linkedin.com/in/blandskron)
@@ -137,7 +137,7 @@
 > Viernes 25 de septiembre de 2026
 >
 > **Temática:** Estrategia, Shadow AI, gestión de datos, riesgos, responsabilidad, revisión humana y reglas para un uso responsable de la IA.
-> **Hora:** 12:00 PM - 2:00 PM (12:00 - 14:00)
+> **Hora:** 12:00 PM - 2:00 PM
 > **Speaker:** Heilẹen Goodson (Estratega, conferencista internacional y consultora especializada en la adopción corporativa de la IA).
 > **Lugar:** Auditorio - FISI UNMSM
 >

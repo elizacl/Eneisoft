@@ -21,7 +21,7 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "ENEISOFT XVI 2026 | FISI UNMSM",
   description:
-    "Encuentro Nacional de Estudiantes de Ingeniería de Sistemas y Computación - Facultad de Ingeniería de Sistemas e Informática, Universidad Nacional Mayor de San Marcos.",
+    "Encuentro Nacional de Estudiantes de Ingeniería de Software - Facultad de Ingeniería de Sistemas e Informática, Universidad Nacional Mayor de San Marcos.",
   icons: {
     icon: "/logoEneisoft.jpg",
     shortcut: "/logoEneisoft.jpg",
