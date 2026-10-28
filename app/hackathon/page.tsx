@@ -9,7 +9,7 @@ import { HackathonSpaces } from "@/components/sections/HackathonSpaces";
 export const metadata = {
     title: "Hackathon | ENEISOFT XVI 2026",
     description:
-        "Hackathon ENEISOFT XVI 2026: IA aplicada a problemas reales de la comunidad universitaria. Reto oficial, premiación, cronograma y evaluación. FISI - UNMSM.",
+        "Hackathon ENEISOFT XVI 2026: Reto oficial, premiación, cronograma y evaluación. FISI - UNMSM.",
 };
 
 export default function HackathonPage() {

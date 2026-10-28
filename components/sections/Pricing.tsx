@@ -28,9 +28,6 @@ export function Pricing() {
                         >
                             Reto Oficial: <span className="text-emerald-600 font-bold">Próximamente.</span>
                         </motion.h2>
-                        <p className="text-emerald-700 text-lg md:text-xl font-medium max-w-2xl mx-auto">
-                            «IA aplicada a problemas reales de la comunidad universitaria»
-                        </p>
                         <p className="text-xs md:text-sm text-neutral-500 mt-2 max-w-xl mx-auto font-normal">
                             El reto oficial y sus requerimientos técnicos específicos se revelarán directamente a los equipos inscritos.
                         </p>
@@ -67,25 +64,15 @@ export function Pricing() {
                                 clasificados e inscritos durante el inicio de la competencia.
                             </p>
 
-                            {/* 3 Information Pillars */}
-                            <div className="grid grid-cols-1 md:grid-cols-3 gap-4 w-full text-left mb-10">
-                                <div className="p-5 rounded-2xl bg-neutral-50 border border-neutral-200/80">
-                                    <div className="flex items-center gap-2 mb-2 text-emerald-700 font-semibold text-sm">
-                                        <Sparkles className="w-4 h-4 text-emerald-600 shrink-0" />
-                                        <span>Enfoque Central</span>
-                                    </div>
-                                    <p className="text-xs text-neutral-600 leading-relaxed font-light">
-                                        Inteligencia Artificial aplicada con impacto tangible para estudiantes, docentes y la universidad.
-                                    </p>
-                                </div>
-
+                            {/* Information Pillars */}
+                            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 w-full text-left mb-10">
                                 <div className="p-5 rounded-2xl bg-neutral-50 border border-neutral-200/80">
                                     <div className="flex items-center gap-2 mb-2 text-emerald-700 font-semibold text-sm">
                                         <Terminal className="w-4 h-4 text-emerald-600 shrink-0" />
                                         <span>Prototipo en Vivo</span>
                                     </div>
                                     <p className="text-xs text-neutral-600 leading-relaxed font-light">
-                                        La solución debe superar el nivel de un simple chatbot y demostrarse en ejecución durante el pitch final.
+                                        La solución debe ser un prototipo funcional y demostrarse en ejecución durante el pitch final.
                                     </p>
                                 </div>
 

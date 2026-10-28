@@ -58,13 +58,13 @@ export function Navbar() {
             {/* Floating Glass Pill */}
             <motion.div
                 initial={{ width: "95%" }}
-                animate={{ width: isScrolled ? "fit-content" : "95%" }}
+                animate={{ width: "95%" }}
                 transition={{ duration: 0.5, ease: [0.16, 1, 0.3, 1] }}
                 className={cn(
-                    "pointer-events-auto flex items-center justify-between transition-all duration-500 rounded-full",
+                    "pointer-events-auto flex items-center justify-between transition-all duration-500 rounded-full max-w-7xl mx-auto w-full",
                     isScrolled
                         ? "bg-[#030806]/85 backdrop-blur-xl shadow-2xl border border-[#00ff87]/20 px-6 py-2.5"
-                        : "bg-transparent py-2 max-w-7xl mx-auto w-full"
+                        : "bg-transparent py-2"
                 )}
             >
                 {/* Logo */}

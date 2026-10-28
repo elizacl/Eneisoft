@@ -52,7 +52,7 @@ export function ProductDemo() {
                         transition={{ duration: 0.7, delay: 0.15 }}
                         className="text-neutral-400 max-w-2xl mx-auto text-sm md:text-base font-light leading-relaxed"
                     >
-                        Pozo oficial de S/ 450.00 en efectivo, becas académicas de especialización, periféricos tecnológicos y certificaciones de honor para los equipos más destacados.
+                        Pozo oficial de S/ 450.00 en efectivo, becas académicas de especialización y certificados para los equipos más destacados.
                     </motion.p>
                 </div>
 
@@ -111,7 +111,7 @@ export function ProductDemo() {
                                     className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch"
                                 >
                                     {/* Left Cash Card (Highlight) */}
-                                    <div className="lg:col-span-5 rounded-2xl bg-gradient-to-br from-[#071d12] via-[#05140c] to-[#020705] border border-[#00ff87]/30 p-8 flex flex-col justify-between relative overflow-hidden group shadow-[0_0_30px_rgba(0,255,135,0.1)]">
+                                    <div className="lg:col-span-5 rounded-2xl bg-gradient-to-br from-[#071d12] via-[#05140c] to-[#020705] border border-[#00ff87]/30 p-8 flex flex-col justify-center relative overflow-hidden group shadow-[0_0_30px_rgba(0,255,135,0.1)]">
                                         <div className="absolute top-0 right-0 w-44 h-44 bg-[#00ff87]/15 rounded-full blur-3xl pointer-events-none group-hover:bg-[#00ff87]/25 transition-all duration-500" />
 
                                         <div>
@@ -127,20 +127,10 @@ export function ProductDemo() {
                                                 <span className="text-[#00ff87]">S/</span> 200<span className="text-2xl text-neutral-400 font-light">.00</span>
                                             </div>
                                         </div>
-
-                                        {/* Ceremonial Check Preview Badge */}
-                                        <div className="mt-8 pt-6 border-t border-white/10 flex items-center gap-4 bg-white/[0.02] -mx-8 -mb-8 px-8 py-5">
-                                            <div className="w-12 h-12 rounded-xl bg-[#00ff87]/10 border border-[#00ff87]/20 flex items-center justify-center text-[#00ff87] shrink-0">
-                                                <Trophy className="w-6 h-6" />
-                                            </div>
-                                            <div>
-                                                <div className="text-base font-semibold text-white">Cheque Gigante Impreso</div>
-                                            </div>
-                                        </div>
                                     </div>
 
                                     {/* Right Perks & Breakdown */}
-                                    <div className="lg:col-span-7 flex flex-col justify-between space-y-4">
+                                    <div className="lg:col-span-7 flex flex-col justify-center space-y-4">
                                         <div className="space-y-3">
                                             <h4 className="text-xs font-mono uppercase tracking-widest text-neutral-400 mb-1">
                                                 Beneficios y Estímulos Adicionales
@@ -152,7 +142,7 @@ export function ProductDemo() {
                                                     <GraduationCap className="w-5 h-5" />
                                                 </div>
                                                 <div className="flex-1 flex items-center justify-between gap-2">
-                                                    <span className="text-sm md:text-base font-medium text-white">Becas Integrales / Periféricos</span>
+                                                    <span className="text-sm md:text-base font-medium text-white">Beca Completa</span>
                                                     <span className="text-[10px] font-mono px-2.5 py-1 rounded-full bg-[#00ff87]/15 text-[#00ff87] border border-[#00ff87]/30 shrink-0">100% Cobertura</span>
                                                 </div>
                                             </div>
@@ -163,7 +153,7 @@ export function ProductDemo() {
                                                     <FileText className="w-5 h-5" />
                                                 </div>
                                                 <div className="flex-1 flex items-center justify-between gap-2">
-                                                    <span className="text-sm md:text-base font-medium text-white">Diplomas de Honor de Primer Lugar</span>
+                                                    <span className="text-sm md:text-base font-medium text-white">Certificados de Primer Lugar</span>
                                                     <span className="text-[10px] font-mono px-2.5 py-1 rounded-full bg-[#60efff]/15 text-[#60efff] border border-[#60efff]/30 shrink-0">Firma FISI</span>
                                                 </div>
                                             </div>
@@ -179,18 +169,6 @@ export function ProductDemo() {
                                                 </div>
                                             </div>
                                         </div>
-
-                                        {/* Bottom Footer Info */}
-                                        <div className="pt-3 border-t border-white/5 flex flex-wrap items-center justify-between gap-3 text-xs font-mono text-neutral-500">
-                                            <span className="flex items-center gap-1.5">
-                                                <Calendar className="w-3.5 h-3.5 text-[#00ff87]" />
-                                                Sábado 07 Nov · 08:00 p. m.
-                                            </span>
-                                            <span className="flex items-center gap-1.5">
-                                                <Users className="w-3.5 h-3.5 text-[#60efff]" />
-                                                85% Jurados + 15% Votación de Pares
-                                            </span>
-                                        </div>
                                     </div>
                                 </motion.div>
                             </TabsContent>
@@ -204,7 +182,7 @@ export function ProductDemo() {
                                     className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch"
                                 >
                                     {/* Left Cash Card */}
-                                    <div className="lg:col-span-5 rounded-2xl bg-gradient-to-br from-[#081a20] via-[#051117] to-[#020705] border border-[#60efff]/30 p-8 flex flex-col justify-between relative overflow-hidden group shadow-[0_0_30px_rgba(96,239,255,0.1)]">
+                                    <div className="lg:col-span-5 rounded-2xl bg-gradient-to-br from-[#081a20] via-[#051117] to-[#020705] border border-[#60efff]/30 p-8 flex flex-col justify-center relative overflow-hidden group shadow-[0_0_30px_rgba(96,239,255,0.1)]">
                                         <div className="absolute top-0 right-0 w-44 h-44 bg-[#60efff]/15 rounded-full blur-3xl pointer-events-none group-hover:bg-[#60efff]/25 transition-all duration-500" />
 
                                         <div>
@@ -220,19 +198,10 @@ export function ProductDemo() {
                                                 <span className="text-[#60efff]">S/</span> 150<span className="text-2xl text-neutral-400 font-light">.00</span>
                                             </div>
                                         </div>
-
-                                        <div className="mt-8 pt-6 border-t border-white/10 flex items-center gap-4 bg-white/[0.02] -mx-8 -mb-8 px-8 py-5">
-                                            <div className="w-12 h-12 rounded-xl bg-[#60efff]/10 border border-[#60efff]/20 flex items-center justify-center text-[#60efff] shrink-0">
-                                                <Trophy className="w-6 h-6" />
-                                            </div>
-                                            <div>
-                                                <div className="text-base font-semibold text-white">Cheque Gigante Impreso</div>
-                                            </div>
-                                        </div>
                                     </div>
 
                                     {/* Right Perks */}
-                                    <div className="lg:col-span-7 flex flex-col justify-between space-y-4">
+                                    <div className="lg:col-span-7 flex flex-col justify-center space-y-4">
                                         <div className="space-y-3">
                                             <h4 className="text-xs font-mono uppercase tracking-widest text-neutral-400 mb-1">
                                                 Beneficios y Estímulos Adicionales
@@ -244,8 +213,8 @@ export function ProductDemo() {
                                                     <GraduationCap className="w-5 h-5" />
                                                 </div>
                                                 <div className="flex-1 flex items-center justify-between gap-2">
-                                                    <span className="text-sm md:text-base font-medium text-white">Becas Parciales / Periféricos</span>
-                                                    <span className="text-[10px] font-mono px-2.5 py-1 rounded-full bg-[#60efff]/15 text-[#60efff] border border-[#60efff]/30 shrink-0">Sponsors</span>
+                                                    <span className="text-sm md:text-base font-medium text-white">Medias Becas</span>
+                                                    <span className="text-[10px] font-mono px-2.5 py-1 rounded-full bg-[#60efff]/15 text-[#60efff] border border-[#60efff]/30 shrink-0">50% Cobertura</span>
                                                 </div>
                                             </div>
 
@@ -255,7 +224,7 @@ export function ProductDemo() {
                                                     <FileText className="w-5 h-5" />
                                                 </div>
                                                 <div className="flex-1 flex items-center justify-between gap-2">
-                                                    <span className="text-sm md:text-base font-medium text-white">Diplomas de Honor de Segundo Lugar</span>
+                                                    <span className="text-sm md:text-base font-medium text-white">Certificados de Segundo Lugar</span>
                                                     <span className="text-[10px] font-mono px-2.5 py-1 rounded-full bg-emerald-500/15 text-emerald-400 border border-emerald-500/30 shrink-0">Firma FISI</span>
                                                 </div>
                                             </div>
@@ -271,17 +240,6 @@ export function ProductDemo() {
                                                 </div>
                                             </div>
                                         </div>
-
-                                        <div className="pt-3 border-t border-white/5 flex flex-wrap items-center justify-between gap-3 text-xs font-mono text-neutral-500">
-                                            <span className="flex items-center gap-1.5">
-                                                <Calendar className="w-3.5 h-3.5 text-[#60efff]" />
-                                                Sábado 07 Nov · 08:00 p. m.
-                                            </span>
-                                            <span className="flex items-center gap-1.5">
-                                                <Users className="w-3.5 h-3.5 text-[#00ff87]" />
-                                                Rúbrica Unificada 100 Puntos
-                                            </span>
-                                        </div>
                                     </div>
                                 </motion.div>
                             </TabsContent>
@@ -295,7 +253,7 @@ export function ProductDemo() {
                                     className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch"
                                 >
                                     {/* Left Cash Card */}
-                                    <div className="lg:col-span-5 rounded-2xl bg-gradient-to-br from-[#1c1507] via-[#140e05] to-[#020705] border border-amber-400/30 p-8 flex flex-col justify-between relative overflow-hidden group shadow-[0_0_30px_rgba(251,191,36,0.1)]">
+                                    <div className="lg:col-span-5 rounded-2xl bg-gradient-to-br from-[#1c1507] via-[#140e05] to-[#020705] border border-amber-400/30 p-8 flex flex-col justify-center relative overflow-hidden group shadow-[0_0_30px_rgba(251,191,36,0.1)]">
                                         <div className="absolute top-0 right-0 w-44 h-44 bg-amber-400/15 rounded-full blur-3xl pointer-events-none group-hover:bg-amber-400/25 transition-all duration-500" />
 
                                         <div>
@@ -311,19 +269,10 @@ export function ProductDemo() {
                                                 <span className="text-amber-400">S/</span> 100<span className="text-2xl text-neutral-400 font-light">.00</span>
                                             </div>
                                         </div>
-
-                                        <div className="mt-8 pt-6 border-t border-white/10 flex items-center gap-4 bg-white/[0.02] -mx-8 -mb-8 px-8 py-5">
-                                            <div className="w-12 h-12 rounded-xl bg-amber-400/10 border border-amber-400/20 flex items-center justify-center text-amber-400 shrink-0">
-                                                <Trophy className="w-6 h-6" />
-                                            </div>
-                                            <div>
-                                                <div className="text-base font-semibold text-white">Cheque Gigante Impreso</div>
-                                            </div>
-                                        </div>
                                     </div>
 
                                     {/* Right Perks */}
-                                    <div className="lg:col-span-7 flex flex-col justify-between space-y-4">
+                                    <div className="lg:col-span-7 flex flex-col justify-center space-y-4">
                                         <div className="space-y-3">
                                             <h4 className="text-xs font-mono uppercase tracking-widest text-neutral-400 mb-1">
                                                 Beneficios y Estímulos Adicionales
@@ -332,15 +281,26 @@ export function ProductDemo() {
                                             {/* Perk 1 */}
                                             <div className="p-4 rounded-xl bg-white/[0.02] hover:bg-white/[0.04] border border-white/5 transition-all flex items-center gap-4">
                                                 <div className="p-2.5 rounded-lg bg-amber-400/10 text-amber-300 border border-amber-400/20 shrink-0">
-                                                    <FileText className="w-5 h-5" />
+                                                    <GraduationCap className="w-5 h-5" />
                                                 </div>
                                                 <div className="flex-1 flex items-center justify-between gap-2">
-                                                    <span className="text-sm md:text-base font-medium text-white">Diplomas de Honor de Tercer Lugar</span>
-                                                    <span className="text-[10px] font-mono px-2.5 py-1 rounded-full bg-amber-400/15 text-amber-300 border border-amber-400/30 shrink-0">Firma FISI</span>
+                                                    <span className="text-sm md:text-base font-medium text-white">Medias Becas</span>
+                                                    <span className="text-[10px] font-mono px-2.5 py-1 rounded-full bg-amber-400/15 text-amber-300 border border-amber-400/30 shrink-0">50% Cobertura</span>
                                                 </div>
                                             </div>
 
                                             {/* Perk 2 */}
+                                            <div className="p-4 rounded-xl bg-white/[0.02] hover:bg-white/[0.04] border border-white/5 transition-all flex items-center gap-4">
+                                                <div className="p-2.5 rounded-lg bg-amber-400/10 text-amber-300 border border-amber-400/20 shrink-0">
+                                                    <FileText className="w-5 h-5" />
+                                                </div>
+                                                <div className="flex-1 flex items-center justify-between gap-2">
+                                                    <span className="text-sm md:text-base font-medium text-white">Certificados de Tercer Lugar</span>
+                                                    <span className="text-[10px] font-mono px-2.5 py-1 rounded-full bg-amber-400/15 text-amber-300 border border-amber-400/30 shrink-0">Firma FISI</span>
+                                                </div>
+                                            </div>
+
+                                            {/* Perk 3 */}
                                             <div className="p-4 rounded-xl bg-white/[0.02] hover:bg-white/[0.04] border border-white/5 transition-all flex items-center gap-4">
                                                 <div className="p-2.5 rounded-lg bg-white/10 text-neutral-200 border border-white/10 shrink-0">
                                                     <Award className="w-5 h-5" />
@@ -350,28 +310,6 @@ export function ProductDemo() {
                                                     <span className="text-[10px] font-mono px-2.5 py-1 rounded-full bg-white/10 text-neutral-300 border border-white/20 shrink-0">3 Integrantes</span>
                                                 </div>
                                             </div>
-
-                                            {/* Perk 3 */}
-                                            <div className="p-4 rounded-xl bg-white/[0.02] hover:bg-white/[0.04] border border-white/5 transition-all flex items-center gap-4">
-                                                <div className="p-2.5 rounded-lg bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 shrink-0">
-                                                    <Sparkles className="w-5 h-5" />
-                                                </div>
-                                                <div className="flex-1 flex items-center justify-between gap-2">
-                                                    <span className="text-sm md:text-base font-medium text-white">Mención Honorífica en el Memo Institucional</span>
-                                                    <span className="text-[10px] font-mono px-2.5 py-1 rounded-full bg-emerald-500/15 text-emerald-400 border border-emerald-500/30 shrink-0">Registro FISI</span>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div className="pt-3 border-t border-white/5 flex flex-wrap items-center justify-between gap-3 text-xs font-mono text-neutral-500">
-                                            <span className="flex items-center gap-1.5">
-                                                <Calendar className="w-3.5 h-3.5 text-amber-400" />
-                                                Sábado 07 Nov · 08:00 p. m.
-                                            </span>
-                                            <span className="flex items-center gap-1.5">
-                                                <Users className="w-3.5 h-3.5 text-[#00ff87]" />
-                                                Auditorio Alfredo Alva Bravo
-                                            </span>
                                         </div>
                                     </div>
                                 </motion.div>

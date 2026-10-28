@@ -19,8 +19,8 @@ const faqs = [
         answer: "ENEISOFT XVI dura 6 días continuos: del lunes 02 al viernes 06 de noviembre se desarrollará el ciclo de ponencias magistrales y becas de especialización (en modalidades presencial en la FISI y virtual). Como cierre estelar, el sábado 07 de noviembre se llevará a cabo la gran Hackathon presencial en las instalaciones de la Facultad de Ingeniería de Sistemas e Informática (FISI) de la Universidad Nacional Mayor de San Marcos (Lima, Perú).",
     },
     {
-        question: "¿Cómo puedo participar en la Hackathon de Inteligencia Artificial?",
-        answer: "Los equipos deben estar compuestos por 3 participantes de pregrado. La inscripción se realiza a través del formulario oficial en la sección de Hackathon. La fase final presencial cuenta con un cupo selecto de 12 equipos clasificados que competirán por premios en efectivo, becas integrales y diplomas.",
+        question: "¿Cómo puedo participar en la Hackathon?",
+        answer: "Los equipos deben estar compuestos por 3 participantes de pregrado. La inscripción se realiza a través del formulario oficial en la sección de Hackathon. La fase final presencial cuenta con un cupo selecto de 12 equipos clasificados que competirán por premios en efectivo, becas y certificados.",
     },
     {
         question: "¿Las ponencias y talleres otorgan certificación oficial?",

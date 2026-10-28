@@ -17,7 +17,6 @@ export function InfiniteMarquee({
         "CREA",
         "CONSTRUYE",
         "HACKATHON XVI",
-        "IA APLICADA",
         "FISI · UNMSM",
         "12 EQUIPOS",
         "07 DE NOVIEMBRE 2026",
