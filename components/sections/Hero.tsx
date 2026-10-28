@@ -85,7 +85,7 @@ export function Hero() {
                     transition={{ duration: 1.2, delay: 0.45, ease: [0.16, 1, 0.3, 1] }}
                     className="text-lg md:text-2xl font-light text-neutral-200 max-w-3xl mt-4 mb-8 leading-relaxed"
                 >
-                    El punto de encuentro de las Ciencias de la Computación: expertos, concursos y comunidad tecnológica en un solo lugar.
+                    El punto de encuentro de la tecnología y la innovación: expertos, concursos y comunidad en un solo lugar.
                 </motion.p>
 
                 {/* Structured Schedule & Duration Cards */}

@@ -71,7 +71,7 @@ export function MissionVision() {
                             </h3>
 
                             <p className="text-sm md:text-base text-neutral-600 font-normal leading-relaxed">
-                                Generar un punto de encuentro para los interesados en las diversas áreas de las Ciencias de la Computación, aficionados y conocedores, para aclarar dudas y generar ideas sobre el cambiante mundo de la tecnología, acercando la experiencia profesional de expertos especializados.
+                                Generar un punto de encuentro para los interesados en las diversas áreas de la tecnología y el desarrollo de software, aficionados y conocedores, para aclarar dudas y generar ideas sobre el cambiante mundo tecnológico, acercando la experiencia profesional de expertos especializados.
                             </p>
                         </div>
 

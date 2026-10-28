@@ -12,7 +12,7 @@ import { HelpCircle } from "lucide-react";
 const faqs = [
     {
         question: "¿Qué es ENEISOFT XVI y quiénes pueden participar?",
-        answer: "ENEISOFT (Encuentro Nacional de Estudiantes de Ingeniería de Sistemas e Informática) es el congreso tecnológico estudiantil más representativo del país, organizado por la comunidad de la FISI - UNMSM. Está abierto a estudiantes de pregrado y posgrado, egresados, profesionales e interesados en Ciencias de la Computación, Inteligencia Artificial y Tecnologías de la Información.",
+        answer: "ENEISOFT (Encuentro Nacional de Estudiantes de Ingeniería de Software) es el congreso tecnológico estudiantil más representativo del país, organizado por la comunidad de la FISI - UNMSM. Está abierto a estudiantes de pregrado y posgrado, egresados, profesionales e interesados en ingeniería de software, Inteligencia Artificial y Tecnologías de la Información.",
     },
     {
         question: "¿Dónde y cuándo se desarrollará el evento?",
