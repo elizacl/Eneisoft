@@ -10,7 +10,7 @@ export interface Partner {
     logo: string;
 }
 
-// Lista oficial de patrocinadores
+// Lista oficial de sponsors
 export const currentSponsors: Partner[] = [
     {
         name: "Datux Perú",
@@ -86,7 +86,7 @@ export function Partners() {
                     <div>
                         <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full border border-[#00c8df]/30 text-xs uppercase tracking-widest text-[#00c8df] mb-4 bg-[#071320]/80 backdrop-blur-sm shadow-[0_0_15px_rgba(0,200,223,0.15)] font-mono">
                             <Handshake className="w-3.5 h-3.5 text-[#24ed7a]" />
-                            Alianzas & Patrocinio
+                            Alianzas & Sponsors
                         </div>
                         <motion.h2
                             initial={{ opacity: 0, y: 20 }}
@@ -112,9 +112,9 @@ export function Partners() {
                     </a>
                 </div>
 
-                {/* Dos rectángulos: Patrocinadores (más angosto) y Alianzas (más ancho) - Ambos con fondo oscuro */}
+                {/* Dos rectángulos: Sponsors (más angosto) y Alianzas (más ancho) - Ambos con fondo oscuro */}
                 <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-8 items-stretch">
-                    {/* 1. Rectángulo de Patrocinadores (más angosto, fondo negro/oscuro) */}
+                    {/* 1. Rectángulo de Sponsors (más angosto, fondo negro/oscuro) */}
                     <motion.div
                         initial={{ opacity: 0, y: 25 }}
                         whileInView={{ opacity: 1, y: 0 }}
@@ -124,7 +124,7 @@ export function Partners() {
                     >
                         <div className="text-center mb-5">
                             <span className="text-xs font-mono font-bold uppercase tracking-[0.25em] text-[#00c8df]">
-                                PATROCINADORES
+                                SPONSORS
                             </span>
                         </div>
 
