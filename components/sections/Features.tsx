@@ -58,7 +58,7 @@ const tableSchedule: AgendaRow[] = [
         title: "Coffee Time / Receso de Almuerzo",
         station: "Comedor FISI",
         stationBadge: "Estación 2 · Comedor FISI",
-        description: "Pausa de integración, refrigerio y almuerzo para todos los equipos participantes.",
+        description: "Pausa de integración y tiempo de refrigerio para todos los equipos participantes.",
         period: "afternoon",
         icon: Pizza,
     },
