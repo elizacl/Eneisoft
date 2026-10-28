@@ -28,9 +28,20 @@ export interface ScrollEventItem {
     fechaDetalle: string;
     hora: string;
     lugar?: string;
-    tematica: string;
+    tematica?: string;
     regla?: string;
     image?: string;
+    cardBadge?: string;
+    cardSubtitle?: string;
+    cardTitle?: string;
+    cardFooterLeft?: string;
+    cardFooterRight?: string;
+    programa?: {
+        time: string;
+        activity: string;
+        description?: string;
+        speaker?: string;
+    }[];
     links: {
         label: string;
         href: string;
@@ -160,41 +171,56 @@ function EventTextItem({
                     </div>
                 ) : (
                     <div>
-                        <div className="relative w-full aspect-[4/3] rounded-2xl overflow-hidden border border-white/15 bg-[#0a1510]">
-                            <div className="w-full h-full flex flex-col items-center justify-center p-6 text-center bg-gradient-to-b from-[#0c2016] to-[#040c07]">
+                        <div className="relative w-full aspect-[4/3] rounded-2xl overflow-hidden border border-[#24ed7a]/30 bg-gradient-to-b from-[#071320] to-[#040d17] p-6 flex flex-col items-center justify-center text-center shadow-[inset_0_0_30px_rgba(36,237,122,0.1)]">
+                            <div className="relative w-14 h-14 rounded-xl bg-black/60 border border-[#24ed7a]/40 flex items-center justify-center mb-3 shadow-[0_0_25px_rgba(36,237,122,0.3)]">
                                 <Image
                                     src="/logoEneisoft.png"
                                     alt="ENEISOFT XVI"
-                                    width={48}
-                                    height={48}
-                                    className="object-contain mb-3"
+                                    width={40}
+                                    height={40}
+                                    className="object-contain"
                                 />
-                                <h4 className="text-xl font-bold text-white uppercase text-gradient-eneisoft">
-                                    HACKATHON XVI
-                                </h4>
-                                <p className="text-xs text-neutral-400 font-mono mt-1">
-                                    {event.fechaDetalle}
-                                </p>
                             </div>
+                            <h4 className="text-2xl font-black text-white uppercase text-gradient-eneisoft mb-2">
+                                {event.cardTitle || (event.id === "inauguracion-hackathon" ? "DÍA 1" : "HACKATHON XVI")}
+                            </h4>
+                            <p className="text-xs font-semibold text-neutral-200 font-mono tracking-wide mb-1.5">
+                                {event.cardFooterLeft || (event.id === "inauguracion-hackathon" ? "Auditorio - FISI UNMSM" : "Sede FISI - UNMSM")}
+                            </p>
+                            <span className="text-[11px] text-[#24ed7a] font-mono font-semibold px-3 py-1 rounded-full bg-[#24ed7a]/10 border border-[#24ed7a]/30">
+                                {event.cardFooterRight || (event.id === "inauguracion-hackathon" ? "2 Ponencias Magistrales" : "12 Equipos · Pitches & Premiación")}
+                            </span>
                         </div>
                         {event.links && event.links.length > 0 && (
                             <div className="flex flex-wrap items-center gap-2.5 pt-4">
-                                {event.links.map((link) => (
-                                    <Link
-                                        key={link.label}
-                                        href={link.href}
-                                        target={link.href.startsWith("http") ? "_blank" : undefined}
-                                        rel={link.href.startsWith("http") ? "noopener noreferrer" : undefined}
-                                        className="inline-block"
-                                    >
-                                        <MagneticButton
-                                            className="inline-flex items-center gap-2 px-4 py-2.5 rounded-full text-xs font-semibold bg-[#24ed7a] text-[#0a2138] hover:bg-[#00c8df] font-bold"
+                                {event.links.map((link) => {
+                                    const isMaps =
+                                        link.href.includes("maps.app.goo.gl") ||
+                                        link.href.includes("google.com/maps") ||
+                                        link.label.toLowerCase().includes("maps");
+
+                                    return (
+                                        <Link
+                                            key={link.label}
+                                            href={link.href}
+                                            target={link.href.startsWith("http") ? "_blank" : undefined}
+                                            rel={link.href.startsWith("http") ? "noopener noreferrer" : undefined}
+                                            className="inline-block"
                                         >
-                                            <span>{link.label}</span>
-                                            <ArrowUpRight className="w-3.5 h-3.5" />
-                                        </MagneticButton>
-                                    </Link>
-                                ))}
+                                            <MagneticButton
+                                                className={`inline-flex items-center gap-2 px-4 py-2.5 rounded-full text-xs font-semibold transition-all duration-300 cursor-pointer ${
+                                                    link.primary
+                                                        ? "bg-[#24ed7a] text-[#0a2138] hover:bg-[#00c8df] font-bold"
+                                                        : "bg-white/5 hover:bg-white/10 text-neutral-300 hover:text-white border border-white/10"
+                                                }`}
+                                            >
+                                                {isMaps && <MapPin className="w-3.5 h-3.5 text-emerald-400" />}
+                                                <span>{link.label}</span>
+                                                <ArrowUpRight className="w-3.5 h-3.5" />
+                                            </MagneticButton>
+                                        </Link>
+                                    );
+                                })}
                             </div>
                         )}
                     </div>
@@ -218,15 +244,44 @@ function EventTextItem({
                     </div>
                 )}
 
-                {/* Temática Box */}
-                <div className="p-4 rounded-xl bg-[#040c07] border border-[#00ff87]/15 mt-3">
-                    <p className="text-xs font-mono uppercase tracking-wider text-[#00ff87] mb-1.5 flex items-center gap-1.5 font-semibold">
-                        <Brain className="w-3.5 h-3.5" /> Temática
-                    </p>
-                    <p className="text-sm text-neutral-300 leading-relaxed font-light">
-                        {event.tematica}
-                    </p>
-                </div>
+                {/* Temática Box (if present) */}
+                {event.tematica && (
+                    <div className="p-4 rounded-xl bg-[#040c07] border border-[#00ff87]/15 mt-3">
+                        <p className="text-xs font-mono uppercase tracking-wider text-[#00ff87] mb-1.5 flex items-center gap-1.5 font-semibold">
+                            <Brain className="w-3.5 h-3.5" /> Temática
+                        </p>
+                        <p className="text-sm text-neutral-300 leading-relaxed font-light">
+                            {event.tematica}
+                        </p>
+                    </div>
+                )}
+
+                {/* Programa del Evento (if present) */}
+                {event.programa && event.programa.length > 0 && (
+                    <div className="p-4 rounded-xl bg-[#040c07] border border-[#24ed7a]/30 mt-3 space-y-3">
+                        <p className="text-xs font-mono uppercase tracking-wider text-[#24ed7a] flex items-center gap-1.5 font-semibold">
+                            <Sparkles className="w-3.5 h-3.5 text-[#24ed7a]" /> Programa del evento
+                        </p>
+                        <div className="space-y-3 pt-1">
+                            {event.programa.map((item, pIdx) => (
+                                <div key={pIdx} className="text-xs border-l-2 border-[#24ed7a]/50 pl-3 py-0.5">
+                                    <div className="flex flex-wrap items-center gap-2">
+                                        <span className="font-mono font-semibold text-[#60efff]">{item.time}</span>
+                                        <span className="text-white font-medium">{item.activity}</span>
+                                    </div>
+                                    {item.description && (
+                                        <p className="text-neutral-300 font-light mt-0.5 leading-relaxed">{item.description}</p>
+                                    )}
+                                    {item.speaker && (
+                                        <p className="text-[#24ed7a] font-mono text-[11px] mt-0.5">
+                                            <strong>Speakers Invitados:</strong> {item.speaker}
+                                        </p>
+                                    )}
+                                </div>
+                            ))}
+                        </div>
+                    </div>
+                )}
 
                 {/* Regla (if present) */}
                 {event.regla && (
@@ -334,49 +389,37 @@ export function StickyScrollEvents({
                                             </div>
                                         </div>
                                     ) : (
-                                        /* Hackathon High-Tech Card (No person photo as requested) */
-                                        <div className="relative w-full h-full rounded-2xl border border-[#24ed7a]/30 bg-gradient-to-b from-[#071320] to-[#040d17] p-8 flex flex-col justify-between overflow-hidden shadow-[inset_0_0_40px_rgba(36,237,122,0.1)]">
+                                        /* High-Tech Card (Inauguración / Día 1) */
+                                        <div className="relative w-full h-full rounded-2xl border border-[#24ed7a]/30 bg-gradient-to-b from-[#071320] to-[#040d17] p-8 flex flex-col items-center justify-center text-center overflow-hidden shadow-[inset_0_0_40px_rgba(36,237,122,0.1)]">
                                             {/* Cyber matrix background decor */}
                                             <div className="absolute -top-10 -right-10 w-44 h-44 bg-[#24ed7a]/15 rounded-full blur-3xl pointer-events-none" />
+                                            <div className="absolute -bottom-10 -left-10 w-44 h-44 bg-[#00c8df]/15 rounded-full blur-3xl pointer-events-none" />
 
-                                            {/* Top Card Bar */}
-                                            <div className="flex items-center justify-between z-10">
-                                                <div className="flex items-center gap-2 px-3 py-1 rounded-full bg-[#24ed7a]/10 border border-[#24ed7a]/30 text-xs font-mono text-[#24ed7a]">
-                                                    <Terminal className="w-3.5 h-3.5" />
-                                                    <span>RETO OFICIAL 2026</span>
-                                                </div>
-                                                <span className="text-xs font-mono text-neutral-400">
-                                                    12 EQUIPOS
-                                                </span>
+                                            {/* 1. Icono */}
+                                            <div className="relative w-20 h-20 md:w-24 md:h-24 rounded-2xl bg-black/60 border border-[#24ed7a]/40 flex items-center justify-center mb-6 shadow-[0_0_35px_rgba(36,237,122,0.35)] z-10">
+                                                <Image
+                                                    src="/logoEneisoft.png"
+                                                    alt="ENEISOFT XVI"
+                                                    width={56}
+                                                    height={56}
+                                                    className="object-contain"
+                                                />
                                             </div>
 
-                                            {/* Center Graphic */}
-                                            <div className="flex flex-col items-center justify-center my-auto text-center z-10">
-                                                <div className="relative w-20 h-20 rounded-2xl bg-black/60 border border-[#24ed7a]/40 flex items-center justify-center mb-5 shadow-[0_0_30px_rgba(36,237,122,0.3)]">
-                                                    <Image
-                                                        src="/logoEneisoft.png"
-                                                        alt="ENEISOFT XVI"
-                                                        width={56}
-                                                        height={56}
-                                                        className="object-contain"
-                                                    />
-                                                </div>
-                                                <span className="text-xs uppercase font-mono tracking-[0.3em] text-[#24ed7a] mb-1 font-semibold">
-                                                    FISI · UNMSM
-                                                </span>
-                                                <h4 className="text-2xl md:text-3xl font-black tracking-tight text-white uppercase text-gradient-eneisoft">
-                                                    HACKATHON XVI
-                                                </h4>
-                                                <p className="text-xs font-mono text-neutral-400 mt-2 max-w-xs">
-                                                    Sábado 07 de Noviembre · 08:00 AM - 08:45 PM
-                                                </p>
-                                            </div>
+                                            {/* 2. DÍA 1 */}
+                                            <h4 className="text-4xl md:text-5xl font-black tracking-tight text-white uppercase text-gradient-eneisoft mb-5 z-10">
+                                                {activeEvent.cardTitle || (activeEvent.id === "inauguracion-hackathon" ? "DÍA 1" : "HACKATHON XVI")}
+                                            </h4>
 
-                                            {/* Bottom Details Footer */}
-                                            <div className="pt-4 border-t border-white/10 flex items-center justify-between text-xs font-mono text-neutral-400 z-10">
-                                                <span>Pozo: S/ 450.00 + Premios</span>
-                                                <span className="text-[#24ed7a]">36 Hackers</span>
-                                            </div>
+                                            {/* 3. Auditorio / Sede */}
+                                            <p className="text-sm md:text-base font-semibold text-neutral-200 font-mono tracking-wide mb-3 z-10">
+                                                {activeEvent.cardFooterLeft || (activeEvent.id === "inauguracion-hackathon" ? "Auditorio - FISI UNMSM" : "Sede FISI - UNMSM")}
+                                            </p>
+
+                                            {/* 4. Insignia destacada */}
+                                            <span className="text-xs md:text-sm text-[#24ed7a] font-mono font-semibold px-4 py-1.5 rounded-full bg-[#24ed7a]/10 border border-[#24ed7a]/30 shadow-[0_0_15px_rgba(36,237,122,0.15)] z-10">
+                                                {activeEvent.cardFooterRight || (activeEvent.id === "inauguracion-hackathon" ? "2 Ponencias Magistrales" : "12 Equipos · Pitches & Premiación")}
+                                            </span>
                                         </div>
                                     )}
                                 </div>
@@ -389,6 +432,10 @@ export function StickyScrollEvents({
                                                 link.variant === "linkedin" ||
                                                 link.href.includes("linkedin.com") ||
                                                 link.label.toLowerCase().includes("linkedin");
+                                            const isMaps =
+                                                link.href.includes("maps.app.goo.gl") ||
+                                                link.href.includes("google.com/maps") ||
+                                                link.label.toLowerCase().includes("maps");
 
                                             return (
                                                 <Link
@@ -408,6 +455,7 @@ export function StickyScrollEvents({
                                                         }`}
                                                     >
                                                         {isLinkedIn && <Linkedin className="w-3.5 h-3.5 fill-current" />}
+                                                        {isMaps && <MapPin className="w-3.5 h-3.5 text-emerald-400" />}
                                                         <span>{link.label}</span>
                                                         <ArrowUpRight className="w-3.5 h-3.5" />
                                                     </MagneticButton>

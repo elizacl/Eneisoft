@@ -38,9 +38,9 @@ export function Hero() {
                             CONECTA / CREA / CONSTRUYE
                         </span>
                     </div>
-                    <div className="hidden sm:inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full border border-white/10 bg-white/5 backdrop-blur-md text-[11px] font-mono text-neutral-400">
-                        <Calendar className="w-3 h-3 text-[#00e5ff]" />
-                        <span>EDICIÓN 2026</span>
+                    <div className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full border border-[#00c8df]/40 bg-[#071320]/80 backdrop-blur-md text-[11px] font-mono text-[#00c8df] font-semibold">
+                        <Calendar className="w-3.5 h-3.5 text-[#00c8df]" />
+                        <span>02 AL 07 DE NOVIEMBRE 2026 · 6 DÍAS</span>
                     </div>
                 </motion.div>
 
@@ -83,23 +83,35 @@ export function Hero() {
                     initial={{ opacity: 0, y: 30 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 1.2, delay: 0.45, ease: [0.16, 1, 0.3, 1] }}
-                    className="text-lg md:text-2xl font-light text-neutral-200 max-w-3xl mt-4 mb-4 leading-relaxed"
+                    className="text-lg md:text-2xl font-light text-neutral-200 max-w-3xl mt-4 mb-8 leading-relaxed"
                 >
                     El punto de encuentro de las Ciencias de la Computación: expertos, concursos y comunidad tecnológica en un solo lugar.
                 </motion.p>
 
-                {/* Details Pills */}
+                {/* Structured Schedule & Duration Cards */}
                 <motion.div
                     initial={{ opacity: 0, y: 30 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 1.2, delay: 0.55, ease: [0.16, 1, 0.3, 1] }}
-                    className="flex flex-wrap items-center justify-center gap-3 text-xs md:text-sm text-neutral-400 mb-12 font-mono"
+                    className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs md:text-sm max-w-2xl w-full mb-10 font-mono"
                 >
-                    <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-white/5 border border-white/10">
-                        <MapPin className="w-3.5 h-3.5 text-[#00ff87]" /> FISI - UNMSM
-                    </span>
-                    <span className="px-3 py-1 rounded-full bg-white/5 border border-white/10">Ponencias con Expertos</span>
-                    <span className="px-3 py-1 rounded-full bg-white/5 border border-white/10 text-[#00ff87]">Concursos & Hackathon</span>
+                    <div className="flex items-center gap-3 px-4 py-3 rounded-2xl bg-[#071320]/90 border border-[#00c8df]/30 text-left backdrop-blur-md shadow-lg hover:border-[#00c8df]/60 transition-colors">
+                        <div className="w-2.5 h-2.5 rounded-full bg-[#00c8df] animate-pulse shrink-0" />
+                        <div>
+                            <div className="text-[10px] uppercase tracking-wider text-[#00c8df] font-semibold">Lun 02 — Vie 06 Noviembre</div>
+                            <div className="text-white text-xs sm:text-sm font-medium">Ponencias Magistrales + Becas</div>
+                            <div className="text-[11px] text-neutral-400 font-sans">Presencial en FISI & Virtual</div>
+                        </div>
+                    </div>
+
+                    <div className="flex items-center gap-3 px-4 py-3 rounded-2xl bg-[#071320]/90 border border-[#24ed7a]/30 text-left backdrop-blur-md shadow-lg hover:border-[#24ed7a]/60 transition-colors">
+                        <div className="w-2.5 h-2.5 rounded-full bg-[#24ed7a] animate-pulse shrink-0" />
+                        <div>
+                            <div className="text-[10px] uppercase tracking-wider text-[#24ed7a] font-semibold">Sábado 07 Noviembre</div>
+                            <div className="text-white text-xs sm:text-sm font-medium">Hackathon Presencial</div>
+                            <div className="text-[11px] text-neutral-400 font-sans">Sede FISI - UNMSM · Jornada Completa</div>
+                        </div>
+                    </div>
                 </motion.div>
 
                 {/* CTA Buttons - Magnetic */}
@@ -109,17 +121,17 @@ export function Hero() {
                     transition={{ duration: 1.2, delay: 0.65, ease: [0.16, 1, 0.3, 1] }}
                     className="flex flex-col sm:flex-row items-center gap-5 mb-4"
                 >
-                    <a href="/hackathon" className="inline-block">
-                        <MagneticButton className="rounded-full px-9 h-14 text-sm font-bold uppercase tracking-wider bg-[#24ed7a] text-[#0a2138] hover:bg-[#00c8df] hover:text-[#0a2138] transition-all duration-300 shadow-[0_0_35px_rgba(36,237,122,0.4)] hover:shadow-[0_0_50px_rgba(0,200,223,0.7)] flex items-center gap-2 cursor-pointer">
-                            <span>Conoce la Hackathon</span>
-                            <ArrowRight className="w-4 h-4 text-[#0a2138]" />
-                        </MagneticButton>
-                    </a>
-
                     <a href="/eventos" className="inline-block">
                         <MagneticButton className="flex items-center text-sm uppercase tracking-widest text-neutral-300 hover:text-[#24ed7a] transition-colors group px-6 py-4 rounded-full border border-white/15 hover:border-[#24ed7a]/50 bg-white/5 cursor-pointer">
                             Ver Eventos
                             <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform text-[#24ed7a]" />
+                        </MagneticButton>
+                    </a>
+
+                    <a href="/hackathon" className="inline-block">
+                        <MagneticButton className="rounded-full px-9 h-14 text-sm font-bold uppercase tracking-wider bg-[#24ed7a] text-[#0a2138] hover:bg-[#00c8df] hover:text-[#0a2138] transition-all duration-300 shadow-[0_0_35px_rgba(36,237,122,0.4)] hover:shadow-[0_0_50px_rgba(0,200,223,0.7)] flex items-center gap-2 cursor-pointer">
+                            <span>Conoce la Hackathon</span>
+                            <ArrowRight className="w-4 h-4 text-[#0a2138]" />
                         </MagneticButton>
                     </a>
                 </motion.div>
