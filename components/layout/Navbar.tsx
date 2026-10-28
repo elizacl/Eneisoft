@@ -56,15 +56,12 @@ export function Navbar() {
             className="fixed top-0 left-0 right-0 z-50 flex justify-center pt-6 px-4 pointer-events-none"
         >
             {/* Floating Glass Pill */}
-            <motion.div
-                initial={{ width: "95%" }}
-                animate={{ width: "95%" }}
-                transition={{ duration: 0.5, ease: [0.16, 1, 0.3, 1] }}
+            <div
                 className={cn(
-                    "pointer-events-auto flex items-center justify-between transition-all duration-500 rounded-full max-w-7xl mx-auto w-full",
+                    "pointer-events-auto flex items-center justify-between rounded-full max-w-7xl mx-auto w-full px-6 py-2.5 transition-all duration-300",
                     isScrolled
-                        ? "bg-[#030806]/85 backdrop-blur-xl shadow-2xl border border-[#00ff87]/20 px-6 py-2.5"
-                        : "bg-transparent py-2"
+                        ? "bg-[#030806]/85 backdrop-blur-xl shadow-2xl border border-[#00ff87]/20"
+                        : "bg-transparent border border-transparent"
                 )}
             >
                 {/* Logo */}
@@ -162,7 +159,7 @@ export function Navbar() {
                         </SheetContent>
                     </Sheet>
                 </div>
-            </motion.div>
+            </div>
         </motion.header>
     );
 }
