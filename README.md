@@ -28,7 +28,7 @@ La solución integra tanto la difusión y bases de la competencia presencial com
 *Secuencia de fondos estrictamente alternada (Oscuro $\to$ Claro $\to$ Oscuro $\to$ Claro $\to$ Oscuro $\to$ Claro):*
 * **Hero ENEISOFT** *(Fondo Oscuro)*: Portada monumental de identidad visual del congreso, lema *«CONECTA / CREA / CONSTRUYE»* y llamados de acción directa a la Hackathon y Eventos.
 * **Misión & Visión Institucional** *(Fondo Claro)*: Sección dedicada con tarjetas interactivas de alta estética para el propósito y la visión a futuro del congreso.
-* **Nuestros Aliados & Patrocinadores** *(Fondo Oscuro)*: Marquesina continua fluida (*Framer Motion*) con logos a gran escala de aliados (IEEE Computer Society PUCP, Developer Student Club PUCP, Club Blockchain PUCP) y botón de contacto directo a WhatsApp (`https://wa.link/k11jrd`) para sponsors.
+* **Nuestros Aliados & Sponsors** *(Fondo Oscuro)*: Marquesina continua fluida (*Framer Motion*) con logos a gran escala de aliados (IEEE Computer Society PUCP, Developer Student Club PUCP, Club Blockchain PUCP) y botón de contacto directo a WhatsApp (`https://wa.link/k11jrd`) para sponsors.
 * **Ubicaciones del Evento (Sede Oficial)** *(Fondo Claro)*: Mapa interactivo con las coordenadas exactas de la FISI - UNMSM, radar de localización, botón directo a Google Maps e información de ingresos y estaciones.
 * **Preguntas Frecuentes (FAQ)** *(Fondo Oscuro)*: Acordeón interactivo con respuestas a dudas sobre inscripciones, dinámicas, sedes y certificaciones oficiales.
 * **Footer Institucional** *(Fondo Claro)*: Navegación (*Explora*), redes oficiales (*Conecta*: Luma, LinkedIn, Facebook, Instagram y WhatsApp) y bloque de marca ENEISOFT.

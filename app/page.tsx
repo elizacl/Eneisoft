@@ -13,7 +13,7 @@ export default function Home() {
       {/* 2. Misión y Visión Institucional (Claro) */}
       <MissionVision />
 
-      {/* 3. Nuestros Aliados & Patrocinadores (Oscuro) */}
+      {/* 3. Nuestros Aliados & Sponsors (Oscuro) */}
       <Partners />
 
       {/* 4. Ubicaciones del Evento con Google Maps (Claro) */}
