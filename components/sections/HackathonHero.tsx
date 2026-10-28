@@ -79,16 +79,6 @@ export function HackathonHero() {
                     <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-48 h-4 bg-[#00ff87]/30 blur-xl pointer-events-none" />
                 </motion.div>
 
-                {/* Official Theme Statement */}
-                <motion.p
-                    initial={{ opacity: 0, y: 30 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 1.2, delay: 0.45, ease: [0.16, 1, 0.3, 1] }}
-                    className="text-lg md:text-2xl font-light text-neutral-200 max-w-2xl mt-4 mb-3 leading-relaxed"
-                >
-                    «IA aplicada a problemas reales de la comunidad universitaria»
-                </motion.p>
-
                 {/* Details Pills */}
                 <motion.div
                     initial={{ opacity: 0, y: 30 }}

@@ -135,7 +135,7 @@ export function HackathonSpaces() {
                                 </div>
 
                                 {/* Content Details */}
-                                <div className="p-6 md:p-7 flex-1 flex flex-col justify-between">
+                                <div className="p-6 md:p-7 flex-1 flex flex-col justify-center">
                                     <div>
                                         {/* Subtitle / Location */}
                                         <div className="flex items-center gap-2 mb-2">
@@ -148,14 +148,9 @@ export function HackathonSpaces() {
                                         </div>
 
                                         {/* Main Title */}
-                                        <h3 className="text-xl font-bold text-neutral-900 mb-3 tracking-tight group-hover:text-emerald-600 transition-colors duration-300">
+                                        <h3 className="text-xl font-bold text-neutral-900 tracking-tight group-hover:text-emerald-600 transition-colors duration-300">
                                             {space.title}
                                         </h3>
-
-                                        {/* Description */}
-                                        <p className="text-xs sm:text-sm text-neutral-600 font-light leading-relaxed">
-                                            {space.description}
-                                        </p>
                                     </div>
                                 </div>
                             </motion.div>

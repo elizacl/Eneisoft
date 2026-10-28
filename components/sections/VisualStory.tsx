@@ -53,8 +53,8 @@ const eventSteps: EventStep[] = [
         fechaDetalle: "Sábado 7 de noviembre de 2026",
         hora: "08:00 AM - 08:45 PM",
         lugar: "Facultad de Ingeniería de Sistemas e Informática (FISI - UNMSM)",
-        tematica: "IA aplicada a problemas reales de la comunidad universitaria. Sub-ejes: Académico, Bienestar y Gestión Universitaria.",
-        regla: "La solución debe ir más allá de un chatbot o dashboard convencional y mostrarse en ejecución durante el pitch final.",
+        tematica: "El reto oficial y sus especificaciones técnicas se revelarán directamente a los equipos participantes.",
+        regla: "La solución debe ser un prototipo funcional y mostrarse en ejecución durante el pitch final.",
         // No speaker image for Hackathon yet, as requested
         image: undefined,
         accentColor: "#00ff87",

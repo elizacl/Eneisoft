@@ -21,7 +21,7 @@ const criteria = [
         color: "text-[#00ff87]",
         borderColor: "border-[#00ff87]/30",
         bgColor: "bg-[#00ff87]/10",
-        description: "Demostración real del software en ejecución. Estabilidad de la solución, flujo principal sin fallas y operatividad de componentes de Inteligencia Artificial."
+        description: "Demostración real del software en ejecución. Estabilidad de la solución, flujo principal sin fallas y operatividad de las funcionalidades clave."
     },
     {
         title: "Problema e Impacto",
@@ -31,7 +31,7 @@ const criteria = [
         color: "text-[#60efff]",
         borderColor: "border-[#60efff]/30",
         bgColor: "bg-[#60efff]/10",
-        description: "Claridad en la definición de la problemática universitaria resuelta. Relevancia para estudiantes, docentes o procesos de gestión, y viabilidad real."
+        description: "Claridad en la definición de la problemática abordada. Relevancia de la propuesta para los usuarios objetivo, impacto potencial y viabilidad real de implementación."
     },
     {
         title: "Innovación y Creatividad",
@@ -41,7 +41,7 @@ const criteria = [
         color: "text-emerald-400",
         borderColor: "border-emerald-500/30",
         bgColor: "bg-emerald-500/10",
-        description: "Originalidad y diferenciación técnica. Superar el nivel de chatbots o dashboards convencionales mediante automatización y procesamiento complejo."
+        description: "Originalidad y diferenciación técnica de la solución propuesta. Valor agregado, enfoque creativo y nivel de sofisticación frente a alternativas convencionales."
     },
     {
         title: "Calidad Técnica y Arquitectura",
