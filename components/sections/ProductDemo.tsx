@@ -8,10 +8,7 @@ import {
     Crown, 
     Sparkles, 
     GraduationCap, 
-    FileText, 
-    Gift,
-    Calendar,
-    Users
+    FileText 
 } from "lucide-react";
 
 export function ProductDemo() {
@@ -228,17 +225,6 @@ export function ProductDemo() {
                                                     <span className="text-[10px] font-mono px-2.5 py-1 rounded-full bg-emerald-500/15 text-emerald-400 border border-emerald-500/30 shrink-0">Firma FISI</span>
                                                 </div>
                                             </div>
-
-                                            {/* Perk 3 */}
-                                            <div className="p-4 rounded-xl bg-white/[0.02] hover:bg-white/[0.04] border border-white/5 transition-all flex items-center gap-4">
-                                                <div className="p-2.5 rounded-lg bg-white/10 text-neutral-200 border border-white/10 shrink-0">
-                                                    <Gift className="w-5 h-5" />
-                                                </div>
-                                                <div className="flex-1 flex items-center justify-between gap-2">
-                                                    <span className="text-sm md:text-base font-medium text-white">Certificados Oficiales de Premiación & Pack Institucional</span>
-                                                    <span className="text-[10px] font-mono px-2.5 py-1 rounded-full bg-white/10 text-neutral-300 border border-white/20 shrink-0">3 Integrantes</span>
-                                                </div>
-                                            </div>
                                         </div>
                                     </div>
                                 </motion.div>
@@ -297,17 +283,6 @@ export function ProductDemo() {
                                                 <div className="flex-1 flex items-center justify-between gap-2">
                                                     <span className="text-sm md:text-base font-medium text-white">Certificados de Tercer Lugar</span>
                                                     <span className="text-[10px] font-mono px-2.5 py-1 rounded-full bg-amber-400/15 text-amber-300 border border-amber-400/30 shrink-0">Firma FISI</span>
-                                                </div>
-                                            </div>
-
-                                            {/* Perk 3 */}
-                                            <div className="p-4 rounded-xl bg-white/[0.02] hover:bg-white/[0.04] border border-white/5 transition-all flex items-center gap-4">
-                                                <div className="p-2.5 rounded-lg bg-white/10 text-neutral-200 border border-white/10 shrink-0">
-                                                    <Award className="w-5 h-5" />
-                                                </div>
-                                                <div className="flex-1 flex items-center justify-between gap-2">
-                                                    <span className="text-sm md:text-base font-medium text-white">Certificados de Premiación y Reconocimiento</span>
-                                                    <span className="text-[10px] font-mono px-2.5 py-1 rounded-full bg-white/10 text-neutral-300 border border-white/20 shrink-0">3 Integrantes</span>
                                                 </div>
                                             </div>
                                         </div>
