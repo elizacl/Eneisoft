@@ -150,8 +150,50 @@ const proximosEventos: ScrollEventItem[] = [
         ],
     },
     {
-        id: "ponencia-danilo",
+        id: "jornada-ponencias-dia3",
         stepNumber: "06",
+        dateBadge: "NOV | 04",
+        modalidad: "Presencial · Día 3 Eneisoft",
+        title: "Jornada de Ponencias",
+        fechaDetalle: "Miércoles 04 de noviembre de 2026",
+        hora: "2:30 PM - 5:30 PM",
+        lugar: "Auditorio - FISI UNMSM",
+        cardTitle: "DÍA 3",
+        cardFooterLeft: "Auditorio - FISI UNMSM",
+        cardFooterRight: "3 Ponencias Magistrales",
+        programa: [
+            {
+                time: "2:30 PM – 3:30 PM",
+                activity: 'Ponencia 1: "Por actualizar"',
+                speaker: "Por actualizar",
+            },
+            {
+                time: "3:30 PM – 4:30 PM",
+                activity: 'Ponencia 2: "Te enseño como crear tu primer agente IA con Microsoft Foundry directo para producción"',
+                speaker: "Henry Keniding",
+            },
+            {
+                time: "4:30 PM – 5:30 PM",
+                activity: 'Ponencia 3: "El rol de la IA en los estudios universitarios"',
+                speaker: "Andrés Cáceres",
+            },
+        ],
+        links: [
+            {
+                label: "Inscribirse al evento en Luma",
+                href: "https://luma.com/user/eneisoft",
+                primary: true,
+            },
+            {
+                label: "Abrir en Google Maps",
+                href: "https://maps.app.goo.gl/tMyPpnmLZ6ZryRej7",
+                primary: false,
+            },
+        ],
+    },
+    {
+        id: "ponencia-danilo",
+        stepNumber: "07",
         dateBadge: "NOV | 04",
         modalidad: "Virtual · Día 3 Eneisoft",
         title: "Lo que me hubiera gustado saber en primer ciclo sobre datos",
@@ -176,7 +218,7 @@ const proximosEventos: ScrollEventItem[] = [
     },
     {
         id: "ponencia-renzo",
-        stepNumber: "07",
+        stepNumber: "08",
         dateBadge: "NOV | 05",
         modalidad: "Virtual · Día 4 Eneisoft",
         title: "[Título por actualizar]",
@@ -201,7 +243,7 @@ const proximosEventos: ScrollEventItem[] = [
     },
     {
         id: "ponencia-ernesto",
-        stepNumber: "08",
+        stepNumber: "09",
         dateBadge: "NOV | 05",
         modalidad: "Virtual · Día 4 Eneisoft",
         title: "[Título por actualizar]",
@@ -226,7 +268,7 @@ const proximosEventos: ScrollEventItem[] = [
     },
     {
         id: "ponencia-doris",
-        stepNumber: "09",
+        stepNumber: "10",
         dateBadge: "NOV | 05",
         modalidad: "Virtual · Día 4 Eneisoft",
         title: "[Título por actualizar]",
@@ -251,7 +293,7 @@ const proximosEventos: ScrollEventItem[] = [
     },
     {
         id: "ponencia-raul",
-        stepNumber: "10",
+        stepNumber: "11",
         dateBadge: "NOV | 05",
         modalidad: "Virtual · Día 4 Eneisoft",
         title: "Empleabilidad más allá del aula: LinkedIn & CV",
@@ -276,7 +318,7 @@ const proximosEventos: ScrollEventItem[] = [
     },
     {
         id: "jornada-ponencias-dia5",
-        stepNumber: "11",
+        stepNumber: "12",
         dateBadge: "NOV | 06",
         modalidad: "Presencial · Día 5 Eneisoft",
         title: "Jornada de Ponencias",
@@ -318,7 +360,7 @@ const proximosEventos: ScrollEventItem[] = [
     },
     {
         id: "hackathon-2026",
-        stepNumber: "12",
+        stepNumber: "13",
         dateBadge: "NOV | 07",
         modalidad: "Hackathon Presencial · Día 6 Eneisoft",
         title: "Hackathon ENEISOFT XVI 2026",
@@ -418,6 +460,10 @@ export default function EventosPage() {
                     title="LO QUE SE VIENE"
                     subtitle="Conferencias magistrales virtuales y el evento central de innovación tecnológica."
                     events={proximosEventos}
+                    actionButton={{
+                        label: "Ver Calendario en Luma",
+                        href: "https://luma.com/eneisoft_unmsm_2026?compact=true",
+                    }}
                 />
 
                 {/* Separador de línea con brillo neón */}

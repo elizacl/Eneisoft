@@ -67,6 +67,25 @@
 
 ***
 
+> 📅 **04 NOV** `Presencial` `Día 3 Eneisoft`
+> ### **Jornada de Ponencias**
+> Miércoles 04 de noviembre de 2026
+>
+> **Programa del evento:**
+> *   **2:30 PM – 3:30 PM | Ponencia 1:** "Por actualizar".
+>     **Speaker Invitado:** Por actualizar
+> *   **3:30 PM – 4:30 PM | Ponencia 2:** "Te enseño como crear tu primer agente IA con Microsoft Foundry directo para producción".
+>     **Speaker Invitado:** Henry Keniding
+> *   **4:30 PM – 5:30 PM | Ponencia 3:** "El rol de la IA en los estudios universitarios".
+>     **Speaker Invitado:** Andrés Cáceres.
+>
+> **Hora:** 2:30 PM - 5:30 PM
+> **Lugar:** Auditorio - FISI UNMSM
+>
+> 🔗 [Inscribirse al evento en Luma](https://luma.com/user/eneisoft) 📍 [Abrir en Google Maps](https://maps.app.goo.gl/tMyPpnmLZ6ZryRej7)
+
+***
+
 > 📅 **04 NOV** `Virtual` `Día 3 Eneisoft`
 > ### **Lo que me hubiera gustado saber en primer ciclo sobre datos**
 > Miércoles 04 de noviembre de 2026

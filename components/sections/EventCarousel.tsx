@@ -230,10 +230,6 @@ export function EventCarousel({
                                                 priority
                                             />
                                             <div className="absolute inset-0 bg-gradient-to-t from-[#0a1510] via-transparent to-transparent opacity-80" />
-                                            <div className="absolute top-4 left-4 z-10 flex items-center gap-2 px-3 py-1 rounded-full bg-black/70 backdrop-blur-md border border-white/10 text-xs font-mono text-white">
-                                                <span className="w-2 h-2 rounded-full bg-[#00ff87] animate-pulse" />
-                                                <span>Ponencia Especializada</span>
-                                            </div>
                                         </div>
 
                                         <div className="pt-4 flex items-center justify-between">
