@@ -14,7 +14,6 @@ import {
     Sparkles,
     Linkedin,
 } from "lucide-react";
-import { Badge } from "@/components/ui/badge";
 import { MagneticButton } from "@/components/ui/MagneticButton";
 
 export interface ScrollEventItem {
@@ -41,6 +40,7 @@ export interface ScrollEventItem {
         activity: string;
         description?: string;
         speaker?: string;
+        speakerLabel?: string;
     }[];
     links: {
         label: string;
@@ -56,6 +56,14 @@ interface StickyScrollEventsProps {
     badgeText: string;
     events: ScrollEventItem[];
     sectionId?: string;
+}
+
+function formatEventDate(dateBadge: string) {
+    const parts = dateBadge.split("|").map((p) => p.trim());
+    if (parts.length === 2) {
+        return `${parts[1]} ${parts[0]}`;
+    }
+    return dateBadge;
 }
 
 function EventTextItem({
@@ -86,15 +94,8 @@ function EventTextItem({
             {/* Meta Header */}
             <div className="flex flex-wrap items-center gap-3 mb-6">
                 <span className="text-3xl font-mono font-bold text-[#24ed7a]">
-                    {event.stepNumber}
+                    {formatEventDate(event.dateBadge)}
                 </span>
-                <div className="h-4 w-[1px] bg-white/20" />
-                <Badge
-                    variant="outline"
-                    className="border-[#24ed7a]/40 bg-[#24ed7a]/10 text-[#24ed7a] font-mono text-xs uppercase tracking-wider"
-                >
-                    📅 {event.dateBadge}
-                </Badge>
             </div>
 
             {/* Title */}
@@ -274,7 +275,7 @@ function EventTextItem({
                                     )}
                                     {item.speaker && (
                                         <p className="text-[#24ed7a] font-mono text-[11px] mt-0.5">
-                                            <strong>Speakers Invitados:</strong> {item.speaker}
+                                            <strong>{item.speakerLabel || (item.speaker.includes(" y ") ? "Speakers Invitados:" : "Speaker Invitado:")}</strong> {item.speaker}
                                         </p>
                                     )}
                                 </div>
@@ -384,7 +385,7 @@ export function StickyScrollEvents({
                                                     </p>
                                                 </div>
                                                 <span className="text-2xl font-mono font-bold text-white/20 shrink-0">
-                                                    {activeEvent.stepNumber}
+                                                    {formatEventDate(activeEvent.dateBadge)}
                                                 </span>
                                             </div>
                                         </div>
