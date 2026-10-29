@@ -56,6 +56,10 @@ interface StickyScrollEventsProps {
     badgeText: string;
     events: ScrollEventItem[];
     sectionId?: string;
+    actionButton?: {
+        label: string;
+        href: string;
+    };
 }
 
 function formatEventDate(dateBadge: string) {
@@ -301,6 +305,7 @@ export function StickyScrollEvents({
     badgeText,
     events,
     sectionId,
+    actionButton,
 }: StickyScrollEventsProps) {
     const [activeIndex, setActiveIndex] = useState(0);
 
@@ -309,17 +314,36 @@ export function StickyScrollEvents({
     return (
         <section id={sectionId} className="py-20 px-4 sm:px-6 max-w-7xl mx-auto w-full">
             {/* Section Header */}
-            <div className="pb-8 mb-4 border-b border-white/10">
-                <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full border border-[#24ed7a]/30 text-xs uppercase tracking-widest text-[#24ed7a] mb-3 bg-[#071320]/80 backdrop-blur-sm font-mono">
-                    <Sparkles className="w-3.5 h-3.5 text-[#24ed7a]" />
-                    {badgeText}
+            <div className="pb-8 mb-4 border-b border-white/10 flex flex-col md:flex-row md:items-end justify-between gap-6">
+                <div>
+                    <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full border border-[#24ed7a]/30 text-xs uppercase tracking-widest text-[#24ed7a] mb-3 bg-[#071320]/80 backdrop-blur-sm font-mono">
+                        <Sparkles className="w-3.5 h-3.5 text-[#24ed7a]" />
+                        {badgeText}
+                    </div>
+                    <h2 className="text-3xl md:text-5xl font-bold tracking-tight text-white mb-2">
+                        {title}
+                    </h2>
+                    <p className="text-neutral-400 text-sm md:text-base font-light">
+                        {subtitle}
+                    </p>
                 </div>
-                <h2 className="text-3xl md:text-5xl font-bold tracking-tight text-white mb-2">
-                    {title}
-                </h2>
-                <p className="text-neutral-400 text-sm md:text-base font-light">
-                    {subtitle}
-                </p>
+
+                {actionButton && (
+                    <div className="shrink-0">
+                        <a
+                            href={actionButton.href}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="inline-block"
+                        >
+                            <MagneticButton className="inline-flex items-center gap-2.5 px-6 py-3.5 rounded-full bg-[#24ed7a] text-[#0a2138] font-bold text-xs uppercase tracking-wider hover:bg-[#00c8df] hover:shadow-[0_0_25px_rgba(0,200,223,0.4)] transition-all duration-300 cursor-pointer">
+                                <Calendar className="w-4 h-4 text-[#0a2138]" />
+                                <span>{actionButton.label}</span>
+                                <ArrowUpRight className="w-4 h-4 text-[#0a2138]" />
+                            </MagneticButton>
+                        </a>
+                    </div>
+                )}
             </div>
 
             {/* Dual Column: Left Scrolling Text / Right Sticky Visual */}
@@ -366,12 +390,6 @@ export function StickyScrollEvents({
                                                 />
                                                 {/* Gradient Overlay */}
                                                 <div className="absolute inset-0 bg-gradient-to-t from-[#0a1510] via-transparent to-transparent opacity-85" />
-
-                                                {/* Live/Status Badge */}
-                                                <div className="absolute top-4 left-4 z-10 flex items-center gap-2 px-3 py-1 rounded-full bg-black/70 backdrop-blur-md border border-white/10 text-xs font-mono text-white">
-                                                    <span className="w-2 h-2 rounded-full bg-[#00ff87] animate-ping" />
-                                                    <span>Ponencia Especializada</span>
-                                                </div>
                                             </div>
 
                                             {/* Bottom info below photo: Nombre y Perfil */}
