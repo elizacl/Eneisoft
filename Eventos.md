@@ -1,7 +1,7 @@
 # LO QUE SE VIENE
 ## Próximos eventos
 
-> 📅 **NOV | 02** `Presencial` `Día 1 Hackathon`
+> 📅 **02 NOV** `Presencial` `Día 1 Eneisoft`
 > ### **Inauguración y Jornada de Ponencias**
 > Lunes 02 de noviembre de 2026
 >
@@ -10,7 +10,7 @@
 > *   **4:00 PM – 5:30 PM | Ponencia 1:** "De resolver un problema a construir un producto: la historia detrás de Latinfo".
 >     **Speakers Invitados:** Kevin Navarro y Lourdes Iturria (DSC PUCP)
 > *   **5:30 PM – 7:00 PM | Ponencia 2:** "El arquitecto híbrido: El encuentro de dos mundos".
->     **Speakers Invitados:** Guillermo Gamboa (QuantumHub).
+>     **Speaker Invitado:** Guillermo Gamboa (QuantumHub).
 >
 > **Hora:** 2:30 PM - 7:00 PM
 > **Lugar:** Auditorio - FISI UNMSM
@@ -19,7 +19,7 @@
 
 ***
 
-> 📅 **NOV | 03** `Ponencia` `Virtual`
+> 📅 **03 NOV** `Virtual` `Día 2 Eneisoft`
 > ### **¿Y si el problema no es el código? Cómo resolver conflictos, destacar bajo presión y transformar problemas en oportunidades de innovación**
 > Martes 03 de noviembre de 2026
 >
@@ -31,7 +31,19 @@
 
 ***
 
-> 📅 **NOV | 03** `Ponencia` `Virtual`
+> 📅 **03 NOV** `Virtual` `Día 2 Eneisoft`
+> ### **[Título por actualizar]**
+> Martes 03 de noviembre de 2026
+>
+> **Temática:** [Por actualizar]
+> **Hora:** 4:00 PM - 5:00 PM
+> **Speaker:** Jasef Huachambe (Senior Cloud Data Engineer, especialista en el diseño, desarrollo e implementación de arquitecturas Big Data e Inteligencia Artificial corporativas).
+>
+> 🔗 [Inscribirse al evento en Luma](https://luma.com/user/eneisoft) 🔗 [Ver perfil de Linkedin](https://pe.linkedin.com/in/jasef-huachambe)
+
+***
+
+> 📅 **03 NOV** `Virtual` `Día 2 Eneisoft`
 > ### **La parte del proyecto: De usar IA a pensar con IA**
 > Martes 03 de noviembre de 2026
 >
@@ -43,7 +55,7 @@
 
 ***
 
-> 📅 **NOV | 03** `Ponencia` `Virtual`
+> 📅 **03 NOV** `Virtual` `Día 2 Eneisoft`
 > ### **Del git push a la nube: construye tu primer pipeline automatizado**
 > Martes 03 de noviembre de 2026
 >
@@ -55,7 +67,7 @@
 
 ***
 
-> 📅 **NOV | 04** `Ponencia` `Virtual`
+> 📅 **04 NOV** `Virtual` `Día 3 Eneisoft`
 > ### **Lo que me hubiera gustado saber en primer ciclo sobre datos**
 > Miércoles 04 de noviembre de 2026
 >
@@ -67,7 +79,19 @@
 
 ***
 
-> 📅 **NOV | 05** `Ponencia` `Virtual`
+> 📅 **05 NOV** `Virtual` `Día 4 Eneisoft`
+> ### **[Título por actualizar]**
+> Jueves 05 de noviembre de 2026
+>
+> **Temática:** [Por actualizar]
+> **Hora:** 2:30 PM - 3:30 PM
+> **Speaker:** Renzo Cienfuegos (Estudiante de Computación Científica, cofundador de QPerú y fundador de QuantumHub Perú, líder en computación cuántica y ciberseguridad).
+>
+> 🔗 [Inscribirse al evento en Luma](https://luma.com/user/eneisoft) 🔗 [Ver perfil de Linkedin](https://www.linkedin.com/in/sudojung)
+
+***
+
+> 📅 **05 NOV** `Virtual` `Día 4 Eneisoft`
 > ### **[Título por actualizar]**
 > Jueves 05 de noviembre de 2026
 >
@@ -79,7 +103,7 @@
 
 ***
 
-> 📅 **NOV | 05** `Ponencia` `Virtual`
+> 📅 **05 NOV** `Virtual` `Día 4 Eneisoft`
 > ### **[Título por actualizar]**
 > Jueves 05 de noviembre de 2026
 >
@@ -91,7 +115,7 @@
 
 ***
 
-> 📅 **NOV | 05** `Ponencia` `Virtual`
+> 📅 **05 NOV** `Virtual` `Día 4 Eneisoft`
 > ### **Empleabilidad más allá del aula: LinkedIn & CV**
 > Jueves 05 de noviembre de 2026
 >
@@ -103,15 +127,34 @@
 
 ***
 
-> 📅 **NOV | 07**  `Hackathon` `Presencial`
+> 📅 **06 NOV** `Presencial` `Día 5 Eneisoft`
+> ### **Jornada de Ponencias**
+> Viernes 06 de noviembre de 2026
+>
+> **Programa del evento:**
+> *   **2:30 PM – 3:30 PM | Ponencia 1:** "Por actualizar".
+>     **Speaker Invitado:** Sheila Ccahua
+> *   **3:30 PM – 4:30 PM | Ponencia 2:** "Por actualizar".
+>     **Speaker Invitado:** Brenda Hidalgo
+> *   **4:30 PM – 5:30 PM | Ponencia 3:** "Por actualizar".
+>     **Speaker Invitado:** Mayte Castillo.
+>
+> **Hora:** 2:30 PM - 5:30 PM
+> **Lugar:** Auditorio - FISI UNMSM
+>
+> 🔗 [Inscribirse al evento en Luma](https://luma.com/user/eneisoft) 📍 [Abrir en Google Maps](https://maps.app.goo.gl/tMyPpnmLZ6ZryRej7)
+
+***
+
+> 📅 **07 NOV** `Hackathon Presencial` `Día 6 Eneisoft`
 > ### **Hackathon ENEISOFT XVI 2026**
 > Sábado 07 de noviembre de 2026
 >
-> **Temática:** IA aplicada a problemas reales de la comunidad universitaria. (Sub-ejes: Académico, Bienestar y Gestión Universitaria).
+> **Temática:** El reto oficial y sus especificaciones técnicas se revelarán directamente a los equipos participantes.
 > **Hora:** 8:00 AM - 8:45 PM
 > **Lugar:** Facultad de Ingeniería de Sistemas e Informática (FISI - UNMSM)
 > 
-> *La solución debe ir más allá de un chatbot o dashboard convencional y mostrarse en ejecución durante el pitch final.*
+> *La solución debe ser un prototipo funcional y mostrarse en ejecución durante el pitch final.*
 >
 > 🔗 [Ver bases] 🔗 [Inscribir a mi equipo] 📍 [Abrir en Google Maps]
 
@@ -120,7 +163,7 @@
 # LO QUE YA VIVIMOS
 ## Eventos anteriores
 
-> 📅 **OCT | 03**  `Ponencia` `Virtual`
+> 📅 **03 OCT**  `Ponencia` `Virtual`
 > ### **Cuando la IA aprende a hackear: Ciberseguridad en la era de los agentes autónomos**
 > Sábado 03 de octubre de 2026
 >
@@ -132,7 +175,7 @@
 
 ***
 
-> 📅 **SEP | 25**  `Ponencia` `Presencial`
+> 📅 **25 SEP**  `Ponencia` `Presencial`
 > ### **La IA ya sabe hacer, ¿nosotros sabemos decidir?**
 > Viernes 25 de septiembre de 2026
 >
