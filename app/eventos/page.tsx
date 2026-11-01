@@ -58,8 +58,8 @@ const proximosEventos: ScrollEventItem[] = [
         fechaDetalle: "Martes 03 de noviembre de 2026",
         hora: "2:30 PM - 3:30 PM",
         speaker: "Enrique Mesones",
-        role: "Líder empresarial, presidente de APESOFT, especializado en impulsar ecosistemas tecnológicos, Web 3.0 e IA",
-        tematica: "Importancia de las habilidades blandas, liderazgo y resolución de problemas bajo presión para generar, capturar y compartir valor en el desarrollo de software.",
+        role: "Presidente de APESOFT y líder empresarial, especializado en ecosistemas tecnológicos, Web 3.0 e Inteligencia Artificial",
+        tematica: "Importancia de las habilidades blandas, liderazgo y resolución de problemas bajo presión para generar, capturar y compartir valor en software.",
         image: "/speakers/EnriqueMesones.png",
         links: [
             {
@@ -79,17 +79,17 @@ const proximosEventos: ScrollEventItem[] = [
         stepNumber: "03",
         dateBadge: "NOV | 03",
         modalidad: "Virtual · Día 2 Eneisoft",
-        title: "[Título por actualizar]",
+        title: "El mundo de los datos: mucho más que dashboards e inteligencia artificial",
         fechaDetalle: "Martes 03 de noviembre de 2026",
         hora: "4:00 PM - 5:00 PM",
         speaker: "Jasef Huachambe",
-        role: "Ingeniero de datos y Senior Cloud Data Engineer, especialista en arquitecturas Big Data e Inteligencia Artificial corporativas",
-        tematica: "[Por actualizar] — Próximamente se revelará el temario detallado de la ponencia.",
+        role: "Senior Cloud Data Engineer, especialista en el diseño, desarrollo e implementación de arquitecturas Big Data e IA corporativas",
+        tematica: "Panorama integral sobre la ingeniería de datos más allá de dashboards e IA, orientado a estudiantes que inician sin requisitos técnicos previos.",
         image: "/speakers/JasefHuachambe.jpg",
         links: [
             {
                 label: "Inscribirse al evento en Luma",
-                href: "https://luma.com/user/eneisoft",
+                href: "https://luma.com/fyfyxdak",
                 primary: true,
             },
             {
@@ -108,13 +108,13 @@ const proximosEventos: ScrollEventItem[] = [
         fechaDetalle: "Martes 03 de noviembre de 2026",
         hora: "5:30 PM - 6:30 PM",
         speaker: "Daniella Orozco",
-        role: "Especialista en transformación organizacional, innovación tecnológica y UX",
-        tematica: "Evolución estratégica desde el uso instrumental de herramientas de IA hacia una mentalidad de pensamiento aumentado aplicada al diseño de productos y la experiencia de usuario.",
+        role: "Especialista en transformación organizacional, metodologías ágiles, innovación tecnológica y diseño de experiencia de usuario",
+        tematica: "Evolución estratégica desde el uso instrumental de herramientas hacia una mentalidad de pensamiento aumentado aplicada al diseño de productos.",
         image: "/speakers/DanielaOrozco.png",
         links: [
             {
                 label: "Inscribirse al evento en Luma",
-                href: "https://luma.com/user/eneisoft",
+                href: "https://luma.com/yz53u1wh",
                 primary: true,
             },
             {
@@ -133,8 +133,8 @@ const proximosEventos: ScrollEventItem[] = [
         fechaDetalle: "Martes 03 de noviembre de 2026",
         hora: "7:00 PM - 8:00 PM",
         speaker: "Miguel Solis",
-        role: "Desarrollador full-stack, especialista en backend, arquitectura cloud y DevSecOps en Mibanco y UNMSM",
-        tematica: "Fundamentos y arquitectura de pipelines CI/CD, automatización de builds y despliegues en la nube con GitHub Actions y Docker, gestión de secretos y detección temprana de errores.",
+        role: "Desarrollador full-stack, especialista en backend, infraestructura cloud y DevSecOps con amplia experiencia corporativa y académica",
+        tematica: "Fundamentos y arquitectura de pipelines CI/CD, despliegues automáticos con GitHub Actions y Docker, gestión de secretos y detección de fallas.",
         image: "/speakers/MiguelSolis.png",
         links: [
             {
@@ -164,8 +164,8 @@ const proximosEventos: ScrollEventItem[] = [
         programa: [
             {
                 time: "2:30 PM – 3:30 PM",
-                activity: 'Ponencia 1: "Por actualizar"',
-                speaker: "Por actualizar",
+                activity: 'Ponencia 1: "[Por actualizar]"',
+                speaker: "Puelles",
             },
             {
                 time: "3:30 PM – 4:30 PM",
@@ -181,7 +181,7 @@ const proximosEventos: ScrollEventItem[] = [
         links: [
             {
                 label: "Inscribirse al evento en Luma",
-                href: "https://luma.com/user/eneisoft",
+                href: "https://luma.com/43p2olvl",
                 primary: true,
             },
             {
@@ -200,8 +200,8 @@ const proximosEventos: ScrollEventItem[] = [
         fechaDetalle: "Miércoles 04 de noviembre de 2026",
         hora: "7:00 PM - 8:00 PM",
         speaker: "Danilo Chavez",
-        role: "Analista de datos corporativos y fundador de DATANILO, enfocado en transformación digital",
-        tematica: "Descubrimiento del mundo de los datos mediante casos prácticos empresariales, toma de decisiones y consejos clave para que los estudiantes comiencen a explorar esta área desde primeros ciclos.",
+        role: "Analista de datos corporativos y fundador de DATANILO, enfocado en consultoría estratégica, analítica y transformación digital",
+        tematica: "Descubrimiento del mundo de los datos mediante casos prácticos empresariales, toma de decisiones y consejos clave para estudiantes en formación.",
         image: "/speakers/DaniloChavez.jpg",
         links: [
             {
@@ -221,17 +221,17 @@ const proximosEventos: ScrollEventItem[] = [
         stepNumber: "08",
         dateBadge: "NOV | 05",
         modalidad: "Virtual · Día 4 Eneisoft",
-        title: "[Título por actualizar]",
+        title: "In superposition... Are you Shor?",
         fechaDetalle: "Jueves 05 de noviembre de 2026",
         hora: "2:30 PM - 3:30 PM",
         speaker: "Renzo Cienfuegos",
-        role: "Estudiante de Computación Científica, cofundador de QPerú y fundador de QuantumHub Perú, líder en computación cuántica y ciberseguridad",
-        tematica: "[Por actualizar] — Próximamente se revelará el temario detallado de la ponencia.",
+        role: "Cofundador de QPerú y QuantumHub Perú, investigador y líder juvenil en divulgación de computación cuántica y ciberseguridad",
+        tematica: "Exploración práctica de la computación cuántica mediante programación en Qiskit, algoritmos cuánticos y aplicaciones de ciberseguridad.",
         image: "/speakers/RenzoCienfuegos.jpg",
         links: [
             {
                 label: "Inscribirse al evento en Luma",
-                href: "https://luma.com/user/eneisoft",
+                href: "https://luma.com/2f169956",
                 primary: true,
             },
             {
@@ -250,8 +250,8 @@ const proximosEventos: ScrollEventItem[] = [
         fechaDetalle: "Jueves 05 de noviembre de 2026",
         hora: "4:00 PM - 5:00 PM",
         speaker: "Ernesto Cuadros",
-        role: "Científico de la computación, investigador y asesor tecnológico peruano con reconocimiento internacional",
-        tematica: "[Por actualizar] — Próximamente se revelará el temario detallado de la ponencia.",
+        role: "Científico de la computación, investigador principal y asesor tecnológico internacional con destacada trayectoria académica",
+        tematica: "Fundamentos, evolución y tendencias científicas en computación e investigación aplicadas al desarrollo de software y tecnología.",
         image: "/speakers/ErnestoCuadros_v2.jpg",
         links: [
             {
@@ -271,17 +271,17 @@ const proximosEventos: ScrollEventItem[] = [
         stepNumber: "10",
         dateBadge: "NOV | 05",
         modalidad: "Virtual · Día 4 Eneisoft",
-        title: "[Título por actualizar]",
+        title: "¿Cómo construir tu carrera en tiempos de IA? Apuesta por los fundamentos, el criterio y las personas",
         fechaDetalle: "Jueves 05 de noviembre de 2026",
         hora: "5:30 PM - 6:30 PM",
         speaker: "Doris Manrique",
-        role: "Arquitecta de soluciones cloud, líder tecnológica y fundadora de la comunidad AWS Girls Peru",
-        tematica: "[Por actualizar] — Próximamente se revelará el temario detallado de la ponencia.",
+        role: "Arquitecta de soluciones cloud, líder tecnológica en computación en la nube y fundadora de la comunidad AWS Girls Peru",
+        tematica: "Estrategias de desarrollo profesional en la era de la IA, priorizando fundamentos sólidos de ingeniería, criterio técnico y trabajo colaborativo.",
         image: "/speakers/DorisManrique.jpg",
         links: [
             {
                 label: "Inscribirse al evento en Luma",
-                href: "https://luma.com/user/eneisoft",
+                href: "https://luma.com/xf678pbo",
                 primary: true,
             },
             {
@@ -300,13 +300,13 @@ const proximosEventos: ScrollEventItem[] = [
         fechaDetalle: "Jueves 05 de noviembre de 2026",
         hora: "7:00 PM - 8:00 PM",
         speaker: "Raúl Mogollón",
-        role: "Especialista en ciberseguridad, gestión de riesgos TI y tecnologías emergentes en BCP y ASBANC",
-        tematica: "Estrategias prácticas de inserción laboral en tecnología mediante la optimización de perfiles en LinkedIn, diseño de CV adaptado a filtros ATS y desarrollo de networking profesional.",
+        role: "Especialista en ciberseguridad, gestión de riesgos TI y tecnologías emergentes con trayectoria en el sector bancario y financiero",
+        tematica: "Estrategias prácticas de inserción laboral en tecnología mediante optimización de LinkedIn, diseño de CV para filtros ATS y networking efectivo.",
         image: "/speakers/RaulMogollon.jpg",
         links: [
             {
                 label: "Inscribirse al evento en Luma",
-                href: "https://luma.com/user/eneisoft",
+                href: "https://luma.com/495kn5cd",
                 primary: true,
             },
             {
@@ -331,24 +331,24 @@ const proximosEventos: ScrollEventItem[] = [
         programa: [
             {
                 time: "2:30 PM – 3:30 PM",
-                activity: 'Ponencia 1: "Por actualizar"',
+                activity: 'Ponencia 1: "De los datos a las decisiones: cómo la Inteligencia Artificial genera valor en el mundo real"',
                 speaker: "Sheila Ccahua",
             },
             {
                 time: "3:30 PM – 4:30 PM",
-                activity: 'Ponencia 2: "Por actualizar"',
+                activity: 'Ponencia 2: "Tokenizar el Perú: Cómo convertir nuestra diversidad en activos digitales"',
                 speaker: "Brenda Hidalgo",
             },
             {
                 time: "4:30 PM – 5:30 PM",
-                activity: 'Ponencia 3: "Por actualizar"',
+                activity: 'Ponencia 3: "Beyond RAG: Construye agentes con Foundry IQ"',
                 speaker: "Mayte Castillo",
             },
         ],
         links: [
             {
                 label: "Inscribirse al evento en Luma",
-                href: "https://luma.com/user/eneisoft",
+                href: "https://luma.com/v62v3wfo",
                 primary: true,
             },
             {
@@ -372,7 +372,6 @@ const proximosEventos: ScrollEventItem[] = [
         cardTitle: "HACKATHON XVI",
         cardFooterLeft: "Sede FISI - UNMSM",
         cardFooterRight: "12 Equipos · Pitches & Premiación",
-        // Sin foto de persona (tarjeta técnica central)
         image: undefined,
         links: [
             {
@@ -400,8 +399,8 @@ const eventosPasados: ScrollEventItem[] = [
         fechaDetalle: "Sábado 03 de octubre de 2026",
         hora: "2:00 PM - 4:00 PM",
         speaker: "Bastián Landskron",
-        role: "Arquitecto de software, ingeniero IA y CEO en Blandskron SpA, especializado en sistemas inteligentes",
-        tematica: "Revolución de la IA en el desarrollo seguro, análisis de vulnerabilidades, impacto de Codex, OWASP Top 10 y riesgos en la era de los LLM.",
+        role: "Arquitecto de software, ingeniero IA y CEO en Blandskron SpA, especializado en soluciones y sistemas inteligentes",
+        tematica: "Revolución de la IA en desarrollo seguro, análisis de vulnerabilidades, impacto de Codex, OWASP Top 10 y riesgos en la era de los LLM.",
         image: "/speakers/BastianLandskron.png",
         links: [
             {
@@ -425,9 +424,9 @@ const eventosPasados: ScrollEventItem[] = [
         fechaDetalle: "Viernes 25 de septiembre de 2026",
         hora: "12:00 PM - 2:00 PM",
         speaker: "Heilẹen Goodson",
-        role: "Estratega, conferencista internacional y consultora especializada en la adopción corporativa de la IA",
+        role: "Estratega, conferencista internacional y consultora corporativa, especializada en la adopción responsable de la IA",
         lugar: "Auditorio - FISI UNMSM",
-        tematica: "Estrategia, Shadow AI, gestión de datos, riesgos, responsabilidad, revisión humana y reglas para un uso responsable de la IA.",
+        tematica: "Estrategia, Shadow AI, gobierno y gestión de datos, riesgos, responsabilidad ética, supervisión humana y gobernanza en IA.",
         image: "/speakers/HeileenGoodson.png",
         links: [
             {

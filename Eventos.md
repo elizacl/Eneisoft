@@ -32,14 +32,14 @@
 ***
 
 > 📅 **03 NOV** `Virtual` `Día 2 Eneisoft`
-> ### **[Título por actualizar]**
+> ### **El mundo de los datos: mucho más que dashboards e inteligencia artificial**
 > Martes 03 de noviembre de 2026
 >
-> **Temática:** [Por actualizar]
+> **Temática:** Una mirada a cuánto hay detrás del trabajo con datos, más allá de los dashboards y la inteligencia artificial que todos conocen. Una charla pensada para estudiantes que están empezando, sin requisitos técnicos previos.
 > **Hora:** 4:00 PM - 5:00 PM
 > **Speaker:** Jasef Huachambe (Senior Cloud Data Engineer, especialista en el diseño, desarrollo e implementación de arquitecturas Big Data e Inteligencia Artificial corporativas).
 >
-> 🔗 [Inscribirse al evento en Luma](https://luma.com/user/eneisoft) 🔗 [Ver perfil de Linkedin](https://pe.linkedin.com/in/jasef-huachambe)
+> 🔗 [Inscribirse al evento en Luma](https://luma.com/fyfyxdak) 🔗 [Ver perfil de Linkedin](https://pe.linkedin.com/in/jasef-huachambe)
 
 ***
 
@@ -51,7 +51,7 @@
 > **Hora:** 5:30 PM - 6:30 PM
 > **Speaker:** Daniella Orozco (Especialista en transformación organizacional, innovación tecnológica y UX).
 >
-> 🔗 [Inscribirse al evento en Luma](https://luma.com/user/eneisoft) 🔗 [Ver perfil de Linkedin](https://www.linkedin.com/in/daniella-orozco-bedregal)
+> 🔗 [Inscribirse al evento en Luma](https://luma.com/yz53u1wh) 🔗 [Ver perfil de Linkedin](https://www.linkedin.com/in/daniella-orozco-bedregal)
 
 ***
 
@@ -72,8 +72,8 @@
 > Miércoles 04 de noviembre de 2026
 >
 > **Programa del evento:**
-> *   **2:30 PM – 3:30 PM | Ponencia 1:** "Por actualizar".
->     **Speaker Invitado:** Por actualizar
+> *   **2:30 PM – 3:30 PM | Ponencia 1:** "[Por actualizar]".
+>     **Speaker Invitado:** Puelles
 > *   **3:30 PM – 4:30 PM | Ponencia 2:** "Te enseño como crear tu primer agente IA con Microsoft Foundry directo para producción".
 >     **Speaker Invitado:** Henry Keniding
 > *   **4:30 PM – 5:30 PM | Ponencia 3:** "El rol de la IA en los estudios universitarios".
@@ -82,7 +82,7 @@
 > **Hora:** 2:30 PM - 5:30 PM
 > **Lugar:** Auditorio - FISI UNMSM
 >
-> 🔗 [Inscribirse al evento en Luma](https://luma.com/user/eneisoft) 📍 [Abrir en Google Maps](https://maps.app.goo.gl/tMyPpnmLZ6ZryRej7)
+> 🔗 [Inscribirse al evento en Luma](https://luma.com/43p2olvl) 📍 [Abrir en Google Maps](https://maps.app.goo.gl/tMyPpnmLZ6ZryRej7)
 
 ***
 
@@ -99,14 +99,14 @@
 ***
 
 > 📅 **05 NOV** `Virtual` `Día 4 Eneisoft`
-> ### **[Título por actualizar]**
+> ### **In superposition... Are you Shor?**
 > Jueves 05 de noviembre de 2026
 >
-> **Temática:** [Por actualizar]
+> **Temática:** Exploración práctica de la computación cuántica mediante programación en Qiskit, algoritmos cuánticos y desafíos aplicados a la ciberseguridad y la resolución de problemas.
 > **Hora:** 2:30 PM - 3:30 PM
 > **Speaker:** Renzo Cienfuegos (Estudiante de Computación Científica, cofundador de QPerú y fundador de QuantumHub Perú, líder en computación cuántica y ciberseguridad).
 >
-> 🔗 [Inscribirse al evento en Luma](https://luma.com/user/eneisoft) 🔗 [Ver perfil de Linkedin](https://www.linkedin.com/in/sudojung)
+> 🔗 [Inscribirse al evento en Luma](https://luma.com/2f169956) 🔗 [Ver perfil de Linkedin](https://www.linkedin.com/in/sudojung)
 
 ***
 
@@ -123,14 +123,14 @@
 ***
 
 > 📅 **05 NOV** `Virtual` `Día 4 Eneisoft`
-> ### **[Título por actualizar]**
+> ### **¿Cómo construir tu carrera en tiempos de IA? Apuesta por los fundamentos, el criterio y las personas**
 > Jueves 05 de noviembre de 2026
 >
-> **Temática:** [Por actualizar]
+> **Temática:** Hoy la IA escribe código en segundos, pero alguien tiene que entender qué problema resuelve, decidir si la solución es buena y trabajar con otros para que llegue a quien la necesita. Enfoque en fundamentos técnicos, criterio y habilidades humanas.
 > **Hora:** 5:30 PM - 6:30 PM
 > **Speaker:** Doris Manrique (Arquitecta de soluciones cloud, líder tecnológica y fundadora de la comunidad AWS Girls Peru).
 >
-> 🔗 [Inscribirse al evento en Luma](https://luma.com/user/eneisoft) 🔗 [Ver perfil de Linkedin](https://www.linkedin.com/in/dorismanrique)
+> 🔗 [Inscribirse al evento en Luma](https://luma.com/xf678pbo) 🔗 [Ver perfil de Linkedin](https://www.linkedin.com/in/dorismanrique)
 
 ***
 
@@ -142,7 +142,7 @@
 > **Hora:** 7:00 PM - 8:00 PM
 > **Speaker:** Raúl Mogollón (Especialista en ciberseguridad, gestión de riesgos TI y tecnologías emergentes en BCP y ASBANC).
 >
-> 🔗 [Inscribirse al evento en Luma](https://luma.com/user/eneisoft) 🔗 [Ver perfil de Linkedin](https://www.linkedin.com/in/raul-mogollon)
+> 🔗 [Inscribirse al evento en Luma](https://luma.com/495kn5cd) 🔗 [Ver perfil de Linkedin](https://www.linkedin.com/in/raul-mogollon)
 
 ***
 
@@ -151,17 +151,17 @@
 > Viernes 06 de noviembre de 2026
 >
 > **Programa del evento:**
-> *   **2:30 PM – 3:30 PM | Ponencia 1:** "Por actualizar".
+> *   **2:30 PM – 3:30 PM | Ponencia 1:** "De los datos a las decisiones: cómo la Inteligencia Artificial genera valor en el mundo real".
 >     **Speaker Invitado:** Sheila Ccahua
-> *   **3:30 PM – 4:30 PM | Ponencia 2:** "Por actualizar".
+> *   **3:30 PM – 4:30 PM | Ponencia 2:** "Tokenizar el Perú: Cómo convertir nuestra diversidad en activos digitales".
 >     **Speaker Invitado:** Brenda Hidalgo
-> *   **4:30 PM – 5:30 PM | Ponencia 3:** "Por actualizar".
+> *   **4:30 PM – 5:30 PM | Ponencia 3:** "Beyond RAG: Construye agentes con Foundry IQ".
 >     **Speaker Invitado:** Mayte Castillo.
 >
 > **Hora:** 2:30 PM - 5:30 PM
 > **Lugar:** Auditorio - FISI UNMSM
 >
-> 🔗 [Inscribirse al evento en Luma](https://luma.com/user/eneisoft) 📍 [Abrir en Google Maps](https://maps.app.goo.gl/tMyPpnmLZ6ZryRej7)
+> 🔗 [Inscribirse al evento en Luma](https://luma.com/v62v3wfo) 📍 [Abrir en Google Maps](https://maps.app.goo.gl/tMyPpnmLZ6ZryRej7)
 
 ***
 
