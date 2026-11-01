@@ -5,7 +5,6 @@ import { SmoothScroll } from "@/components/layout/SmoothScroll";
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
 import { Noise } from "@/components/ui/Noise";
-import { CustomCursor } from "@/components/ui/CustomCursor";
 import { Preloader } from "@/components/ui/Preloader";
 
 const geistSans = Geist({
@@ -37,11 +36,10 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-background text-foreground overflow-x-hidden selection:bg-neutral-900 selection:text-white dark:selection:bg-white dark:selection:text-black cursor-none`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-background text-foreground overflow-x-hidden selection:bg-neutral-900 selection:text-white dark:selection:bg-white dark:selection:text-black`}
       >
         <SmoothScroll>
           <Preloader />
-          <CustomCursor />
           <Noise />
           <Navbar />
           <main className="min-h-screen">
