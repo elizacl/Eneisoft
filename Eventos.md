@@ -169,11 +169,11 @@
 > ### **Hackathon ENEISOFT XVI 2026**
 > Sábado 07 de noviembre de 2026
 >
-> **Temática:** El reto oficial y sus especificaciones técnicas se revelarán directamente a los equipos participantes.
+> **Temática:** IA aplicada a problemas reales de la comunidad universitaria. (Sub-ejes: Académico, Bienestar y Gestión Universitaria).
 > **Hora:** 8:00 AM - 8:45 PM
 > **Lugar:** Facultad de Ingeniería de Sistemas e Informática (FISI - UNMSM)
 > 
-> *La solución debe ser un prototipo funcional y mostrarse en ejecución durante el pitch final.*
+> *La solución debe ir más allá de un chatbot o dashboard convencional y mostrarse en ejecución durante el pitch final.*
 >
 > 🔗 [Ver bases] 🔗 [Inscribir a mi equipo] 📍 [Abrir en Google Maps]
 
