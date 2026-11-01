@@ -376,13 +376,8 @@ const proximosEventos: ScrollEventItem[] = [
         image: undefined,
         links: [
             {
-                label: "Ver bases",
+                label: "Ver bases y reto",
                 href: "/hackathon#ejes",
-                primary: false,
-            },
-            {
-                label: "Inscribir a mi equipo",
-                href: "https://forms.gle/kEkG3JYVXWN5t7hX9",
                 primary: true,
             },
             {

@@ -105,32 +105,23 @@ export function Navbar() {
 
                 {/* Actions */}
                 <div className="hidden md:flex items-center gap-4 ml-8">
-                    <a
-                        href="https://forms.gle/kEkG3JYVXWN5t7hX9"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="inline-block"
-                    >
-                        <MagneticButton className="rounded-full px-5 py-2.5 bg-[#24ed7a] text-[#0a2138] hover:bg-[#00c8df] hover:text-[#0a2138] text-xs font-bold uppercase tracking-wider transition-all duration-300 shadow-[0_0_20px_rgba(36,237,122,0.35)] hover:shadow-[0_0_30px_rgba(0,200,223,0.5)] border border-[#24ed7a] cursor-pointer">
-                            Inscribir Equipo
+                    <Link href="/hackathon#ejes" className="inline-block">
+                        <MagneticButton className="rounded-full px-5 py-2.5 bg-white/10 text-neutral-200 hover:bg-[#24ed7a] hover:text-[#0a2138] text-xs font-semibold uppercase tracking-wider transition-all duration-300 border border-white/20 hover:border-[#24ed7a] cursor-pointer">
+                            Ver Hackathon
                         </MagneticButton>
-                    </a>
+                    </Link>
                 </div>
 
                 {/* Mobile Menu */}
                 <div className="md:hidden flex items-center">
-                    <a
-                        href="https://forms.gle/kEkG3JYVXWN5t7hX9"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
+                    <Link href="/hackathon#ejes">
                         <Button
                             size="sm"
-                            className="rounded-full px-4 bg-[#24ed7a] text-[#0a2138] hover:bg-[#00c8df] font-semibold transition-all mr-2 text-xs cursor-pointer"
+                            className="rounded-full px-3.5 bg-white/10 text-neutral-200 hover:bg-[#24ed7a] hover:text-[#0a2138] border border-white/20 font-semibold transition-all mr-2 text-xs cursor-pointer"
                         >
-                            Inscribir
+                            Hackathon
                         </Button>
-                    </a>
+                    </Link>
                     <Sheet>
                         <SheetTrigger asChild>
                             <Button variant="ghost" size="icon" className="rounded-full">

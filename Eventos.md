@@ -175,7 +175,7 @@
 > 
 > *La solución debe ir más allá de un chatbot o dashboard convencional y mostrarse en ejecución durante el pitch final.*
 >
-> 🔗 [Ver bases] 🔗 [Inscribir a mi equipo] 📍 [Abrir en Google Maps]
+> 🔗 [Ver bases y reto] 📍 [Abrir en Google Maps]
 
 ---
 

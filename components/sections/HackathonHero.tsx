@@ -1,7 +1,7 @@
 "use client";
 
 import { motion, useScroll, useTransform } from "framer-motion";
-import { ArrowRight, Calendar, MapPin, Sparkles, Terminal } from "lucide-react";
+import { ArrowRight, Calendar, MapPin, Sparkles, Terminal, Lock } from "lucide-react";
 import { MagneticButton } from "@/components/ui/MagneticButton";
 import { TextScramble } from "@/components/ui/TextScramble";
 
@@ -107,28 +107,21 @@ export function HackathonHero() {
                     </span>
                 </motion.div>
 
-                {/* CTA Buttons - Magnetic */}
+                {/* CTA Buttons & Status Badge */}
                 <motion.div
                     initial={{ opacity: 0, y: 30 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 1.2, delay: 0.65, ease: [0.16, 1, 0.3, 1] }}
-                    className="flex flex-col sm:flex-row items-center gap-5"
+                    className="flex flex-col sm:flex-row items-center gap-4"
                 >
-                    <a
-                        href="https://forms.gle/kEkG3JYVXWN5t7hX9"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="inline-block"
-                    >
-                        <MagneticButton className="rounded-full px-9 h-14 text-sm font-bold uppercase tracking-wider bg-[#24ed7a] text-[#0a2138] hover:bg-[#00c8df] hover:text-[#0a2138] transition-all duration-300 shadow-[0_0_35px_rgba(36,237,122,0.4)] hover:shadow-[0_0_50px_rgba(0,200,223,0.7)] flex items-center gap-2 cursor-pointer">
-                            <span>Inscribir a mi equipo</span>
-                            <ArrowRight className="w-4 h-4 text-[#0a2138]" />
-                        </MagneticButton>
-                    </a>
+                    <div className="inline-flex items-center gap-2 px-7 h-14 rounded-full bg-white/[0.04] border border-white/15 text-neutral-300 font-mono text-xs uppercase tracking-wider backdrop-blur-md cursor-not-allowed select-none shadow-[inset_0_0_20px_rgba(255,255,255,0.02)]">
+                        <Lock className="w-4 h-4 text-amber-400" />
+                        <span className="font-semibold text-neutral-200">Inscripciones Cerradas</span>
+                    </div>
 
                     <a href="#ejes" className="inline-block">
-                        <MagneticButton className="flex items-center text-sm uppercase tracking-widest text-neutral-300 hover:text-[#24ed7a] transition-colors group px-6 py-4 rounded-full border border-white/15 hover:border-[#24ed7a]/50 bg-white/5 cursor-pointer">
-                            Ver Bases del Reto
+                        <MagneticButton className="flex items-center text-sm uppercase tracking-widest text-neutral-300 hover:text-[#24ed7a] transition-colors group px-7 h-14 rounded-full border border-white/15 hover:border-[#24ed7a]/50 bg-white/5 cursor-pointer">
+                            Ver Reto y Bases
                             <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform text-[#24ed7a]" />
                         </MagneticButton>
                     </a>

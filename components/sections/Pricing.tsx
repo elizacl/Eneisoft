@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Check, GraduationCap, HeartPulse, Building2, Sparkles, ArrowRight } from "lucide-react";
+import { Check, GraduationCap, HeartPulse, Building2, Sparkles, ArrowRight, Lock } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 import { MagneticButton } from "@/components/ui/MagneticButton";
 
@@ -147,19 +147,12 @@ export function Pricing() {
                         </div>
                     </div>
 
-                    {/* CTA Bottom Action */}
+                    {/* Status Badge - Closed Registrations */}
                     <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-                        <a
-                            href="https://forms.gle/kEkG3JYVXWN5t7hX9"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="inline-block"
-                        >
-                            <MagneticButton className="inline-flex items-center gap-2 px-8 py-4 rounded-full bg-[#24ed7a] text-[#0a2138] hover:bg-[#00c8df] hover:text-[#0a2138] font-bold text-sm uppercase tracking-wider transition-all duration-300 shadow-[0_4px_20px_rgba(36,237,122,0.35)] hover:shadow-[0_4px_25px_rgba(0,200,223,0.5)] cursor-pointer">
-                                <span>Inscribir a mi Equipo</span>
-                                <ArrowRight className="w-4 h-4 text-[#0a2138]" />
-                            </MagneticButton>
-                        </a>
+                        <div className="inline-flex items-center gap-2 px-8 py-4 rounded-full bg-neutral-100 border border-neutral-300 text-neutral-700 font-mono text-xs uppercase tracking-wider shadow-sm cursor-not-allowed select-none">
+                            <Lock className="w-4 h-4 text-neutral-600" />
+                            <span className="font-bold text-neutral-900">Inscripciones Cerradas</span>
+                        </div>
                     </div>
                 </div>
             </div>
