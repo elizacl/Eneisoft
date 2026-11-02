@@ -75,7 +75,7 @@
 > *   **2:30 PM – 3:30 PM | Ponencia 1:** "[Por actualizar]".
 >     **Speaker Invitado:** Puelles
 > *   **3:30 PM – 4:30 PM | Ponencia 2:** "Te enseño como crear tu primer agente IA con Microsoft Foundry directo para producción".
->     **Speaker Invitado:** Henry Keniding
+>     **Speaker Invitado:** Henry Tarazona
 > *   **4:30 PM – 5:30 PM | Ponencia 3:** "El rol de la IA en los estudios universitarios".
 >     **Speaker Invitado:** Andrés Cáceres.
 >

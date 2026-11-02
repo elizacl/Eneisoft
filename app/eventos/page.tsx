@@ -173,6 +173,21 @@ const proximosEventos: ScrollEventItem[] = [
         fechaDetalle: "Miércoles 04 de noviembre de 2026",
         hora: "2:30 PM - 5:30 PM",
         lugar: "Auditorio - FISI UNMSM",
+        speaker: "Henry Tarazona",
+        role: "Software & AI Engineer en Interbank y CEO de Connect Technologies, especialista en microservicios, cloud y sistemas multi-agente",
+        image: "/speakers/HenryTarazona.png",
+        speakersList: [
+            {
+                speaker: "Henry Tarazona",
+                role: "Software & AI Engineer en Interbank y CEO de Connect Technologies, especialista en microservicios, cloud y sistemas multi-agente",
+                image: "/speakers/HenryTarazona.png",
+            },
+            {
+                speaker: "Andrés Cáceres",
+                role: "Consultor de TI con 25 años de trayectoria liderando desarrollo de sistemas corporativos e infraestructura para el sector financiero",
+                image: "/speakers/AndresCaceres.jpg",
+            },
+        ],
         cardTitle: "DÍA 3",
         cardFooterLeft: "Auditorio - FISI UNMSM",
         cardFooterRight: "3 Ponencias Magistrales",
@@ -185,7 +200,7 @@ const proximosEventos: ScrollEventItem[] = [
             {
                 time: "3:30 PM – 4:30 PM",
                 activity: 'Ponencia 2: "Te enseño como crear tu primer agente IA con Microsoft Foundry directo para producción"',
-                speaker: "Henry Keniding",
+                speaker: "Henry Tarazona",
             },
             {
                 time: "4:30 PM – 5:30 PM",
@@ -340,6 +355,26 @@ const proximosEventos: ScrollEventItem[] = [
         fechaDetalle: "Viernes 06 de noviembre de 2026",
         hora: "2:30 PM - 5:30 PM",
         lugar: "Auditorio - FISI UNMSM",
+        speaker: "Sheila Ccahua",
+        role: "Data Scientist especialista en analítica de clientes, inferencia causal y optimización matemática orientada a productos de inteligencia artificial con impacto de negocio",
+        image: "/speakers/SheilaCcahua.png",
+        speakersList: [
+            {
+                speaker: "Sheila Ccahua",
+                role: "Data Scientist especialista en analítica de clientes, inferencia causal y optimización matemática orientada a productos de inteligencia artificial con impacto de negocio",
+                image: "/speakers/SheilaCcahua.png",
+            },
+            {
+                speaker: "Brenda Hidalgo",
+                role: "Especialista en estrategia de tecnologías emergentes y consultora de IA y Web3 para alta dirección, enfocada en la inclusión financiera y el crecimiento sostenible",
+                image: "/speakers/BrendaHidalgo.png",
+            },
+            {
+                speaker: "Mayte Castillo",
+                role: "Microsoft MVP y arquitecta de tecnología GenAI, especialista en MLOps y el diseño de arquitecturas de datos escalables en entornos multicloud",
+                image: "/speakers/MayteCastillo.png",
+            },
+        ],
         cardTitle: "DÍA 5",
         cardFooterLeft: "Auditorio - FISI UNMSM",
         cardFooterRight: "3 Ponencias Magistrales",
