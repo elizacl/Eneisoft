@@ -255,7 +255,7 @@ const proximosEventos: ScrollEventItem[] = [
         fechaDetalle: "Jueves 05 de noviembre de 2026",
         hora: "2:30 PM - 3:30 PM",
         speaker: "Renzo Cienfuegos",
-        role: "Cofundador de QPerú y QuantumHub Perú, investigador y líder juvenil en divulgación de computación cuántica y ciberseguridad",
+        role: "CCo-Founder de QPeru y Creador del canal de difusión Quantum CyberSec Community, investigador y líder juvenil en divulgación de computación cuántica y ciberseguridad",
         tematica: "Exploración práctica de la computación cuántica mediante programación en Qiskit, algoritmos cuánticos y aplicaciones de ciberseguridad.",
         image: "/speakers/RenzoCienfuegos.jpg",
         links: [

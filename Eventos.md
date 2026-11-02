@@ -104,7 +104,7 @@
 >
 > **Temática:** Exploración práctica de la computación cuántica mediante programación en Qiskit, algoritmos cuánticos y desafíos aplicados a la ciberseguridad y la resolución de problemas.
 > **Hora:** 2:30 PM - 3:30 PM
-> **Speaker:** Renzo Cienfuegos (Estudiante de Computación Científica, cofundador de QPerú y fundador de QuantumHub Perú, líder en computación cuántica y ciberseguridad).
+> **Speaker:** Renzo Cienfuegos (Co-Founder de QPeru y Creador del canal de difusión Quantum CyberSec Community).
 >
 > 🔗 [Inscribirse al evento en Luma](https://luma.com/2f169956) 🔗 [Ver perfil de Linkedin](https://www.linkedin.com/in/sudojung)
 
