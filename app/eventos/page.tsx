@@ -16,6 +16,21 @@ const proximosEventos: ScrollEventItem[] = [
         fechaDetalle: "Lunes 02 de noviembre de 2026",
         hora: "2:30 PM - 7:00 PM",
         lugar: "Auditorio - FISI UNMSM",
+        speaker: "Kevin Gamarra y Lourdes Iturria",
+        role: "Founders de Latinfo, especialistas en arquitectura de datos, LegalTech y la transformación de software propio en startups de alcance regional",
+        image: "/speakers/PonentesDia1.png",
+        speakersList: [
+            {
+                speaker: "Kevin Gamarra y Lourdes Iturria",
+                role: "Founders de Latinfo, especialistas en arquitectura de datos, LegalTech y la transformación de software propio en startups de alcance regional",
+                image: "/speakers/PonentesDia1.png",
+            },
+            {
+                speaker: "Guillermo Gamboa",
+                role: "Board Member en QuantumHub Perú, investigador de sistemas complejos adaptativos y desarrollador de infraestructura de software híbrida para simulación cuántica",
+                image: "/speakers/GuillermoGamboa.png",
+            },
+        ],
         cardTitle: "DÍA 1",
         cardFooterLeft: "Auditorio - FISI UNMSM",
         cardFooterRight: "2 Ponencias Magistrales",
@@ -28,7 +43,7 @@ const proximosEventos: ScrollEventItem[] = [
             {
                 time: "4:00 PM – 5:30 PM",
                 activity: 'Ponencia 1: "De resolver un problema a construir un producto: la historia detrás de Latinfo"',
-                speaker: "Kevin Navarro y Lourdes Iturria (DSC PUCP)",
+                speaker: "Kevin Gamarra y Lourdes Iturria (Latinfo)",
             },
             {
                 time: "5:30 PM – 7:00 PM",
@@ -85,7 +100,7 @@ const proximosEventos: ScrollEventItem[] = [
         speaker: "Jasef Huachambe",
         role: "Senior Cloud Data Engineer, especialista en el diseño, desarrollo e implementación de arquitecturas Big Data e IA corporativas",
         tematica: "Panorama integral sobre la ingeniería de datos más allá de dashboards e IA, orientado a estudiantes que inician sin requisitos técnicos previos.",
-        image: "/speakers/JasefHuachambe.jpg",
+        image: "/speakers/JasefHuachambe.png",
         links: [
             {
                 label: "Inscribirse al evento en Luma",

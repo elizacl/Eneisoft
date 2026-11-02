@@ -8,7 +8,7 @@
 > **Programa del evento:**
 > *   **2:30 PM – 4:00 PM | Inauguración:** Apertura oficial del evento y bienvenida a los participantes.
 > *   **4:00 PM – 5:30 PM | Ponencia 1:** "De resolver un problema a construir un producto: la historia detrás de Latinfo".
->     **Speakers Invitados:** Kevin Navarro y Lourdes Iturria (DSC PUCP)
+>     **Speakers Invitados:** Kevin Gamarra y Lourdes Iturria (Latinfo)
 > *   **5:30 PM – 7:00 PM | Ponencia 2:** "El arquitecto híbrido: El encuentro de dos mundos".
 >     **Speaker Invitado:** Guillermo Gamboa (QuantumHub).
 >

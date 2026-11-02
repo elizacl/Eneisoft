@@ -13,6 +13,8 @@ import {
     Terminal,
     Sparkles,
     Linkedin,
+    ChevronLeft,
+    ChevronRight,
 } from "lucide-react";
 import { MagneticButton } from "@/components/ui/MagneticButton";
 
@@ -30,6 +32,11 @@ export interface ScrollEventItem {
     tematica?: string;
     regla?: string;
     image?: string;
+    speakersList?: {
+        speaker: string;
+        role: string;
+        image: string;
+    }[];
     cardBadge?: string;
     cardSubtitle?: string;
     cardTitle?: string;
@@ -84,6 +91,17 @@ function EventTextItem({
         margin: "-35% 0px -35% 0px",
     });
 
+    const [mobileSpeakerIndex, setMobileSpeakerIndex] = useState(0);
+
+    const hasSpeakersList = event.speakersList && event.speakersList.length > 0;
+    const currentMobileSpeaker = hasSpeakersList
+        ? event.speakersList![mobileSpeakerIndex]
+        : {
+              speaker: event.speaker,
+              role: event.role,
+              image: event.image,
+          };
+
     useEffect(() => {
         if (isInView) {
             onVisible(index);
@@ -117,24 +135,57 @@ function EventTextItem({
 
             {/* Mobile Image preview (only on mobile screens) */}
             <div className="block lg:hidden my-6">
-                {event.image ? (
+                {currentMobileSpeaker.image ? (
                     <div>
-                        <div className="relative w-full aspect-[4/3] rounded-2xl overflow-hidden border border-white/15 bg-[#0a1510]">
+                        <div className="relative w-full aspect-[4/3] rounded-2xl overflow-hidden border border-white/15 bg-[#0a1510] group">
                             <Image
-                                src={event.image}
-                                alt={event.speaker || event.title}
+                                src={currentMobileSpeaker.image}
+                                alt={currentMobileSpeaker.speaker || event.title}
                                 fill
                                 className="object-cover object-top"
                             />
+                            {hasSpeakersList && (
+                                <div className="absolute inset-x-2 bottom-2 z-10 flex items-center justify-between pointer-events-auto">
+                                    <button
+                                        type="button"
+                                        onClick={(e) => {
+                                            e.stopPropagation();
+                                            setMobileSpeakerIndex((prev) =>
+                                                prev === 0 ? event.speakersList!.length - 1 : prev - 1
+                                            );
+                                        }}
+                                        className="w-8 h-8 rounded-full bg-black/75 backdrop-blur-md border border-white/20 text-white flex items-center justify-center hover:bg-[#24ed7a] hover:text-[#0a2138] transition-colors"
+                                        aria-label="Ponente anterior"
+                                    >
+                                        <ChevronLeft className="w-4 h-4" />
+                                    </button>
+                                    <span className="text-[10px] font-mono px-2 py-0.5 rounded-full bg-black/75 backdrop-blur-md border border-white/20 text-neutral-300">
+                                        {mobileSpeakerIndex + 1} / {event.speakersList!.length}
+                                    </span>
+                                    <button
+                                        type="button"
+                                        onClick={(e) => {
+                                            e.stopPropagation();
+                                            setMobileSpeakerIndex((prev) =>
+                                                prev === event.speakersList!.length - 1 ? 0 : prev + 1
+                                            );
+                                        }}
+                                        className="w-8 h-8 rounded-full bg-black/75 backdrop-blur-md border border-white/20 text-white flex items-center justify-center hover:bg-[#24ed7a] hover:text-[#0a2138] transition-colors"
+                                        aria-label="Siguiente ponente"
+                                    >
+                                        <ChevronRight className="w-4 h-4" />
+                                    </button>
+                                </div>
+                            )}
                         </div>
                         {/* Debajo de la foto en móvil: Nombre y Perfil */}
-                        {event.speaker && (
+                        {currentMobileSpeaker.speaker && (
                             <div className="pt-3">
                                 <h4 className="text-base font-bold text-white tracking-tight">
-                                    {event.speaker}
+                                    {currentMobileSpeaker.speaker}
                                 </h4>
                                 <p className="text-xs text-[#24ed7a] font-mono mt-0.5 leading-relaxed">
-                                    {event.role}
+                                    {currentMobileSpeaker.role}
                                 </p>
                             </div>
                         )}
@@ -308,8 +359,37 @@ export function StickyScrollEvents({
     actionButton,
 }: StickyScrollEventsProps) {
     const [activeIndex, setActiveIndex] = useState(0);
+    const [speakerSlideIndices, setSpeakerSlideIndices] = useState<Record<string, number>>({});
 
     const activeEvent = events[activeIndex] || events[0];
+
+    const currentSlideIndex = speakerSlideIndices[activeEvent.id] || 0;
+    const hasSpeakersList = activeEvent.speakersList && activeEvent.speakersList.length > 0;
+    const currentActiveSpeaker = hasSpeakersList
+        ? activeEvent.speakersList![currentSlideIndex]
+        : {
+              speaker: activeEvent.speaker,
+              role: activeEvent.role,
+              image: activeEvent.image,
+          };
+
+    const handlePrevSpeaker = () => {
+        if (!hasSpeakersList) return;
+        const total = activeEvent.speakersList!.length;
+        setSpeakerSlideIndices((prev) => ({
+            ...prev,
+            [activeEvent.id]: (currentSlideIndex - 1 + total) % total,
+        }));
+    };
+
+    const handleNextSpeaker = () => {
+        if (!hasSpeakersList) return;
+        const total = activeEvent.speakersList!.length;
+        setSpeakerSlideIndices((prev) => ({
+            ...prev,
+            [activeEvent.id]: (currentSlideIndex + 1) % total,
+        }));
+    };
 
     return (
         <section id={sectionId} className="py-20 px-4 sm:px-6 max-w-7xl mx-auto w-full">
@@ -377,29 +457,57 @@ export function StickyScrollEvents({
                             >
                                 {/* Rectángulo que contiene la foto y datos del ponente */}
                                 <div className="relative w-full aspect-square rounded-[2.5rem] overflow-hidden border border-white/15 bg-[#0a1510] shadow-[0_0_50px_rgba(0,0,0,0.8)] p-6">
-                                    {activeEvent.image ? (
+                                    {currentActiveSpeaker.image ? (
                                         /* Speaker Presentation Card with Image */
                                         <div className="relative w-full h-full flex flex-col justify-between rounded-2xl overflow-hidden">
                                             <div className="relative flex-1 w-full rounded-2xl overflow-hidden border border-white/10 group">
                                                 <Image
-                                                    src={activeEvent.image}
-                                                    alt={activeEvent.speaker || "Ponente ENEISOFT"}
+                                                    key={currentActiveSpeaker.image}
+                                                    src={currentActiveSpeaker.image}
+                                                    alt={currentActiveSpeaker.speaker || "Ponente ENEISOFT"}
                                                     fill
                                                     className="object-cover object-top filter grayscale contrast-125 group-hover:grayscale-0 transition-all duration-700"
                                                     priority
                                                 />
                                                 {/* Gradient Overlay */}
                                                 <div className="absolute inset-0 bg-gradient-to-t from-[#0a1510] via-transparent to-transparent opacity-85" />
+
+                                                {/* Navigation Arrows if event has multiple speakers */}
+                                                {hasSpeakersList && (
+                                                    <div className="absolute inset-x-3 bottom-3 z-20 flex items-center justify-between pointer-events-auto">
+                                                        <button
+                                                            type="button"
+                                                            onClick={handlePrevSpeaker}
+                                                            className="w-9 h-9 rounded-full bg-black/80 backdrop-blur-md border border-white/20 text-white flex items-center justify-center hover:bg-[#24ed7a] hover:text-[#0a2138] hover:border-[#24ed7a] transition-all cursor-pointer shadow-lg"
+                                                            aria-label="Ponente anterior"
+                                                        >
+                                                            <ChevronLeft className="w-5 h-5" />
+                                                        </button>
+
+                                                        <span className="text-[11px] font-mono font-semibold px-3 py-1 rounded-full bg-black/80 backdrop-blur-md border border-white/20 text-neutral-200">
+                                                            {currentSlideIndex + 1} / {activeEvent.speakersList!.length}
+                                                        </span>
+
+                                                        <button
+                                                            type="button"
+                                                            onClick={handleNextSpeaker}
+                                                            className="w-9 h-9 rounded-full bg-black/80 backdrop-blur-md border border-white/20 text-white flex items-center justify-center hover:bg-[#24ed7a] hover:text-[#0a2138] hover:border-[#24ed7a] transition-all cursor-pointer shadow-lg"
+                                                            aria-label="Siguiente ponente"
+                                                        >
+                                                            <ChevronRight className="w-5 h-5" />
+                                                        </button>
+                                                    </div>
+                                                )}
                                             </div>
 
                                             {/* Bottom info below photo: Nombre y Perfil */}
                                             <div className="pt-4 flex items-start justify-between gap-4">
                                                 <div className="flex-1 min-w-0">
                                                     <h4 className="text-base md:text-lg font-bold text-white tracking-tight leading-snug">
-                                                        {activeEvent.speaker}
+                                                        {currentActiveSpeaker.speaker}
                                                     </h4>
                                                     <p className="text-xs text-[#24ed7a] font-mono mt-1 leading-relaxed">
-                                                        {activeEvent.role}
+                                                        {currentActiveSpeaker.role}
                                                     </p>
                                                 </div>
                                                 <span className="text-2xl font-mono font-bold text-white/20 shrink-0">
