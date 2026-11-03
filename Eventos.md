@@ -72,8 +72,8 @@
 > Miércoles 04 de noviembre de 2026
 >
 > **Programa del evento:**
-> *   **2:30 PM – 3:30 PM | Ponencia 1:** "[Por actualizar]".
->     **Speaker Invitado:** Puelles
+> *   **2:30 PM – 3:30 PM | Ponencia 1:** "Algoritmos inspirados en la naturaleza e IA para el desarrollo de Sistemas Inteligentes".
+>     **Speaker Invitado:** María Puelles Bulnes (Docente Investigadora y Magíster en Modelamiento Computacional, especializada en IA, Machine Learning y Optimización Combinatoria).
 > *   **3:30 PM – 4:30 PM | Ponencia 2:** "Te enseño como crear tu primer agente IA con Microsoft Foundry directo para producción".
 >     **Speaker Invitado:** Henry Tarazona
 > *   **4:30 PM – 5:30 PM | Ponencia 3:** "El rol de la IA en los estudios universitarios".
@@ -104,7 +104,7 @@
 >
 > **Temática:** Exploración práctica de la computación cuántica mediante programación en Qiskit, algoritmos cuánticos y desafíos aplicados a la ciberseguridad y la resolución de problemas.
 > **Hora:** 2:30 PM - 3:30 PM
-> **Speaker:** Renzo Cienfuegos (Estudiante de Computación Científica, cofundador de QPerú y fundador de QuantumHub Perú, líder en computación cuántica y ciberseguridad).
+> **Speaker:** Renzo Cienfuegos (Co-Founder de QPeru y Creador del canal de difusión Quantum CyberSec Community).
 >
 > 🔗 [Inscribirse al evento en Luma](https://luma.com/2f169956) 🔗 [Ver perfil de Linkedin](https://www.linkedin.com/in/sudojung)
 

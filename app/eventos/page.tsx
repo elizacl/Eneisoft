@@ -173,10 +173,15 @@ const proximosEventos: ScrollEventItem[] = [
         fechaDetalle: "Miércoles 04 de noviembre de 2026",
         hora: "2:30 PM - 5:30 PM",
         lugar: "Auditorio - FISI UNMSM",
-        speaker: "Henry Tarazona",
-        role: "Software & AI Engineer en Interbank y CEO de Connect Technologies, especialista en microservicios, cloud y sistemas multi-agente",
-        image: "/speakers/HenryTarazona.png",
+        speaker: "María Puelles Bulnes",
+        role: "Docente Investigadora y Magíster en Modelamiento Computacional, especializada en IA, Machine Learning y Optimización Combinatoria",
+        image: "/speakers/MariaPuelles.png",
         speakersList: [
+            {
+                speaker: "María Puelles Bulnes",
+                role: "Docente Investigadora y Magíster en Modelamiento Computacional, especializada en IA, Machine Learning y Optimización Combinatoria",
+                image: "/speakers/MariaPuelles.png",
+            },
             {
                 speaker: "Henry Tarazona",
                 role: "Software & AI Engineer en Interbank y CEO de Connect Technologies, especialista en microservicios, cloud y sistemas multi-agente",
@@ -194,8 +199,8 @@ const proximosEventos: ScrollEventItem[] = [
         programa: [
             {
                 time: "2:30 PM – 3:30 PM",
-                activity: 'Ponencia 1: "[Por actualizar]"',
-                speaker: "Puelles",
+                activity: 'Ponencia 1: "Algoritmos inspirados en la naturaleza e IA para el desarrollo de Sistemas Inteligentes"',
+                speaker: "María Puelles Bulnes",
             },
             {
                 time: "3:30 PM – 4:30 PM",
@@ -255,7 +260,7 @@ const proximosEventos: ScrollEventItem[] = [
         fechaDetalle: "Jueves 05 de noviembre de 2026",
         hora: "2:30 PM - 3:30 PM",
         speaker: "Renzo Cienfuegos",
-        role: "Cofundador de QPerú y QuantumHub Perú, investigador y líder juvenil en divulgación de computación cuántica y ciberseguridad",
+        role: "Co-Founder de QPeru y Creador del canal de difusión Quantum CyberSec Community",
         tematica: "Exploración práctica de la computación cuántica mediante programación en Qiskit, algoritmos cuánticos y aplicaciones de ciberseguridad.",
         image: "/speakers/RenzoCienfuegos.jpg",
         links: [
